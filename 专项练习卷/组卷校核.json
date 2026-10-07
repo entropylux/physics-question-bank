@@ -1,0 +1,189 @@
+{
+  "papers": [
+    {
+      "paper": 1,
+      "title": "第1套 · 基础框架与基本计算",
+      "file": "第1套_基础框架与基本计算",
+      "questionCount": 7,
+      "points": 100,
+      "plannedMinutes": 170,
+      "items": [
+        {
+          "slot": 1,
+          "source": "08_量子力学/2-1T1071",
+          "points": 15
+        },
+        {
+          "slot": 2,
+          "source": "08_量子力学/2-1T1069",
+          "points": 15
+        },
+        {
+          "slot": 3,
+          "source": "08_量子力学/2-1T1084",
+          "points": 15
+        },
+        {
+          "slot": 4,
+          "source": "09_统计物理/2-3T1508",
+          "points": 15
+        },
+        {
+          "slot": 5,
+          "source": "09_统计物理/2-3T1516",
+          "points": 20
+        },
+        {
+          "slot": 6,
+          "source": "02_分析力学/1-5T998",
+          "points": 10
+        },
+        {
+          "slot": 7,
+          "source": "03_电磁学/1-2T202",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "paper": 2,
+      "title": "第2套 · 近似方法与热力学势",
+      "file": "第2套_近似方法与热力学势",
+      "questionCount": 7,
+      "points": 100,
+      "plannedMinutes": 175,
+      "items": [
+        {
+          "slot": 1,
+          "source": "08_量子力学/2-1T1087",
+          "points": 15
+        },
+        {
+          "slot": 2,
+          "source": "08_量子力学/2-1T1072",
+          "points": 15
+        },
+        {
+          "slot": 3,
+          "source": "08_量子力学/2-1T1082",
+          "points": 15
+        },
+        {
+          "slot": 4,
+          "source": "09_统计物理/2-3T1419",
+          "points": 15
+        },
+        {
+          "slot": 5,
+          "source": "05_热学/1-4T907",
+          "points": 20
+        },
+        {
+          "slot": 6,
+          "source": "02_分析力学/1-5T1013",
+          "points": 10
+        },
+        {
+          "slot": 7,
+          "source": "06_光学/1-3T679",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "paper": 3,
+      "title": "第3套 · 角动量与量子统计",
+      "file": "第3套_角动量与量子统计",
+      "questionCount": 7,
+      "points": 100,
+      "plannedMinutes": 175,
+      "items": [
+        {
+          "slot": 1,
+          "source": "08_量子力学/2-1T1080",
+          "points": 15
+        },
+        {
+          "slot": 2,
+          "source": "08_量子力学/2-1T1095",
+          "points": 15
+        },
+        {
+          "slot": 3,
+          "source": "08_量子力学/2-1T1101",
+          "points": 15
+        },
+        {
+          "slot": 4,
+          "source": "09_统计物理/2-3T1502",
+          "points": 15
+        },
+        {
+          "slot": 5,
+          "source": "09_统计物理/2-3T1500",
+          "points": 20
+        },
+        {
+          "slot": 6,
+          "source": "02_分析力学/1-5T1001",
+          "points": 10
+        },
+        {
+          "slot": 7,
+          "source": "04_电动力学/1-6T1059",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "paper": 4,
+      "title": "第4套 · 综合检验与系综联系",
+      "file": "第4套_综合检验与系综联系",
+      "questionCount": 7,
+      "points": 100,
+      "plannedMinutes": 170,
+      "items": [
+        {
+          "slot": 1,
+          "source": "08_量子力学/2-1T1090",
+          "points": 15
+        },
+        {
+          "slot": 2,
+          "source": "08_量子力学/2-1T1079",
+          "points": 15
+        },
+        {
+          "slot": 3,
+          "source": "08_量子力学/2-1T1098",
+          "points": 15
+        },
+        {
+          "slot": 4,
+          "source": "09_统计物理/2-3T1510",
+          "points": 15
+        },
+        {
+          "slot": 5,
+          "source": "09_统计物理/2-3T1521",
+          "points": 20
+        },
+        {
+          "slot": 6,
+          "source": "02_分析力学/1-5T1003",
+          "points": 10
+        },
+        {
+          "slot": 7,
+          "source": "03_电磁学/1-2T195",
+          "points": 10
+        }
+      ]
+    }
+  ],
+  "uniqueSources": 28,
+  "questions": 28,
+  "totalMath": 849,
+  "mathErrors": [],
+  "errors": []
+}

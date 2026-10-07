@@ -1,0 +1,144 @@
+{
+  "items": [
+    {
+      "paper": 1,
+      "slot": 7,
+      "subject": "电动力学",
+      "sourceSubject": "03_电磁学",
+      "sourceId": "1-2T202",
+      "title": "两介质界面的正入射平面波",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "原题中文重排，保留(a)–(c)全部问项；明确界面与传播方向。题目存于电磁学库，内容对应今年电动力学4.1、4.2。",
+      "question": "\n平面界面$z=0$两侧为均匀、各向同性、无损耗的非磁介质，$z<0$为介质1，$z>0$为介质2，介电常数分别为$\\varepsilon_1,\\varepsilon_2>0$，磁导率均为$\\mu_0$。角频率为$\\omega$、电场振幅为$E_0$的线偏振平面波沿$+z$方向从介质1正入射，电场沿$x$方向。界面没有外加自由面电荷和面电流。\n\n(a) 写出入射、反射、透射波的电场和磁感应强度的完整表达式，可采用复数表示，但须说明时间约定。\n\n(b) 求透射电场和磁感应强度的振幅。\n\n(c) 求入射能量中被反射和透射的比例。\n",
+      "solution": "\n**1. 先把传播方向与磁场方向一起确定。** 采用$e^{-i\\omega t}$约定，物理场取复场实部。定义各介质的波数与波阻抗\n$$\nk_j=\\omega\\sqrt{\\mu_0\\varepsilon_j},\\qquad Z_j=\\sqrt{\\mu_0/\\varepsilon_j}.\n$$\n平面波满足$\\mathbf B=\\mathbf k\\times\\mathbf E/\\omega$。把所有电场振幅都沿同一个$+x$方向定义为有符号量，有\n$$\n\\begin{aligned}\n\\mathbf E_i&=\\hat{\\mathbf x}E_0e^{i(k_1z-\\omega t)},&\n\\mathbf B_i&=\\hat{\\mathbf y}\\frac{k_1E_0}{\\omega}e^{i(k_1z-\\omega t)},\\\\\n\\mathbf E_r&=\\hat{\\mathbf x}rE_0e^{i(-k_1z-\\omega t)},&\n\\mathbf B_r&=-\\hat{\\mathbf y}\\frac{k_1rE_0}{\\omega}e^{i(-k_1z-\\omega t)},\\\\\n\\mathbf E_t&=\\hat{\\mathbf x}tE_0e^{i(k_2z-\\omega t)},&\n\\mathbf B_t&=\\hat{\\mathbf y}\\frac{k_2tE_0}{\\omega}e^{i(k_2z-\\omega t)}.\n\\end{aligned}\n$$\n反射波的磁场多一个负号，是传播方向反向导致的。\n\n**2. 用边界条件求振幅。** 切向电场、磁场强度连续，所以\n$$\n1+r=t,\\qquad \\frac{1-r}{Z_1}=\\frac{t}{Z_2}.\n$$\n联立得到\n$$\nr=\\frac{Z_2-Z_1}{Z_2+Z_1},\\qquad\nt=\\frac{2Z_2}{Z_1+Z_2}=\\frac{2\\sqrt{\\varepsilon_1}}{\\sqrt{\\varepsilon_1}+\\sqrt{\\varepsilon_2}}.\n$$\n透射场振幅为$E_{t0}=tE_0$、$B_{t0}=\\sqrt{\\mu_0\\varepsilon_2}\\,tE_0$。\n\n**3. 振幅比与能流比不同。** 无损介质中，平面波的时间平均能流大小是$\\langle S\\rangle=|E|^2/(2Z)$。故\n$$\nR=|r|^2,\\qquad T=\\frac{Z_1}{Z_2}|t|^2=\\frac{4Z_1Z_2}{(Z_1+Z_2)^2}.\n$$\n两者相加为1，与界面无损耗一致。即使$t>1$也不违反能量守恒，因为两侧的波阻抗不同。\n",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "三束波的相位、传播方向及E/B关系正确"
+        },
+        {
+          "points": 3,
+          "text": "边界条件与透射场振幅正确"
+        },
+        {
+          "points": 3,
+          "text": "用能流计算R、T而非直接令T=t²"
+        },
+        {
+          "points": 1,
+          "text": "能量守恒及相同介质极限检查"
+        }
+      ],
+      "checks": [
+        "ε1=ε2时r=0、t=1。",
+        "R+T=1。"
+      ]
+    },
+    {
+      "paper": 2,
+      "slot": 7,
+      "subject": "电动力学",
+      "sourceSubject": "06_光学",
+      "sourceId": "1-3T679",
+      "title": "斜入射的p偏振与布儒斯特角",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "原题中文重排，保留反射振幅推导及布儒斯特条件两项要求；补充非磁、无损、传播折射波假定与符号定义。题目在光学库，按电动力学界面题使用。",
+      "question": "\n单色平面电磁波从折射率为$n_1$的均匀无损非磁介质，以入射角$\\theta$射向折射率为$n_2$的均匀无损非磁介质，$n_1\\ne n_2$。界面没有外加自由面电荷和面电流，入射光为$p$偏振，即电场位于入射面内；折射角记为$\\phi$。本题先讨论存在传播折射波的角度。\n\n(a) 从电磁场边界条件出发，推导振幅反射系数$r_p=E_r/E_i$随$\\theta$的表达式。画出或明确说明各束光电场振幅的正方向。\n\n(b) 证明当$\\tan\\theta=n_2/n_1$时没有反射光。\n",
+      "solution": "\n**1. 选择基矢，避免把符号约定混入物理量。** 界面为$z=0$，入射面为$xz$面，波从$z<0$射向$z>0$。令\n$$\n\\begin{aligned}\n\\hat{\\mathbf k}_i&=(\\sin\\theta,0,\\cos\\theta),&\\mathbf e_i&=(\\cos\\theta,0,-\\sin\\theta),\\\\\n\\hat{\\mathbf k}_r&=(\\sin\\theta,0,-\\cos\\theta),&\\mathbf e_r&=(-\\cos\\theta,0,-\\sin\\theta),\\\\\n\\hat{\\mathbf k}_t&=(\\sin\\phi,0,\\cos\\phi),&\\mathbf e_t&=(\\cos\\phi,0,-\\sin\\phi).\n\\end{aligned}\n$$\n三者均有$\\hat{\\mathbf k}\\times\\mathbf e=\\hat{\\mathbf y}$。$E_i,E_r,E_t$是沿这些各自基矢的有符号振幅。界面相位匹配给Snell定律$n_1\\sin\\theta=n_2\\sin\\phi$。\n\n**2. 写切向场连续条件。** 非磁介质中$H=nE/(\\mu_0c)$，所以\n$$\n(E_i-E_r)\\cos\\theta=E_t\\cos\\phi,\\qquad\nn_1(E_i+E_r)=n_2E_t.\n$$\n消去$E_t$，可得\n$$\n\\boxed{r_p=\\frac{n_2\\cos\\theta-n_1\\cos\\phi}{n_2\\cos\\theta+n_1\\cos\\phi}}.\n$$\n若将反射电场基矢反向，$r_p$整体变号，反射率$R_p=|r_p|^2$不变。\n\n**3. 求无反射条件。** 分子为零要求$n_2\\cos\\theta=n_1\\cos\\phi$。结合Snell定律，且$n_1\\ne n_2$，得到\n$$\n\\theta+\\phi=\\frac\\pi2,\\qquad\n\\boxed{\\tan\\theta_B=\\frac{n_2}{n_1}}.\n$$\n这时反射方向与折射方向垂直，$p$偏振的反射振幅为零。若从高折射率一侧入射，此角也小于全反射临界角，因此存在实际传播折射波。\n",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "明确基矢及Snell定律"
+        },
+        {
+          "points": 4,
+          "text": "由切向E、H连续推导rp"
+        },
+        {
+          "points": 3,
+          "text": "由分子为零得到布儒斯特条件"
+        },
+        {
+          "points": 1,
+          "text": "说明振幅符号约定不改变反射率"
+        }
+      ],
+      "checks": [
+        "正入射反射率与正入射公式一致，振幅符号由基矢约定解释。",
+        "在布儒斯特角代回分子应为零。"
+      ]
+    },
+    {
+      "paper": 3,
+      "slot": 7,
+      "subject": "电动力学",
+      "sourceSubject": "04_电动力学",
+      "sourceId": "1-6T1059",
+      "title": "菲涅尔菱体与全反射相移",
+      "points": 10,
+      "minutes": 25,
+      "adaptation": "原题中文重排，保留(a)–(c)全部问项；用文字完整说明两次全反射的装置几何，统一取外界折射率为1。",
+      "question": "\n菲涅尔菱体可把线偏振光转换为圆偏振光。光从端面正入射，在菱体内部经历两次相同入射角$\\theta_i$的全反射，再从另一端面正出射。两次反射的入射面相同，均在菱体的截面内。菱体无损且非磁，其相对外界的折射率记为$n>1$；可将外界折射率取为1。\n\n入射线偏振方向与入射面成$45^\\circ$，装置要求每次全反射在$p$、$s$分量之间产生$45^\\circ$的相对相移。\n\n(a) 求一次全反射时$p$偏振反射波相对于入射波的相移。\n\n(b) 求一次全反射时$s$偏振的相移。\n\n(c) 若$\\theta_i=53.3^\\circ$，求满足装置要求的$n$。\n\n可使用$\\tan(\\alpha-\\beta)=(\\tan\\alpha-\\tan\\beta)/(1+\\tan\\alpha\\tan\\beta)$。须明确使用的反射振幅基矢约定。\n",
+      "solution": "\n**1. 全反射仍有透射侧的倏逝场。** 采用$e^{-i\\omega t}$约定，选择外侧随远离界面而衰减的场。令\n$$\nb=\\sqrt{\\sin^2\\theta_i-n^{-2}},\\qquad c_i=\\cos\\theta_i,\n$$\n全反射要求$b>0$。令$s$基矢固定垂直于入射面，每束光各自取局部$p$基矢$\\mathbf e_p=\\mathbf e_s\\times\\hat{\\mathbf k}$，因此入射与反射$p$基矢的切向投影方向相反。在该约定下，由切向场连续得到\n$$\nr_p=\\frac{c_i-in^2b}{c_i+in^2b},\\qquad\nr_s=\\frac{c_i-ib}{c_i+ib}.\n$$\n分母、分子互为共轭，故$|r_p|=|r_s|=1$。全反射保持每一分量的强度，但可改变相对相位。\n\n**2. 提取相位。** 对$a,d>0$，$(a-id)/(a+id)=\\exp[-2i\\arctan(d/a)]$。于是\n$$\n\\phi_p=-2\\arctan\\frac{n^2b}{c_i},\\qquad\n\\phi_s=-2\\arctan\\frac{b}{c_i}.\n$$\n若反向定义反射$p$基矢，单次$p$相移会相差$\\pi$；比较装置输入、输出时必须同时追踪基矢。\n\n**3. 由相位延迟反求折射率。** 单次相对延迟大小为$\\Delta=|\\phi_p-\\phi_s|$。正切差角公式给\n$$\n\\tan\\frac{\\Delta}{2}\n=\\frac{(n^2-1)bc_i}{c_i^2+n^2b^2}\n=\\frac{bc_i}{\\sin^2\\theta_i}.\n$$\n最后一步用了$c_i^2+n^2b^2=(n^2-1)\\sin^2\\theta_i$。要求$\\Delta=\\pi/4$，记$t=\\tan(\\pi/8)=\\sqrt2-1$，有\n$$\n\\boxed{n=\\left[\\sin^2\\theta_i-t^2\\frac{\\sin^4\\theta_i}{\\cos^2\\theta_i}\\right]^{-1/2}\\simeq1.50.}\n$$\n所得值满足全反射条件。入射的$p,s$分量等幅；两次反射累计相对相移$\\pi/2$，得到圆偏振。正入射的入口、出口对两分量作用相同，不改变这一结论。\n",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确写出全反射rp及p相移"
+        },
+        {
+          "points": 2,
+          "text": "s相移正确"
+        },
+        {
+          "points": 4,
+          "text": "相移差、折射率方程及数值正确"
+        },
+        {
+          "points": 1,
+          "text": "全反射条件与圆偏振物理检查"
+        }
+      ],
+      "checks": [
+        "n约1.50时θc约41.8°，小于53.3°。",
+        "两个反射系数的模均为1。"
+      ]
+    },
+    {
+      "paper": 4,
+      "slot": 7,
+      "subject": "电动力学",
+      "sourceSubject": "03_电磁学",
+      "sourceId": "1-2T195",
+      "title": "无碰撞等离子体中的平面电磁波",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "节选原题(b)、(c)，保留电子响应、电流密度、电导率、波动方程及色散关系要求，省略(a)的单电子强度数值估算；补齐节选所需的非相对论模型。",
+      "question": "\n均匀等离子体中电子数密度为$n_0$，电子质量为$m$、电荷为$-e$；正离子具有相等的电荷数密度，但因质量很大可视为静止。忽略碰撞、热运动及电子的相对论效应。考虑沿$+z$方向传播、沿$x$方向偏振的小振幅横向平面波，各复物理量按$e^{i(kz-\\omega t)}$变化，只保留场和电子速度的一阶项。\n\n(a) 求波所诱导的电流密度$\\mathbf J$与电场$\\mathbf E$的关系，并求复电导率$\\sigma(\\omega)$。\n\n(b) 从Maxwell方程推导适用于该模型的电场波动方程和色散关系。使用SI单位制，真空常数为$\\varepsilon_0,\\mu_0$，$c=1/\\sqrt{\\mu_0\\varepsilon_0}$。\n",
+      "solution": "\n**1. 先求物质的线性响应。** 磁力$-e\\mathbf v\\times\\mathbf B$是波幅的二阶量，在本题线性模型中略去。电子运动方程为\n$$\nm\\frac{d\\mathbf v}{dt}=-e\\mathbf E.\n$$\n在$e^{-i\\omega t}$约定下，$-i\\omega m\\mathbf v=-e\\mathbf E$，故\n$$\n\\mathbf v=-i\\frac{e}{m\\omega}\\mathbf E,\\qquad\n\\boxed{\\mathbf J=-n_0e\\mathbf v=i\\frac{n_0e^2}{m\\omega}\\mathbf E},\\qquad\n\\boxed{\\sigma(\\omega)=i\\frac{n_0e^2}{m\\omega}}.\n$$\n纯虚电导率意味着电流与电场相差四分之一周期，因此无碰撞模型没有平均焦耳耗散；不能把它当成实的直流电导率。\n\n**2. 对Faraday定律取旋度。** 配合含传导电流的Ampère–Maxwell定律，有\n$$\n\\nabla\\times(\\nabla\\times\\mathbf E)\n=-\\mu_0\\frac{\\partial\\mathbf J}{\\partial t}\n-\\mu_0\\varepsilon_0\\frac{\\partial^2\\mathbf E}{\\partial t^2}.\n$$\n本题是均匀介质中的横波，$\\nabla\\cdot\\mathbf E=0$。同时由运动方程得$\\partial_t\\mathbf J=(n_0e^2/m)\\mathbf E$，因此\n$$\n\\nabla^2\\mathbf E-\\frac1{c^2}\\frac{\\partial^2\\mathbf E}{\\partial t^2}\n-\\frac{\\omega_p^2}{c^2}\\mathbf E=0,\\qquad\n\\omega_p^2=\\frac{n_0e^2}{m\\varepsilon_0}.\n$$\n代入平面波形式得到\n$$\n\\boxed{\\omega^2=c^2k^2+\\omega_p^2}.\n$$\n**检查与解释。** 当$n_0\\to0$时回到真空色散。$\\omega>\\omega_p$时波数为实数；$\\omega<\\omega_p$时为倏逝场。对于传播波，$v_g=c^2k/\\omega<c$，即使相速度$\\omega/k>c$也不意味着信号超光速。\n",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "线性化电子运动方程及速度响应"
+        },
+        {
+          "points": 2,
+          "text": "电流与电导率的符号、相位"
+        },
+        {
+          "points": 3,
+          "text": "由Maxwell方程得到波动方程"
+        },
+        {
+          "points": 2,
+          "text": "色散关系及真空极限检查"
+        }
+      ],
+      "checks": [
+        "σ为纯虚数，平均J·E为零。",
+        "ωp²量纲为时间的负二次方。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-07",
+  "subjects": [
+    {
+      "subject": "01_力学",
+      "count": 67,
+      "bytes": 14984075
+    },
+    {
+      "subject": "02_分析力学",
+      "count": 49,
+      "bytes": 9324740
+    },
+    {
+      "subject": "03_电磁学",
+      "count": 73,
+      "bytes": 17768241
+    },
+    {
+      "subject": "04_电动力学",
+      "count": 23,
+      "bytes": 3474213
+    },
+    {
+      "subject": "05_热学",
+      "count": 74,
+      "bytes": 13077850
+    },
+    {
+      "subject": "06_光学",
+      "count": 68,
+      "bytes": 5602570
+    },
+    {
+      "subject": "08_量子力学",
+      "count": 61,
+      "bytes": 11914214
+    },
+    {
+      "subject": "09_统计物理",
+      "count": 49,
+      "bytes": 9970241
+    },
+    {
+      "subject": "10_统计力学",
+      "count": 49,
+      "shared_with": "09_统计物理"
+    }
+  ],
+  "errors": [],
+  "unique_files": 464
+}

@@ -1,0 +1,406 @@
+{
+  "items": [
+    {
+      "file": "1-1T2.png",
+      "subparts": "单问",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T3.png",
+      "subparts": "a,b,c,d,e",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T4.png",
+      "subparts": "d图内全问：反射系数、beta、理想导体极限",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T5.png",
+      "subparts": "a,b,c,d,e,f",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T6.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T7.png",
+      "subparts": "a,b,c,d（可验证充分条件与正参数边界）",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T8.png",
+      "subparts": "a,b,c,d",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T9.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T10.png",
+      "subparts": "单问",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T11.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T12.png",
+      "subparts": "a,b,c,d,e",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T13.png",
+      "subparts": "a,b,c,d,e",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T14.png",
+      "subparts": "a,b,c,d",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T15.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T16.png",
+      "subparts": "a,b,c,d,e,f",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T17.png",
+      "subparts": "a,b,c,d,e",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T18.png",
+      "subparts": "a,b,c,d,e",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T19.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T20.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T21.png",
+      "subparts": "全部：模式与频率",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T22.png",
+      "subparts": "单问",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T23.png",
+      "subparts": "完整A2；下方相邻A3残段不另立题",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T24.png",
+      "subparts": "i,ii",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T25.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T26.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T27.png",
+      "subparts": "方程、模态与频率",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T28.png",
+      "subparts": "运动方程、能量、角动量与势零点条件",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T29.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T31.png",
+      "subparts": "a,b,c,d",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T32.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T33.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T34.png",
+      "subparts": "近日点、远日点",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T35.png",
+      "subparts": "单问；纠正原图冲突答案",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T36.png",
+      "subparts": "单问",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T37.png",
+      "subparts": "a,b,c；纠正原图积分式",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T38.png",
+      "subparts": "单问及无耗散条件",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T39.png",
+      "subparts": "频率与振型",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T40.png",
+      "subparts": "a,b,c(i-v)；明确收缩协议与潮汐近似",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T41.png",
+      "subparts": "单问",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T42.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；条件与检查见正文"
+    },
+    {
+      "file": "1-1T43.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T44.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T45.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T46.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T47.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T48.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T49.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T50.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T51.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T52.png",
+      "subparts": "全部小问与条件核对",
+      "status": "solved",
+      "note": "已逐图查看并独立推导；原题歧义及适用条件见正文"
+    },
+    {
+      "file": "1-1T53.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T54.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T55.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T56.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T57.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T59.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T60.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T61.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T62.png",
+      "subparts": "全部小问及条件检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T63.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T64.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T65.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T66.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T67.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T68.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T69.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    },
+    {
+      "file": "1-1T70.png",
+      "subparts": "全部小问及极限检查",
+      "status": "solved",
+      "note": "已逐图查看并独立推导"
+    }
+  ]
+}

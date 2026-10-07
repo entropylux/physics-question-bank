@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-07",
+  "subjects": 11,
+  "questions": 132,
+  "officialEntries": 464,
+  "officialSolved": 461,
+  "sourceIncomplete": [
+    {
+      "subject": "03_电磁学",
+      "file": "1-2T227.png"
+    },
+    {
+      "subject": "06_光学",
+      "file": "1-3T663.png"
+    },
+    {
+      "subject": "08_量子力学",
+      "file": "2-1T1078.png"
+    }
+  ],
+  "imageCopiesVerified": 513,
+  "localLinksVerified": 5037,
+  "mathExpressionsRendered": 12477,
+  "courses": [
+    {
+      "subject": "01_力学",
+      "lectureCharacters": 9130,
+      "questions": 12,
+      "originalImages": 67
+    },
+    {
+      "subject": "02_分析力学",
+      "lectureCharacters": 10799,
+      "questions": 12,
+      "originalImages": 49
+    },
+    {
+      "subject": "03_电磁学",
+      "lectureCharacters": 10607,
+      "questions": 12,
+      "originalImages": 73
+    },
+    {
+      "subject": "04_电动力学",
+      "lectureCharacters": 8529,
+      "questions": 12,
+      "originalImages": 23
+    },
+    {
+      "subject": "05_热学",
+      "lectureCharacters": 8967,
+      "questions": 12,
+      "originalImages": 74
+    },
+    {
+      "subject": "06_光学",
+      "lectureCharacters": 7330,
+      "questions": 12,
+      "originalImages": 68
+    },
+    {
+      "subject": "07_高等量子力学",
+      "lectureCharacters": 10310,
+      "questions": 12,
+      "originalImages": 0
+    },
+    {
+      "subject": "08_量子力学",
+      "lectureCharacters": 9254,
+      "questions": 12,
+      "originalImages": 61
+    },
+    {
+      "subject": "09_统计物理",
+      "lectureCharacters": 9411,
+      "questions": 12,
+      "originalImages": 49
+    },
+    {
+      "subject": "10_统计力学",
+      "lectureCharacters": 9609,
+      "questions": 12,
+      "originalImages": 49
+    },
+    {
+      "subject": "11_相对论",
+      "lectureCharacters": 7831,
+      "questions": 12,
+      "originalImages": 0
+    }
+  ],
+  "official": [
+    {
+      "subject": "01_力学",
+      "entries": 67,
+      "solved": 67,
+      "sourceIncomplete": []
+    },
+    {
+      "subject": "02_分析力学",
+      "entries": 49,
+      "solved": 49,
+      "sourceIncomplete": []
+    },
+    {
+      "subject": "03_电磁学",
+      "entries": 73,
+      "solved": 72,
+      "sourceIncomplete": [
+        "1-2T227.png"
+      ]
+    },
+    {
+      "subject": "04_电动力学",
+      "entries": 23,
+      "solved": 23,
+      "sourceIncomplete": []
+    },
+    {
+      "subject": "05_热学",
+      "entries": 74,
+      "solved": 74,
+      "sourceIncomplete": []
+    },
+    {
+      "subject": "06_光学",
+      "entries": 68,
+      "solved": 67,
+      "sourceIncomplete": [
+        "1-3T663.png"
+      ]
+    },
+    {
+      "subject": "08_量子力学",
+      "entries": 61,
+      "solved": 60,
+      "sourceIncomplete": [
+        "2-1T1078.png"
+      ]
+    },
+    {
+      "subject": "09_统计物理",
+      "entries": 49,
+      "solved": 49,
+      "sourceIncomplete": []
+    },
+    {
+      "subject": "10_统计力学",
+      "entries": 49,
+      "solved": 49,
+      "sourceIncomplete": []
+    }
+  ],
+  "errors": []
+}

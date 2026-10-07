@@ -1,0 +1,56 @@
+{
+  "outputs": [
+    {
+      "paper": 1,
+      "pdf": "第1套_基础框架与基本计算.pdf",
+      "bytes": 443282,
+      "questions": 7,
+      "answers": 7,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 2,
+      "pdf": "第2套_近似方法与热力学势.pdf",
+      "bytes": 500152,
+      "questions": 7,
+      "answers": 7,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 3,
+      "pdf": "第3套_角动量与量子统计.pdf",
+      "bytes": 469843,
+      "questions": 7,
+      "answers": 7,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 4,
+      "pdf": "第4套_综合检验与系综联系.pdf",
+      "bytes": 516727,
+      "questions": 7,
+      "answers": 7,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    }
+  ]
+}

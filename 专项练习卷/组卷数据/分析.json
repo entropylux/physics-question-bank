@@ -1,0 +1,134 @@
+{
+  "items": [
+    {
+      "paper": 1,
+      "slot": 6,
+      "subject": "分析力学",
+      "sourceSubject": "02_分析力学",
+      "sourceId": "1-5T998",
+      "title": "球摆的循环坐标与第一积分",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "节选原图中完整的49.2球摆题，中文重排；补全质量、角度和势能零点约定，并将原题“求第一积分”拆为三个推导步骤。不使用同页49.1的附图。",
+      "question": "质量为 $m$ 的质点用长为 $l$、不可伸长且质量可忽略的细杆连接到固定点，在重力作用下作球摆运动。重力加速度为 $g$，忽略空气阻力和支点摩擦。用 $\\theta$ 表示杆与**向下铅垂方向**的夹角，用 $\\psi$ 表示绕竖直轴的方位角；只在 $0<\\theta<\\pi$ 的常规坐标区域讨论。以支点所在水平面为重力势能零点。\n\n1. 写出质点的动能、势能和拉格朗日量。（3分）\n2. 找出循环坐标，求其对应的广义动量及第一积分，并说明该守恒量的物理意义。（3分）\n3. 求能量第一积分，解释它为什么守恒，并将两个第一积分写成关于 $\\theta,\\psi$ 及其时间导数的关系。（4分）",
+      "solution": "**1. 从球面上的速度写拉格朗日量。** 质点沿子午线和纬线的速度分量分别为 $l\\dot\\theta$ 与 $l\\sin\\theta\\,\\dot\\psi$，二者垂直。因此\n$$\nT=\\frac{ml^2}{2}\\left(\\dot\\theta^2+\\sin^2\\theta\\,\\dot\\psi^2\\right),\n\\qquad V=-mgl\\cos\\theta,\n$$\n$$\n\\mathcal L=T-V\n=\\frac{ml^2}{2}\\left(\\dot\\theta^2+\\sin^2\\theta\\,\\dot\\psi^2\\right)+mgl\\cos\\theta.\n$$\n\n**2. 循环坐标给第一积分。** $\\mathcal L$ 不含 $\\psi$ 本身，所以\n$$\n\\frac{d}{dt}p_\\psi=\\frac{\\partial\\mathcal L}{\\partial\\psi}=0,\n\\qquad\np_\\psi=\\frac{\\partial\\mathcal L}{\\partial\\dot\\psi}\n=ml^2\\sin^2\\theta\\,\\dot\\psi=J.\n$$\n$J$ 就是质点绕竖直轴的角动量分量。取常数 $n=J/(ml^2)$，得到\n$$\n\\boxed{\\sin^2\\theta\\,\\dot\\psi=n.}\n$$\n\n**3. 无显含时间给能量积分。** 系统的约束不随时间变化，$\\mathcal L$ 无显含时间，其能量函数守恒；这里它就是机械能：\n$$\nE=\\dot\\theta\\frac{\\partial\\mathcal L}{\\partial\\dot\\theta}\n+\\dot\\psi\\frac{\\partial\\mathcal L}{\\partial\\dot\\psi}\n-\\mathcal L\n=\\frac{ml^2}{2}\\left(\\dot\\theta^2+\\sin^2\\theta\\,\\dot\\psi^2\\right)-mgl\\cos\\theta.\n$$\n令 $h=2E/(ml^2)$，第二个第一积分为\n$$\n\\boxed{\\dot\\theta^2+\\sin^2\\theta\\,\\dot\\psi^2-\\frac{2g}{l}\\cos\\theta=h.}\n$$\n二式共同降低了运动方程的求解难度，但一般不能据此把 $\\dot\\psi$ 视为常数：当 $\\theta$ 变化时，$\\dot\\psi=n/\\sin^2\\theta$ 也变化。若 $J=0$，在常规坐标区域有 $\\dot\\psi=0$，恢复平面单摆。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "动能1分、势能符号与零点1分、拉格朗日量1分。"
+        },
+        {
+          "points": 3,
+          "text": "认出ψ为循环坐标1分，求得守恒广义动量1分，解释为竖直角动量1分。"
+        },
+        {
+          "points": 4,
+          "text": "说明无显含时间的守恒依据1分，求出能量函数2分，正确写出两个第一积分及常数定义1分。"
+        }
+      ],
+      "checks": [
+        "原图49.2题干与球摆图完整，已逐图核对。",
+        "向下铅垂角对应V=−mgl cosθ；两个积分与原题答案一致。",
+        "J=0时恢复平面单摆，能量和角动量的量纲正确。"
+      ]
+    },
+    {
+      "paper": 2,
+      "slot": 6,
+      "subject": "分析力学",
+      "sourceSubject": "02_分析力学",
+      "sourceId": "1-5T1013",
+      "title": "弹簧滑块与单摆的两个正规模",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "原题完整中文重排；用文字补全原图的连接关系和坐标方向，将建立二次拉格朗日量单列为步骤，保留原题求频率与振型的要求。",
+      "question": "质量为 $m$ 的滑块可在光滑水平面上运动，滑块通过刚度为 $k$ 的水平轻弹簧连接固定墙。滑块上悬挂一根长为 $L$ 的轻刚杆，杆下端连接质量同为 $m$ 的摆球；摆在包含滑块运动方向的竖直平面内摆动。重力加速度为 $g$，忽略一切摩擦。平衡时弹簧无形变、摆杆竖直向下，并满足\n$$\n\\frac{k}{m}=\\frac{g}{L}=\\omega_0^2.\n$$\n令 $x$ 为滑块相对平衡位置向右的位移，$\\theta$ 为摆杆从向下铅垂方向向右偏转的角度。可使用同量纲坐标 $q=L\\theta$。\n\n1. 写出平衡附近小振动的二次拉格朗日量。（3分）\n2. 求两个正规模的角频率。（4分）\n3. 给出每个正规模中 $x$ 与 $q$ 的振幅比，并说明摆球与滑块的**水平绝对位移**是同向还是反向。（3分）",
+      "solution": "**1. 保留动能与势能的二次项。** 摆球的水平坐标是 $x+L\\sin\\theta$。在线性小振动中，它的水平位移为 $x+q$；竖直速度对动能的贡献从四阶开始。因此\n$$\nT_2=\\frac m2\\dot x^2+\\frac m2(\\dot x+\\dot q)^2,\n\\qquad\nV_2=\\frac{kx^2}{2}+\\frac{mgL}{2}\\theta^2\n=\\frac{m\\omega_0^2}{2}(x^2+q^2).\n$$\n所求 $\\mathcal L_2=T_2-V_2$。动能中的交叉项 $m\\dot x\\dot q$ 体现了两种运动的耦合。\n\n**2. 建立本征方程。** 拉格朗日方程为\n$$\n2\\ddot x+\\ddot q+\\omega_0^2x=0,\n\\qquad\n\\ddot x+\\ddot q+\\omega_0^2q=0.\n$$\n取 $(x,q)=(X,Q)\\cos(\\omega t+\\delta)$，令 $\\lambda=\\omega^2/\\omega_0^2$，振幅满足\n$$\n\\begin{pmatrix}\n1-2\\lambda&-\\lambda\\\\\n-\\lambda&1-\\lambda\n\\end{pmatrix}\n\\begin{pmatrix}X\\\\Q\\end{pmatrix}=0.\n$$\n有非零解要求\n$$\n(1-2\\lambda)(1-\\lambda)-\\lambda^2\n=\\lambda^2-3\\lambda+1=0.\n$$\n所以\n$$\n\\boxed{\\omega_\\pm=\\omega_0\\sqrt{\\frac{3\\pm\\sqrt5}{2}}.}\n$$\n\n**3. 计算并解释振型。** 由振幅方程及特征多项式可得\n$$\n\\frac{Q_\\pm}{X_\\pm}=1-\\lambda_\\pm\n=\\frac{-1\\mp\\sqrt5}{2}.\n$$\n在第 $\\pm$ 个模中，可写成\n$$\nx=A_\\pm\\cos(\\omega_\\pm t+\\delta_\\pm),\n\\qquad\nq=(1-\\lambda_\\pm)A_\\pm\\cos(\\omega_\\pm t+\\delta_\\pm).\n$$\n注意 $q$ 是摆球相对滑块的水平位移，摆球的绝对位移是 $x_{\\rm bob}=x+q$。因此\n$$\n\\frac{X_{{\\rm bob},-}}{X_-}=\\frac{1+\\sqrt5}{2}>0,\n\\qquad\n\\frac{X_{{\\rm bob},+}}{X_+}=\\frac{1-\\sqrt5}{2}<0.\n$$\n低频模中摆球与滑块同向，高频模中两者反向。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确写出两部分动能并保留交叉项2分，二次势能及拉格朗日量1分。"
+        },
+        {
+          "points": 4,
+          "text": "列出耦合方程或质量/刚度矩阵2分，正确本征方程1分，两角频率1分。"
+        },
+        {
+          "points": 3,
+          "text": "两个相对振幅比2分，区分q和摆球绝对位移并正确说明同向/反向1分。"
+        }
+      ],
+      "checks": [
+        "原题图中的质量相等、水平弹簧连接及k/m=g/L条件已核对。",
+        "两本征值均为正，和为3、积为1；满足本征方程。",
+        "振型使用q=Lθ，摆球绝对位移单独取x+q，未混淆两种位移。"
+      ]
+    },
+    {
+      "paper": 3,
+      "slot": 6,
+      "subject": "分析力学",
+      "sourceSubject": "02_分析力学",
+      "sourceId": "1-5T1001",
+      "title": "重对称陀螺的哈密顿函数",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "节选原图中完整的49.11题并中文重排；补全欧拉角正方向，明确惯量均关于固定点O。本卷额外给定标准欧拉角动能公式，降低刚体运动学记忆负担；将广义动量与循环坐标列为推导步骤。",
+      "question": "质量为 $m$ 的轴对称刚体在重力作用下绕固定点 $O$ 无摩擦转动，其质心位于从 $O$ 出发的正向对称轴上，与 $O$ 相距 $l$。关于通过 $O$ 的对称轴的转动惯量为 $C$；关于通过 $O$ 且垂直于对称轴的任意轴的转动惯量为 $A$。\n\n用 $\\theta$ 表示对称轴与**向上竖直方向**的夹角，$\\psi$ 表示进动角，$\\varphi$ 表示自转角，采用使轴向角速度为 $\\dot\\varphi+\\dot\\psi\\cos\\theta$ 的欧拉角约定。取 $0<\\theta<\\pi$，以过 $O$ 的水平面为重力势能零点。\n\n**本卷给定**刚体动能公式：\n$$\nT=\\frac A2\\left(\\dot\\theta^2+\\dot\\psi^2\\sin^2\\theta\\right)\n+\\frac C2\\left(\\dot\\varphi+\\dot\\psi\\cos\\theta\\right)^2.\n$$\n\n1. 写出拉格朗日量，并求三个共轭动量 $p_\\theta,p_\\psi,p_\\varphi$。（3分）\n2. 将各广义速度用坐标和动量表示，作 Legendre 变换，求 $H(\\theta,\\psi,\\varphi,p_\\theta,p_\\psi,p_\\varphi)$。（5分）\n3. 指出哪两个广义动量守恒，并解释各自的物理意义。（2分）",
+      "solution": "**1. 先固定势能与角度约定。** 质心高度为 $l\\cos\\theta$，故\n$$\nV=mgl\\cos\\theta,\\qquad \\mathcal L=T-mgl\\cos\\theta.\n$$\n逐项对广义速度求偏导，得到\n$$\np_\\theta=A\\dot\\theta,\n\\qquad\np_\\varphi=C(\\dot\\varphi+\\dot\\psi\\cos\\theta),\n$$\n$$\np_\\psi=A\\sin^2\\theta\\,\\dot\\psi\n+C(\\dot\\varphi+\\dot\\psi\\cos\\theta)\\cos\\theta\n=A\\sin^2\\theta\\,\\dot\\psi+p_\\varphi\\cos\\theta.\n$$\n这里 $p_\\psi$ 同时含进动与自转的贡献，不能只保留第一项。\n\n**2. 解出速度再作 Legendre 变换。**\n$$\n\\dot\\theta=\\frac{p_\\theta}{A},\\qquad\n\\dot\\psi=\\frac{p_\\psi-p_\\varphi\\cos\\theta}{A\\sin^2\\theta},\n$$\n$$\n\\dot\\varphi=\\frac{p_\\varphi}{C}\n-\\frac{\\cos\\theta\\,(p_\\psi-p_\\varphi\\cos\\theta)}{A\\sin^2\\theta}.\n$$\n按照定义\n$$\nH=p_\\theta\\dot\\theta+p_\\psi\\dot\\psi+p_\\varphi\\dot\\varphi-\\mathcal L.\n$$\n由于动能关于广义速度是二次齐次式，动量与速度的乘积之和为 $2T$，从而 $H=T+V$；仍需把速度全部换成动量，得到\n$$\n\\boxed{\nH=\\frac{p_\\theta^2}{2A}\n+\\frac{(p_\\psi-p_\\varphi\\cos\\theta)^2}{2A\\sin^2\\theta}\n+\\frac{p_\\varphi^2}{2C}\n+mgl\\cos\\theta.}\n$$\n只写 $H=T+V$ 而保留速度，尚未完成原题要求的哈密顿函数。\n\n**3. 循环坐标与角动量。** $H$ 不含 $\\psi$ 和 $\\varphi$ 本身，所以\n$$\n\\dot p_\\psi=-\\frac{\\partial H}{\\partial\\psi}=0,\n\\qquad\n\\dot p_\\varphi=-\\frac{\\partial H}{\\partial\\varphi}=0.\n$$\n$p_\\psi$ 是角动量的向上竖直分量，$p_\\varphi$ 是角动量沿刚体对称轴的分量。$\\theta$ 一般不是循环坐标，$p_\\theta$ 一般不守恒。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确势能及拉格朗日量1分，三个共轭动量2分。"
+        },
+        {
+          "points": 5,
+          "text": "解出三广义速度2分，说明并完成Legendre变换1分，得到只含坐标与动量的完整H 2分。"
+        },
+        {
+          "points": 2,
+          "text": "指出pψ、pφ守恒1分，分别解释为竖直角动量与轴向角动量1分。"
+        }
+      ],
+      "checks": [
+        "原图49.11完整题干与Euler角图已核对；页首上一题残余答案未纳入。",
+        "A和C均关于O，未误用质心惯量；向上竖直角对应V=+mgl cosθ。",
+        "对所得H求三个动量偏导可还原速度表达式。",
+        "θ=0、π坐标奇点已在题干排除，不引入不必要的奇点讨论。"
+      ]
+    },
+    {
+      "paper": 4,
+      "slot": 6,
+      "subject": "分析力学",
+      "sourceSubject": "02_分析力学",
+      "sourceId": "1-5T1003",
+      "title": "由作用量求细杆的方程与端点条件",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "节选原图中的完整49.21题并补充给定作用量；题干明确标注“本卷给定”。只考纵振的体内方程与边界条件，不纳入同页49.20悬绳题，不要求求解偏微分方程或振动频谱。",
+      "question": "一根均匀细杆长为 $l$、横截面积为 $F$、质量密度为 $\\rho$，Young模量为 $E$。杆的一端固定，另一端连接点质量 $m$。忽略阻尼，研究平衡位置附近的微小纵向振动。\n\n用 $x\\in[0,l]$ 标记杆的平衡位置，$x=0$ 为固定端，$u(x,t)$ 为沿 $+x$ 方向的纵位移，记 $u_t=\\partial u/\\partial t$、$u_x=\\partial u/\\partial x$。\n\n**本卷给定**二次作用量：\n$$\nS=\\int_{t_1}^{t_2}dt\\left\\{\n\\int_0^l\\left[\\frac12\\rho F u_t^2-\\frac12 EF u_x^2\\right]dx\n+\\frac12m[u_t(l,t)]^2\n\\right\\}.\n$$\n变分在初末时刻为零，固定端满足 $u(0,t)=0$，但 $u(l,t)$ 未被预先固定。\n\n1. 应用 Hamilton 变分原理，对作用量积分分部，求杆内部 $0<x<l$ 的运动方程。（4分）\n2. 写出两端边界条件，特别说明附加点质量如何改变 $x=l$ 处的边界条件。（4分）\n3. 令 $m\\to0$，说明末端条件退化为什么物理条件。（2分）\n\n本题不要求求解振动频率。",
+      "solution": "**1. 体内方程来自任意内部变分。** 对给定作用量变分：\n$$\n\\delta S=\\int dt\\left\\{\n\\int_0^l\\left(\\rho F u_t\\,\\delta u_t-EF u_x\\,\\delta u_x\\right)dx\n+m u_t(l,t)\\,\\delta u_t(l,t)\n\\right\\}.\n$$\n动能项对时间积分分部，弹性项对空间积分分部。时间端点的变分为零，于是\n$$\n\\delta S=\\int dt\\int_0^l\n\\left(-\\rho F u_{tt}+EFu_{xx}\\right)\\delta u\\,dx\n-\\int dt\\,[EFu_x\\delta u]_{0}^{l}\n-\\int dt\\,m u_{tt}(l,t)\\delta u(l,t).\n$$\n内部的 $\\delta u$ 任意，故\n$$\n\\boxed{\\rho F u_{tt}=EFu_{xx},\n\\qquad u_{tt}=\\frac E\\rho u_{xx}.}\n$$\n这是波速 $c=\\sqrt{E/\\rho}$ 的纵波方程。\n\n**2. 自由端变分给惯性边界条件。** 左端是固定端，\n$$\n\\boxed{u(0,t)=0.}\n$$\n因此 $\\delta u(0,t)=0$，该处的边界项消失。右端允许移动，$\\delta u(l,t)$ 任意，其系数必须为零：\n$$\n\\boxed{EFu_x(l,t)+m u_{tt}(l,t)=0.}\n$$\n从受力看，杆对末端质量的恢复力为 $-EFu_x(l,t)$，所以该式也正是末端质量的牛顿方程\n$$\nm u_{tt}(l,t)=-EFu_x(l,t).\n$$\n不能把端点位移也固定为零，否则会错误消去端点质量的动力学。\n\n**3. 无附加质量的极限。** $m\\to0$ 时，\n$$\nEFu_x(l,t)=0\\quad\\Longrightarrow\\quad\n\\boxed{u_x(l,t)=0.}\n$$\n末端纵向应力为 $E u_x$，故这是无外力自由端的零应力条件，不是零位移条件。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "正确写出δS 1分，对时间和空间积分分部并保留边界项2分，得到内部波动方程1分。"
+        },
+        {
+          "points": 4,
+          "text": "固定端u(0,t)=0 1分，端点质量的变分贡献1分，自然边界条件及符号2分。"
+        },
+        {
+          "points": 2,
+          "text": "得到m→0时u_x(l,t)=0 1分，解释为自由端零应力条件1分。"
+        }
+      ],
+      "checks": [
+        "原图49.21题干完整，长度、截面积、密度、Young模量及端点质量均逐项核对。",
+        "作用量为本卷额外给定，adaptation和题干均明确标注。",
+        "端点条件与端点质量的牛顿方程同号一致，EFu_x与m u_tt均为力。",
+        "m→0恢复自由端零应力条件；未要求连续体频谱，工作量限定为一次变分与两次积分分部。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "subjects": 11,
+  "totalQuestions": 132,
+  "uniqueOriginalImages": 464,
+  "originalImageCopies": 513,
+  "totalMath": 12477,
+  "mathErrors": [],
+  "subjectsDetail": [
+    {
+      "subject": "01_力学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 67,
+      "officialCoverage": {
+        "solved": 67
+      },
+      "documents": [
+        {
+          "file": "01_力学\\分层练习题.md",
+          "chars": 2133,
+          "math": 67
+        },
+        {
+          "file": "01_力学\\官方题库导读.md",
+          "chars": 1026,
+          "math": 2
+        },
+        {
+          "file": "01_力学\\官方题库解答.md",
+          "chars": 42489,
+          "math": 1044
+        },
+        {
+          "file": "01_力学\\知识点讲义.md",
+          "chars": 9130,
+          "math": 192
+        },
+        {
+          "file": "01_力学\\练习详解.md",
+          "chars": 5010,
+          "math": 131
+        },
+        {
+          "file": "01_力学\\题库索引.md",
+          "chars": 4178,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "02_分析力学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 49,
+      "officialCoverage": {
+        "solved": 49
+      },
+      "documents": [
+        {
+          "file": "02_分析力学\\分层练习题.md",
+          "chars": 2032,
+          "math": 61
+        },
+        {
+          "file": "02_分析力学\\官方题库导读.md",
+          "chars": 1001,
+          "math": 11
+        },
+        {
+          "file": "02_分析力学\\官方题库解答.md",
+          "chars": 39990,
+          "math": 1014
+        },
+        {
+          "file": "02_分析力学\\知识点讲义.md",
+          "chars": 10799,
+          "math": 242
+        },
+        {
+          "file": "02_分析力学\\练习详解.md",
+          "chars": 6133,
+          "math": 161
+        },
+        {
+          "file": "02_分析力学\\题库索引.md",
+          "chars": 3343,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "03_电磁学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 73,
+      "officialCoverage": {
+        "solved": 72,
+        "source_incomplete": 1
+      },
+      "documents": [
+        {
+          "file": "03_电磁学\\分层练习题.md",
+          "chars": 2172,
+          "math": 71
+        },
+        {
+          "file": "03_电磁学\\官方题库导读.md",
+          "chars": 1103,
+          "math": 10
+        },
+        {
+          "file": "03_电磁学\\官方题库解答.md",
+          "chars": 48332,
+          "math": 903
+        },
+        {
+          "file": "03_电磁学\\知识点讲义.md",
+          "chars": 10607,
+          "math": 227
+        },
+        {
+          "file": "03_电磁学\\练习详解.md",
+          "chars": 6557,
+          "math": 135
+        },
+        {
+          "file": "03_电磁学\\题库索引.md",
+          "chars": 4790,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "04_电动力学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 23,
+      "officialCoverage": {
+        "solved": 23
+      },
+      "documents": [
+        {
+          "file": "04_电动力学\\分层练习题.md",
+          "chars": 1807,
+          "math": 43
+        },
+        {
+          "file": "04_电动力学\\官方题库导读.md",
+          "chars": 1260,
+          "math": 16
+        },
+        {
+          "file": "04_电动力学\\官方题库解答.md",
+          "chars": 21964,
+          "math": 451
+        },
+        {
+          "file": "04_电动力学\\知识点讲义.md",
+          "chars": 8529,
+          "math": 177
+        },
+        {
+          "file": "04_电动力学\\练习详解.md",
+          "chars": 4181,
+          "math": 105
+        },
+        {
+          "file": "04_电动力学\\题库索引.md",
+          "chars": 1658,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "05_热学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 74,
+      "officialCoverage": {
+        "solved": 74
+      },
+      "documents": [
+        {
+          "file": "05_热学\\分层练习题.md",
+          "chars": 2404,
+          "math": 62
+        },
+        {
+          "file": "05_热学\\官方题库导读.md",
+          "chars": 1344,
+          "math": 18
+        },
+        {
+          "file": "05_热学\\官方题库解答.md",
+          "chars": 54400,
+          "math": 1110
+        },
+        {
+          "file": "05_热学\\知识点讲义.md",
+          "chars": 8967,
+          "math": 196
+        },
+        {
+          "file": "05_热学\\练习详解.md",
+          "chars": 4934,
+          "math": 91
+        },
+        {
+          "file": "05_热学\\题库索引.md",
+          "chars": 4851,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "06_光学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 68,
+      "officialCoverage": {
+        "solved": 67,
+        "source_incomplete": 1
+      },
+      "documents": [
+        {
+          "file": "06_光学\\分层练习题.md",
+          "chars": 2103,
+          "math": 53
+        },
+        {
+          "file": "06_光学\\官方题库导读.md",
+          "chars": 895,
+          "math": 12
+        },
+        {
+          "file": "06_光学\\官方题库解答.md",
+          "chars": 41789,
+          "math": 834
+        },
+        {
+          "file": "06_光学\\知识点讲义.md",
+          "chars": 7330,
+          "math": 145
+        },
+        {
+          "file": "06_光学\\练习详解.md",
+          "chars": 3219,
+          "math": 78
+        },
+        {
+          "file": "06_光学\\题库索引.md",
+          "chars": 4469,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "07_高等量子力学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 0,
+      "officialCoverage": {},
+      "documents": [
+        {
+          "file": "07_高等量子力学\\分层练习题.md",
+          "chars": 3226,
+          "math": 82
+        },
+        {
+          "file": "07_高等量子力学\\知识点讲义.md",
+          "chars": 10310,
+          "math": 183
+        },
+        {
+          "file": "07_高等量子力学\\练习详解.md",
+          "chars": 5937,
+          "math": 126
+        }
+      ]
+    },
+    {
+      "subject": "08_量子力学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 61,
+      "officialCoverage": {
+        "solved": 60,
+        "source_incomplete": 1
+      },
+      "documents": [
+        {
+          "file": "08_量子力学\\分层练习题.md",
+          "chars": 2926,
+          "math": 80
+        },
+        {
+          "file": "08_量子力学\\官方题库导读.md",
+          "chars": 1328,
+          "math": 25
+        },
+        {
+          "file": "08_量子力学\\官方题库解答.md",
+          "chars": 44729,
+          "math": 970
+        },
+        {
+          "file": "08_量子力学\\知识点讲义.md",
+          "chars": 9254,
+          "math": 205
+        },
+        {
+          "file": "08_量子力学\\练习详解.md",
+          "chars": 6415,
+          "math": 141
+        },
+        {
+          "file": "08_量子力学\\题库索引.md",
+          "chars": 4206,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "09_统计物理",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 49,
+      "officialCoverage": {
+        "solved": 49
+      },
+      "documents": [
+        {
+          "file": "09_统计物理\\分层练习题.md",
+          "chars": 2767,
+          "math": 64
+        },
+        {
+          "file": "09_统计物理\\官方题库导读.md",
+          "chars": 1329,
+          "math": 23
+        },
+        {
+          "file": "09_统计物理\\官方题库解答.md",
+          "chars": 41963,
+          "math": 900
+        },
+        {
+          "file": "09_统计物理\\知识点讲义.md",
+          "chars": 9411,
+          "math": 192
+        },
+        {
+          "file": "09_统计物理\\练习详解.md",
+          "chars": 5414,
+          "math": 123
+        },
+        {
+          "file": "09_统计物理\\题库索引.md",
+          "chars": 3400,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "10_统计力学",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 49,
+      "officialCoverage": {
+        "solved": 49
+      },
+      "documents": [
+        {
+          "file": "10_统计力学\\分层练习题.md",
+          "chars": 2485,
+          "math": 65
+        },
+        {
+          "file": "10_统计力学\\官方题库导读.md",
+          "chars": 1372,
+          "math": 20
+        },
+        {
+          "file": "10_统计力学\\官方题库解答.md",
+          "chars": 41963,
+          "math": 900
+        },
+        {
+          "file": "10_统计力学\\知识点讲义.md",
+          "chars": 9609,
+          "math": 207
+        },
+        {
+          "file": "10_统计力学\\练习详解.md",
+          "chars": 6427,
+          "math": 150
+        },
+        {
+          "file": "10_统计力学\\题库索引.md",
+          "chars": 3400,
+          "math": 0
+        }
+      ]
+    },
+    {
+      "subject": "11_相对论",
+      "complete": true,
+      "questions": 12,
+      "originalImages": 0,
+      "officialCoverage": {},
+      "documents": [
+        {
+          "file": "11_相对论\\分层练习题.md",
+          "chars": 2232,
+          "math": 67
+        },
+        {
+          "file": "11_相对论\\知识点讲义.md",
+          "chars": 7831,
+          "math": 193
+        },
+        {
+          "file": "11_相对论\\练习详解.md",
+          "chars": 4422,
+          "math": 99
+        }
+      ]
+    }
+  ]
+}

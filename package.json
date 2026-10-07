@@ -1,0 +1,13 @@
+{
+  "name": "physics-question-bank",
+  "private": true,
+  "scripts": {
+    "build": "node 工具/build_reading.mjs && node 工具/build_practice_exams.mjs",
+    "verify": "node 工具/verify_materials.mjs",
+    "pdf": "node 工具/render_practice_exams.mjs"
+  },
+  "devDependencies": {
+    "marked": "^15.0.12",
+    "playwright": "^1.51.1"
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "items": [
+    {
+      "paper": 1,
+      "slot": 4,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1508",
+      "title": "简并能级的正则能量涨落",
+      "points": 15,
+      "minutes": 25,
+      "adaptation": "原题(a)、(b)完整中文重排；明确ε>0，保留零能级二重简并。",
+      "question": "一个量子系统与温度为$T>0$的热库达到热平衡。系统能级为$+\\epsilon$、$0$、$-\\epsilon$，其中$\\epsilon>0$；零能级二重简并，另两个能级均非简并。\n\n(a) 求系统的能量方差\n$$\n\\operatorname{Var}(E)=\\langle E^2\\rangle-\\langle E\\rangle^2.\n$$\n（10分）\n\n(b) 分别求$T\\to0^+$和$T\\to\\infty$时的能量方差，并从各微观态的占据情况解释结果。（5分）",
+      "solution": "**(a) 先确定系综，再数微观态。** 系统只与热库交换能量，采用正则系综。每个微观态$i$的概率是$p_i=e^{-\\beta E_i}/Z$，其中$\\beta=1/(k_BT)$。零能级对应两个不同微观态，必须贡献两个权重。令$x=\\beta\\epsilon$，则\n$$\nZ=e^{-x}+2+e^x=2+2\\cosh x\n=4\\cosh^2(x/2).\n$$\n平均能量可从配分函数求得：\n$$\nU=\\langle E\\rangle=-\\frac{\\partial\\ln Z}{\\partial\\beta}\n=-\\epsilon\\tanh(x/2).\n$$\n为什么二阶导数给方差？对$U=\\sum_iE_ip_i$求$\\beta$导数，利用$\\partial_\\beta p_i=-(E_i-U)p_i$，得到\n$$\n-\\frac{\\partial U}{\\partial\\beta}\n=\\langle E^2\\rangle-U^2\n=\\frac{\\partial^2\\ln Z}{\\partial\\beta^2}.\n$$\n因此\n$$\n\\boxed{\\operatorname{Var}(E)\n=\\frac{\\epsilon^2}{2}\\operatorname{sech}^2\n\\left(\\frac{\\epsilon}{2k_BT}\\right)}.\n$$\n直接按概率求$\\langle E^2\\rangle=\\epsilon^2\\cosh x/(1+\\cosh x)$再减$U^2$，也得到相同结果。\n\n**(b) 用占据情况检查极限。** 零温时系统以概率1占据唯一基态$-\\epsilon$，测得的能量不再变化：\n$$\n\\boxed{\\lim_{T\\to0^+}\\operatorname{Var}(E)=0}.\n$$\n高温时四个微观态各以概率$1/4$出现，平均能量为零，而平方平均值为\n$$\n\\langle E^2\\rangle\\longrightarrow\n\\frac{\\epsilon^2+0+0+\\epsilon^2}{4}\n=\\frac{\\epsilon^2}{2}.\n$$\n故\n$$\n\\boxed{\\lim_{T\\to\\infty}\\operatorname{Var}(E)=\\frac{\\epsilon^2}{2}}.\n$$\n高温使有限能级的概率趋于均匀，并不使能量涨落消失。方差的单位是能量平方；标准差应另取平方根。作为热力学检查，正则系综有$\\operatorname{Var}(E)=k_BT^2C$，本题得到非负热容，并在两端趋于零。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正则配分函数正确，零能级按二重简并计数。"
+        },
+        {
+          "points": 3,
+          "text": "正确求平均能量及二阶矩，或建立配分函数二阶导数与方差的关系。"
+        },
+        {
+          "points": 4,
+          "text": "得到完整能量方差表达式，量纲与归一化正确。"
+        },
+        {
+          "points": 2,
+          "text": "零温极限及唯一基态占据解释正确。"
+        },
+        {
+          "points": 3,
+          "text": "高温方差为ε²/2，并解释四个微观态等概率。"
+        }
+      ],
+      "checks": [
+        "原图(a)、(b)逐项核对；零能级简并度为2，其余为1。",
+        "四态直接求和与ln Z二阶导数结果一致。",
+        "低温方差0，高温ε²/2，单位为能量平方。"
+      ]
+    },
+    {
+      "paper": 1,
+      "slot": 5,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1516",
+      "title": "经典配分函数与熵的广延性",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题(a)–(c)完整中文重排，保留给定态密度与积分；采用经典非简并极限。",
+      "question": "体积为$V$的三维盒内，一个质量为$m$、无自旋的自由粒子的能量态密度为\n$$\nD(\\epsilon)=\\frac{V}{4\\pi^2}\n\\left(\\frac{2m}{\\hbar^2}\\right)^{3/2}\\epsilon^{1/2},\n\\qquad \\epsilon\\ge0.\n$$\n考虑温度$T$下由$N$个全同、无相互作用粒子构成的气体，且气体处于经典非简并区。\n\n(a) 写出单粒子配分函数$Z_1$的积分表达式并求值。可用\n$$\n\\int_0^\\infty x^{1/2}e^{-ax}\\,dx\n=\\frac{\\sqrt\\pi}{2a^{3/2}},\\qquad a>0.\n$$\n（5分）\n\n(b) 如果直接取$Z_N=Z_1^N$，求所得气体熵，并证明这个熵不是广延量。（9分）\n\n(c) 应如何修正$Z_N$，才能在热力学极限得到广延的熵？写出修正后的熵。（6分）",
+      "solution": "**(a) 态密度把逐态求和变成能量积分。** 正则配分函数是每个单粒子态的Boltzmann权重之和：\n$$\nZ_1=\\int_0^\\infty D(\\epsilon)e^{-\\beta\\epsilon}\\,d\\epsilon.\n$$\n将题给积分中的$a$取为$\\beta$，得到\n$$\nZ_1=\\frac{V}{4\\pi^2}\n\\left(\\frac{2m}{\\hbar^2}\\right)^{3/2}\n\\frac{\\sqrt\\pi}{2\\beta^{3/2}}\n=V\\left(\\frac{mk_BT}{2\\pi\\hbar^2}\\right)^{3/2}.\n$$\n引入热德布罗意波长$\\lambda_T=h/\\sqrt{2\\pi mk_BT}$，可简写为\n$$\n\\boxed{Z_1=\\frac{V}{\\lambda_T^3}}.\n$$\n分子分母都是体积，保证$Z_1$无量纲。\n\n**(b) 检查全同粒子被标号后的结果。** 采用题设的朴素表达式，会得到\n$$\nF_{\\rm naive}=-k_BT\\ln Z_N\n=-Nk_BT\\ln\\frac{V}{\\lambda_T^3}.\n$$\n在$V,N$不变时求$S=-(\\partial F/\\partial T)_{V,N}$。由于$\\lambda_T^{-3}\\propto T^{3/2}$，对数的温度导数也必须保留：\n$$\n\\boxed{S_{\\rm naive}\n=Nk_B\\left[\\ln\\frac{V}{\\lambda_T^3}+\\frac32\\right]}.\n$$\n广延性要求在$T$不变时，将$V,N$同时放大$a$倍应使熵也恰好放大$a$倍。实际却是\n$$\nS_{\\rm naive}(aN,aV)\n=aS_{\\rm naive}(N,V)+aNk_B\\ln a.\n$$\n最后的附加项表明朴素熵不广延。物理原因是$Z_1^N$把粒子人为编号，交换两个相同粒子被重复计为新微观态。\n\n**(c) 用Gibbs因子消除重复计数。** 在经典非简并区，\n$$\n\\boxed{Z_N=\\frac{Z_1^N}{N!}}.\n$$\n于是\n$$\nF=-k_BT\\left[N\\ln\\frac{V}{\\lambda_T^3}-\\ln N!\\right].\n$$\n大$N$时$\\ln N!\\simeq N\\ln N-N$，从而\n$$\nF\\simeq-Nk_BT\\left[\\ln\\frac{V}{N\\lambda_T^3}+1\\right],\n$$\n$$\n\\boxed{S\\simeq Nk_B\\left[\n\\ln\\frac{V}{N\\lambda_T^3}+\\frac52\\right]}.\n$$\n同时放大$N,V$时，括号中的$V/N$不变，因此熵的主导项具有广延性。精确阶乘会产生次广延的有限粒子数修正；这里检验的是热力学极限。$1/N!$是经典态计数修正，当$n\\lambda_T^3$不再远小于1时，仍须改用完整的Bose或Fermi统计。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "单粒子配分函数写成态密度与Boltzmann因子的积分。"
+        },
+        {
+          "points": 3,
+          "text": "积分常数正确，得到Z1=V/λT³或等价式。"
+        },
+        {
+          "points": 4,
+          "text": "由朴素配分函数求出熵，含正确的3/2项。"
+        },
+        {
+          "points": 5,
+          "text": "通过N、V同比例放大展示多余的aNkB ln a项，说明非广延性。"
+        },
+        {
+          "points": 2,
+          "text": "给出1/N!修正并说明全同粒子重复计数。"
+        },
+        {
+          "points": 4,
+          "text": "用Stirling近似得到含5/2项的广延熵并验证。"
+        }
+      ],
+      "checks": [
+        "原图(a)、(b)、(c)完整保留；原题为无自旋粒子，未添加自旋因子。",
+        "态密度积分与三维动量Gaussian积分的配分函数一致。",
+        "修正前后熵分别出现3/2与5/2，广延性检查保持T不变。"
+      ]
+    },
+    {
+      "paper": 2,
+      "slot": 4,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1419",
+      "title": "单层吸附的巨正则描述",
+      "points": 15,
+      "minutes": 25,
+      "adaptation": "原题两项任务完整中文重排，改为求巨配分函数而不预先展示待证结果；原题末句漏列化学势μ，本题明确保留μ依赖。",
+      "question": "固体平面上有$M$个等价的吸附位置，表面与温度为$T$、化学势为$\\mu$的蒸气达到平衡。每个位置至多吸附一个原子；空位置能量为0，被占据位置能量为$\\epsilon$。不同位置之间无相互作用。\n\n吸附$N$个原子时，总能量为$N\\epsilon$，构型数为\n$$\n\\Omega_N=\\frac{M!}{N!(M-N)!},\\qquad N=0,1,\\ldots,M.\n$$\n\n(a) 求整个吸附表面的巨配分函数$\\Xi(T,\\mu,M)$。（8分）\n\n(b) 利用$\\Xi$求平均吸附原子数$\\langle N\\rangle$，用$M,\\epsilon,\\mu,T$表示。（7分）",
+      "solution": "**(a) 粒子数可变，须对粒子数和构型一起求和。** 蒸气既是热库又是粒子库，所以一个含$N$粒子、能量为$E$的微观态，其巨正则权重为$e^{-\\beta(E-\\mu N)}$。对固定$N$，题给$\\Omega_N$个构型的能量全为$N\\epsilon$，因此\n$$\n\\Xi=\\sum_{N=0}^M\n\\binom MN e^{-\\beta N(\\epsilon-\\mu)}.\n$$\n令$z=e^{-\\beta(\\epsilon-\\mu)}$，利用二项式定理，\n$$\n\\boxed{\\Xi=(1+z)^M\n=\\left[1+e^{-\\beta(\\epsilon-\\mu)}\\right]^M}.\n$$\n也可逐位置计数：每个位置有“空”和“占据”两态，单位置巨配分函数为$1+z$，$M$个独立位置给其$M$次方。这是与整体构型计数相互独立的核验。\n\n**(b) 化学势导数给平均粒子数。** 因为每一项的指数含$\\beta\\mu N$，\n$$\n\\frac{\\partial\\ln\\Xi}{\\partial\\mu}\n=\\beta\\langle N\\rangle\n$$\n（求导时保持$T,M$不变）。所以\n$$\n\\boxed{\\langle N\\rangle\n=\\frac1\\beta\\frac{\\partial\\ln\\Xi}{\\partial\\mu}\n=\\frac{Mz}{1+z}\n=\\frac{M}{e^{\\beta(\\epsilon-\\mu)}+1}}.\n$$\n$\\mu$不能从答案中略去：即使表面和温度相同，不同粒子库的化学势也会导致不同覆盖率。\n\n若$\\mu-\\epsilon$很大，表面趋于满占据，$\\langle N\\rangle\\to M$；若$\\mu-\\epsilon$很负，则$\\langle N\\rangle\\to0$；$\\mu=\\epsilon$时恰为半占据。形式上出现“加1”来自每个位置只能取占据数0或1，并不意味着仅凭这一吸附模型就能断言原子本身必为费米子。构型数已经完整数过位置选择，不能再额外除以$N!$。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确写出包含E−μN的巨正则权重与N=0至M求和。"
+        },
+        {
+          "points": 3,
+          "text": "使用构型简并度并通过二项式求和或逐位置因子化。"
+        },
+        {
+          "points": 2,
+          "text": "得到完整巨配分函数。"
+        },
+        {
+          "points": 3,
+          "text": "正确使用平均粒子数与ln Ξ的μ导数关系。"
+        },
+        {
+          "points": 4,
+          "text": "得到含M、ε、μ、T的平均吸附数，符号和占据上限正确。"
+        }
+      ],
+      "checks": [
+        "核对原图能量为Nε、每位置最多一原子、构型数为组合数。",
+        "原题末句遗漏μ属于已明确修正的参数遗漏，未假定μ=0。",
+        "二项式总构型计数与单位置因子化一致，平均数范围为0至M。"
+      ]
+    },
+    {
+      "paper": 2,
+      "slot": 5,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "05_热学",
+      "sourceId": "1-4T907",
+      "title": "从Gibbs自由能恢复热力学性质",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题(a)–(d)完整中文重排；补明T>0、P>0、N固定及仅有体积功，保持原Gibbs势表达式。",
+      "question": "一个简单可压缩系统只作体积功。其Gibbs自由能为\n$$\nG(T,P,N)=-Nk_BT\\ln\\left(\\frac{aT^{5/2}}{P}\\right),\n$$\n其中$T>0$、$P>0$，$N$为粒子数，$a>0$为与$T,P,N$无关的常数，且其量纲使对数自变量无量纲。以下热力学导数均保持$N$不变。\n\n(a) 求系统熵$S$。（5分）\n\n(b) 求定压热容$C_P$。（5分）\n\n(c) 求状态方程，即$V,P,T,N$之间的关系。（5分）\n\n(d) 求系统内能$U$。（5分）",
+      "solution": "**从势的自然变量识别正确导数。** 对只作体积功的简单系统，\n$$\ndU=T\\,dS-P\\,dV+\\mu\\,dN.\n$$\n定义$G=U-TS+PV$并微分，得到\n$$\ndG=-S\\,dT+V\\,dP+\\mu\\,dN.\n$$\n这一步说明了为何对$T$求导给$-S$、对$P$求导给$V$，同时确定应固定哪些变量。令\n$$\nL=\\ln\\left(\\frac{aT^{5/2}}P\\right).\n$$\n\n**(a) 熵。** 在$P,N$固定时，$\\partial_TL=5/(2T)$。因此\n$$\nS=-\\left(\\frac{\\partial G}{\\partial T}\\right)_{P,N}\n=Nk_B\\left(L+\\frac52\\right),\n$$\n即\n$$\n\\boxed{S=Nk_B\\left[\n\\ln\\left(\\frac{aT^{5/2}}P\\right)+\\frac52\\right]}.\n$$\n$G$中显式的$T$和对数内部的$T$都要求导。\n\n**(b) 定压热容。** 对可逆的定压温度变化，$\\delta Q_{\\rm rev}=T\\,dS$，所以\n$$\nC_P=T\\left(\\frac{\\partial S}{\\partial T}\\right)_{P,N}\n=\\boxed{\\frac52Nk_B}.\n$$\n等价写法是$C_P=-T(\\partial_T^2G)_{P,N}$。\n\n**(c) 状态方程。** 由$\\partial_PL=-1/P$，\n$$\nV=\\left(\\frac{\\partial G}{\\partial P}\\right)_{T,N}\n=\\frac{Nk_BT}{P}.\n$$\n因此\n$$\n\\boxed{PV=Nk_BT}.\n$$\n它是从给定势推得的结果，而非应当在开头额外假设的关系。\n\n**(d) 内能。** 由$G=U-TS+PV$解出\n$$\nU=G+TS-PV.\n$$\n将前三问结果代入，对数项恰好抵消：\n$$\nU=-Nk_BTL+Nk_BT\\left(L+\\frac52\\right)-Nk_BT\n=\\boxed{\\frac32Nk_BT}.\n$$\n因此$C_V=3Nk_B/2$，且$C_P-C_V=Nk_B$，与所得状态方程相互一致。\n\n另一个导数检查是Maxwell关系：\n$$\n\\left(\\frac{\\partial S}{\\partial P}\\right)_{T,N}\n=-\\frac{Nk_B}{P}\n=-\\left(\\frac{\\partial V}{\\partial T}\\right)_{P,N}.\n$$\n它检验了熵和体积导数中的相对负号。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "正确识别S=−∂G/∂T及固定变量。"
+        },
+        {
+          "points": 3,
+          "text": "熵的对数项和5/2常数项正确。"
+        },
+        {
+          "points": 2,
+          "text": "正确定义定压热容并对熵或G求导。"
+        },
+        {
+          "points": 3,
+          "text": "得到CP=5NkB/2。"
+        },
+        {
+          "points": 2,
+          "text": "正确识别V=∂G/∂P。"
+        },
+        {
+          "points": 3,
+          "text": "得到PV=NkBT，符号正确。"
+        },
+        {
+          "points": 2,
+          "text": "使用U=G+TS−PV。"
+        },
+        {
+          "points": 3,
+          "text": "得到U=3NkBT/2，对数项正确消去。"
+        }
+      ],
+      "checks": [
+        "原图G中温度幂次为5/2，原四问为S、CP、状态方程和平均内能。",
+        "熵、体积满足Maxwell关系；CP−CV=NkB。",
+        "不含普通气体循环题，考查热力学势及自然变量。"
+      ]
+    },
+    {
+      "paper": 3,
+      "slot": 4,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1502",
+      "title": "二维Fermi气体的精确化学势",
+      "points": 15,
+      "minutes": 25,
+      "adaptation": "原题求μ(T)的任务完整中文重排；将原题默认的自由电子模型明确写为二维非相互作用、二次色散及面积A，保留原给定积分。",
+      "question": "面积为$A$的二维大盒内有$N$个质量为$m$、自旋为$1/2$的非相互作用自由电子。单粒子色散为\n$$\n\\epsilon_{\\mathbf k}=\\frac{\\hbar^2(k_x^2+k_y^2)}{2m},\n$$\n能量零点取在带底。每个波矢有两个自旋态。体系处于温度$T>0$，电子面密度$n=N/A$固定，采用热力学极限。\n\nFermi分布为\n$$\nf(\\epsilon)=\\frac1{e^{\\beta(\\epsilon-\\mu)}+1},\n\\qquad \\beta=\\frac1{k_BT},\n$$\n粒子数满足$N=2\\sum_{\\mathbf k}f(\\epsilon_{\\mathbf k})$。\n\n求任意温度下化学势$\\mu(T)$的精确表达式，用$n,m,\\hbar,k_B,T$表示。（15分）\n\n可用\n$$\n\\int_0^\\infty\\frac{dy}{ae^y+1}\n=\\ln(a+1)-\\ln a,\\qquad a>0.\n$$",
+      "solution": "**先把粒子数约束写成二维态计数。** 化学势不是预先固定为费米能；它须随温度调整，使总电子数保持不变。热力学极限下，每个自旋的波矢态密度为$A/(2\\pi)^2$。包括两个自旋，\n$$\nn=2\\int\\frac{d^2k}{(2\\pi)^2}\n\\frac1{e^{\\beta(\\epsilon_{\\mathbf k}-\\mu)}+1}.\n$$\n在二维极坐标中$d^2k=2\\pi k\\,dk$。又$\\epsilon=\\hbar^2k^2/(2m)$，故$k\\,dk=(m/\\hbar^2)d\\epsilon$，得到\n$$\nn=\\frac{m}{\\pi\\hbar^2}\\int_0^\\infty\n\\frac{d\\epsilon}{e^{\\beta(\\epsilon-\\mu)}+1}.\n$$\n于是含自旋的二维单位面积态密度是常数$m/(\\pi\\hbar^2)$。这是二维问题能精确积分的原因。\n\n令$y=\\beta\\epsilon$、$a=e^{-\\beta\\mu}$，用给定积分：\n$$\nn=\\frac{mk_BT}{\\pi\\hbar^2}\n\\left[\\ln(1+e^{-\\beta\\mu})+\\beta\\mu\\right]\n=\\frac{mk_BT}{\\pi\\hbar^2}\n\\ln(1+e^{\\beta\\mu}).\n$$\n定义同一密度对应的零温费米能\n$$\nE_F=\\frac{\\pi\\hbar^2n}{m}.\n$$\n反解粒子数方程，\n$$\ne^{\\beta\\mu}=e^{E_F/(k_BT)}-1,\n$$\n$$\n\\boxed{\\mu(T)=k_BT\\ln\\left[\n\\exp\\left(\\frac{\\pi\\hbar^2n}{mk_BT}\\right)-1\\right]}.\n$$\n也可等价写为\n$$\n\\mu(T)=E_F+k_BT\\ln\\left(1-e^{-E_F/(k_BT)}\\right).\n$$\n\n**检查退化区与经典区。** 当$T\\to0^+$，第二式的对数修正指数趋零，因此$\\mu\\to E_F$。这里低温修正不是三维气体常见的$T^2$形式，原因正是二维态密度为常数。高温$k_BT\\gg E_F$时，\n$$\n\\mu\\simeq k_BT\\ln\\frac{E_F}{k_BT}\n=k_BT\\ln\\frac{n\\lambda_T^2}{2},\n\\qquad\n\\lambda_T=\\frac{h}{\\sqrt{2\\pi mk_BT}},\n$$\n回到含自旋简并度2的经典Boltzmann结果。漏掉自旋因子2会使整个费米能尺度偏差一倍。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "二维波矢计数及自旋因子正确，得到常数态密度m/(πℏ²)。"
+        },
+        {
+          "points": 4,
+          "text": "粒子数方程积分正确，得到n=(mkBT/πℏ²)ln(1+e^{βμ})。"
+        },
+        {
+          "points": 5,
+          "text": "正确反解，得到任意温度下μ的完整表达式。"
+        },
+        {
+          "points": 2,
+          "text": "所用密度、能量零点与固定粒子数条件明确，表达式量纲和参数系数正确。"
+        }
+      ],
+      "checks": [
+        "原题给自旋1/2及N=2Σkf；重排明确原题默认的二维自由电子二次色散。",
+        "二维态密度已包含自旋2，无二次计入。",
+        "T趋零回到EF，经典高温回到kBT ln(nλT²/2)。"
+      ]
+    },
+    {
+      "paper": 3,
+      "slot": 5,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1500",
+      "title": "Bose磁振子与低温磁矩",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题求三维低温磁矩行为完整中文重排；明确ω为角频率、单磁振子能量ℏω，以V记样品体积，避免把二次色散误作相对论无质量色散；要求系数可保留纯数积分。",
+      "question": "三维Heisenberg铁磁体的低能激发是自旋波（磁振子）。考虑体积为$V$的大样品，在已选定磁化方向的低温铁磁相中，低波矢色散为\n$$\n\\omega(\\mathbf k)=Dk^2,\\qquad D>0,\n$$\n其中$\\omega$为角频率，单个磁振子的能量为$\\hbar\\omega(\\mathbf k)$。磁振子是非相互作用Bose准粒子，其数目不守恒，处于无外加磁场的热平衡。只有一支这样的低能自旋波分支。\n\n每产生一个磁振子，总磁矩减少$\\mu_s>0$，所以\n$$\n\\mathcal M(T)=\\mathcal M(0)-\\mu_s\\langle N_{\\rm mag}\\rangle.\n$$\n\n在热力学极限求三维体系低温下$\\mathcal M(T)$的主导温度依赖，并写出主导系数。系数中的纯数积分可以保留，无需数值计算。（20分）",
+      "solution": "**第一步：确定平均占据。** 磁振子的产生或消失不受独立粒子数守恒约束，因此平衡化学势为零。能量为$\\epsilon_{\\mathbf k}=\\hbar Dk^2$的模式服从Bose分布：\n$$\n\\bar n_{\\mathbf k}\n=\\frac1{e^{\\beta\\hbar Dk^2}-1}.\n$$\n虽然色散无能隙，却不是$\\epsilon=ck$；计算必须使用题给的二次色散。单个磁振子改变的是磁矩，不是仅给体系增加热能，所以要积分粒子数占据，而非积分$\\epsilon_{\\mathbf k}\\bar n_{\\mathbf k}$。\n\n**第二步：在三维数模式。** 每一波矢态占据的波矢空间体积为$(2\\pi)^3/V$，只有一支模式，不再乘偏振或自旋简并度。于是\n$$\n\\langle N_{\\rm mag}\\rangle\n=\\frac{V}{(2\\pi)^3}\\int d^3k\\,\n\\frac1{e^{\\beta\\hbar Dk^2}-1}\n=\\frac{V}{2\\pi^2}\\int_0^\\infty\n\\frac{k^2\\,dk}{e^{\\beta\\hbar Dk^2}-1}.\n$$\n低温下主要激发小$k$，上限可以从真实晶格截止近似延伸到无穷。取热力学极限后，选定整体磁化方向所对应的全局旋转零模不影响这一体积密度积分。\n\n**第三步：提取温度幂次。** 令$x=\\beta\\hbar Dk^2$，则\n$$\nk^2\\,dk=\\frac12\n\\left(\\frac{k_BT}{\\hbar D}\\right)^{3/2}\nx^{1/2}\\,dx.\n$$\n所以\n$$\n\\langle N_{\\rm mag}\\rangle\n=\\frac{V}{4\\pi^2}\n\\left(\\frac{k_BT}{\\hbar D}\\right)^{3/2}\n\\int_0^\\infty\\frac{x^{1/2}\\,dx}{e^x-1}.\n$$\n积分在$x\\to0$时的被积函数为$x^{-1/2}$，可积；大$x$时指数衰减，因此它是有限、正的纯数。\n\n代入磁矩关系，得到Bloch低温律\n$$\n\\boxed{\\mathcal M(T)=\\mathcal M(0)-\n\\frac{\\mu_sV}{4\\pi^2}\n\\left(\\frac{k_BT}{\\hbar D}\\right)^{3/2}\n\\int_0^\\infty\\frac{x^{1/2}\\,dx}{e^x-1}},\n$$\n即\n$$\n\\boxed{\\mathcal M(0)-\\mathcal M(T)\\propto T^{3/2}}.\n$$\n若进一步用积分值$\\Gamma(3/2)\\zeta(3/2)=(\\sqrt\\pi/2)\\zeta(3/2)$，\n$$\n\\mathcal M(T)=\\mathcal M(0)-\n\\frac{\\mu_sV\\zeta(3/2)}{8\\pi^{3/2}}\n\\left(\\frac{k_BT}{\\hbar D}\\right)^{3/2}.\n$$\n$k_BT/(\\hbar D)$的单位为长度的负二次方，乘$V$后三次方根组合无量纲，因此磁矩减少量的单位正确。该结果要求热激发集中在二次色散成立的低能区；高温接近居里温度时不能继续外推。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "认识磁振子数不守恒，采用零化学势Bose占据且能量为ℏDk²。"
+        },
+        {
+          "points": 5,
+          "text": "正确进行三维波矢模式计数，一支分支的V/(2π²)径向积分系数正确。"
+        },
+        {
+          "points": 5,
+          "text": "正确换元并得到有限纯数积分与T^{3/2}幂次。"
+        },
+        {
+          "points": 4,
+          "text": "由磁振子数转成总磁矩，主导系数及负号正确；纯数积分可保留。"
+        },
+        {
+          "points": 2,
+          "text": "说明低温连续近似适用条件，并检查低能收敛或量纲。"
+        }
+      ],
+      "checks": [
+        "原图确写ω=Dk²而非能量=Dk²，因此保留ℏ。",
+        "原图以μ表示单磁振子磁矩减少量，重排为μs以免与化学势混淆。",
+        "单支三维态密度积分系数核对：V/(4π²)乘Γ(3/2)ζ(3/2)。",
+        "Bose低能积分在三维二次色散下可积，幂次3/2。"
+      ]
+    },
+    {
+      "paper": 4,
+      "slot": 4,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1510",
+      "title": "恒温恒压系综及其热力学势",
+      "points": 15,
+      "minutes": 25,
+      "adaptation": "原题(a)、(b)完整中文重排；不在题干预先给出待推导的权重或自由能关系；用固定体积测度dV/V*使归一化函数无量纲，并明确热力学极限。",
+      "question": "一个粒子数固定为$N$的小系统与很大的环境接触，能够与环境交换能量和体积。环境维持温度$T$和压强$P$不变。系统加环境整体孤立，总能量与总体积分别为$E_{\\rm tot}$和$V_{\\rm tot}$。\n\n系统在体积$V$下的第$i$个微观态能量为$E_i(V)$，环境熵记为$S_R(E_R,V_R)$；小系统的能量和体积远小于环境相应总量。设\n$$\nZ(T,V,N)=\\sum_i e^{-\\beta E_i(V)},\\qquad \\beta=\\frac1{k_BT}.\n$$\n体积采用固定测度$dV/V_*$，其中$V_*$为与$T,P$无关的参考体积。\n\n(a) 从环境状态数出发，推导小系统处在体积区间$[V,V+dV]$、微观态$i$的归一化概率。（8分）\n\n(b) 将归一化函数$\\mathcal X(T,P,N)$写成关于$Z(T,V,N)$的积分，并建立$\\mathcal X$与恒温恒压热力学势的关系。说明该势与通常Gibbs自由能$G$的联系。（7分）",
+      "solution": "**(a) 用环境熵给小系统微观态赋权。** 复合系统孤立，小系统固定在某个微观态后，允许的总微观态数就是环境的状态数。因此小系统该态的概率与\n$$\n\\exp\\left[\n\\frac{S_R(E_{\\rm tot}-E_i,V_{\\rm tot}-V)}{k_B}\n\\right]\n$$\n成正比。环境足够大，可在小系统的能量、体积上作一阶展开。环境基本关系给出\n$$\ndS_R=\\frac{dE_R}{T}+\\frac{P}{T}\\,dV_R.\n$$\n故\n$$\nS_R(E_{\\rm tot}-E_i,V_{\\rm tot}-V)\n\\simeq S_R(E_{\\rm tot},V_{\\rm tot})\n-\\frac{E_i}{T}-\\frac{PV}{T}.\n$$\n与系统态无关的第一项吸收到归一化常数中，得到\n$$\n\\boxed{\\Pr(i,V\\in[V,V+dV])\n=\\frac{e^{-\\beta[E_i(V)+PV]}}{\\mathcal X}\n\\frac{dV}{V_*}}.\n$$\n$PV$之前是正号：系统从环境中占用更多体积，环境体积减少，对应环境熵减少$PV/T$。\n\n**(b) 归一化与自由能。** 对所有$i$求和、对$V>0$积分，总概率应为1。因此\n$$\n\\boxed{\\mathcal X\n=\\int_0^\\infty\\frac{dV}{V_*}\\,\ne^{-\\beta PV}Z(T,V,N)}.\n$$\n与固定测度$dV/V_*$对应的概率密度记为$p_i(V)$，其熵为\n$$\nS=-k_B\\sum_i\\int\\frac{dV}{V_*}\\,p_i(V)\\ln p_i(V).\n$$\n代入$\\ln p_i=-\\beta(E_i+PV)-\\ln\\mathcal X$，利用概率归一化，\n$$\nS=k_B\\ln\\mathcal X+\n\\frac{\\langle E\\rangle+P\\langle V\\rangle}{T}.\n$$\n于是恒温恒压系综的热力学势为\n$$\n\\boxed{\\mathcal G\n=\\langle E\\rangle+P\\langle V\\rangle-TS\n=-k_BT\\ln\\mathcal X}.\n$$\n在热力学极限，能量和体积的相对涨落趋小，$\\mathcal G$与通常Gibbs自由能$G=U+PV-TS$一致，故按同一测度约定写\n$$\n\\boxed{\\mathcal X=e^{-\\beta G}}.\n$$\n固定参考体积只是使体积积分无量纲；改变参考测度带来非广延的基准差异，不改变宏观状态方程。\n\n可用导数核验物理含义：\n$$\n-\\left(\\frac{\\partial\\ln\\mathcal X}{\\partial\\beta}\\right)_{P,N}\n=\\langle E+PV\\rangle,\\qquad\n-\\frac1\\beta\\left(\\frac{\\partial\\ln\\mathcal X}{\\partial P}\\right)_{T,N}\n=\\langle V\\rangle.\n$$\n第一个导数给平均焓，而非仅给平均内能，这正是与正则系综的区别。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "小系统概率与环境状态数成正比。"
+        },
+        {
+          "points": 3,
+          "text": "环境熵一阶展开正确，使用∂S/∂E=1/T及∂S/∂V=P/T。"
+        },
+        {
+          "points": 3,
+          "text": "得到含E+PV的指数权重与正确归一化概率。"
+        },
+        {
+          "points": 3,
+          "text": "归一化函数写成e^{−βPV}Z的体积积分，测度一致。"
+        },
+        {
+          "points": 3,
+          "text": "由熵或等价热力学论证得到−kBT ln X=U+PV−TS。"
+        },
+        {
+          "points": 1,
+          "text": "说明热力学极限下与Gibbs自由能一致及固定粒子数条件。"
+        }
+      ],
+      "checks": [
+        "原题(a)要求从环境熵推概率，(b)要求X积分与exp(−βG)，均保留。",
+        "PV正号由环境体积减少直接得到；β导数给平均焓。",
+        "采用固定无量纲体积测度，未把有限体系测度常数误当宏观物性。"
+      ]
+    },
+    {
+      "paper": 4,
+      "slot": 5,
+      "subject": "热力学与统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1521",
+      "title": "陷阱态密度与Bose凝聚判据",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题(a)–(c)完整中文重排；明确一维凝聚判断采用标准陷阱热力学极限，避免与有限粒子数的基态占据交叉混淆；三维给定态密度不变。",
+      "question": "考虑谐振子陷阱中的非相互作用、自旋为0的Bose气体。单粒子能量的共同常数已减去，因此基态能量为零。\n\n一维陷阱的单粒子能级为\n$$\n\\epsilon_n=n\\hbar\\omega,\\qquad n=0,1,2,\\ldots.\n$$\n\n(a) 在平滑连续近似下求一维单粒子态密度$D_{1D}(\\epsilon)$。本题态密度的定义为：$D(\\epsilon)d\\epsilon$是能量在$[\\epsilon,\\epsilon+d\\epsilon]$之间的轨道数，不除以系统体积。（4分）\n\n(b) 在标准一维陷阱热力学极限$N\\to\\infty,\\omega\\to0$且$N\\omega$固定时，这种气体能否在非零温度发生Bose–Einstein凝聚？给出论证。（8分）\n\n(c) 三维各向同性谐振子陷阱的平滑单粒子态密度为\n$$\nD_{3D}(\\epsilon)=\\frac{\\epsilon^2}{2(\\hbar\\omega)^3}.\n$$\n求$N$个粒子的凝聚温度$T_c$，用$N,\\omega$及普适常数表示。纯数积分不必求值。（8分）",
+      "solution": "**(a) 数能级，而非数粒子。** 一维单粒子能级等间隔，相邻能级间隔$\\hbar\\omega$。宽度为$d\\epsilon$且包含许多能级的能区约有$d\\epsilon/(\\hbar\\omega)$个轨道，因此\n$$\n\\boxed{D_{1D}(\\epsilon)=\\frac1{\\hbar\\omega}}.\n$$\n其单位是能量的倒数。若不作平滑近似，精确态密度是$\\sum_{n\\ge0}\\delta(\\epsilon-n\\hbar\\omega)$。凝聚问题中应把基态占据单独计算。\n\n**(b) 凝聚的关键是激发态是否有有限容量。** Bose分布为\n$$\n\\bar n(\\epsilon)=\\frac1{e^{\\beta(\\epsilon-\\mu)}-1}.\n$$\n基态能量为零，所以$\\mu\\le0$。当增加粒子数，$\\mu$从负值升向0；若$\\mu\\to0$时激发态总数仍有有限上限，其余粒子才必须进入基态。\n\n一维连续近似中，在$\\mu\\to0$时\n$$\nN_{\\rm ex}^{\\rm max}\n=\\frac1{\\hbar\\omega}\n\\int_0^\\infty\\frac{d\\epsilon}{e^{\\beta\\epsilon}-1}.\n$$\n低能区$e^{\\beta\\epsilon}-1\\simeq\\beta\\epsilon$，因此积分含\n$$\n\\frac{k_BT}{\\hbar\\omega}\\int_0\\frac{d\\epsilon}{\\epsilon},\n$$\n发生对数发散。激发态在非零温度没有有限的饱和容量，所以\n$$\n\\boxed{\\text{标准一维陷阱热力学极限下不存在非零温度的Bose凝聚转变。}}\n$$\n这不是仅凭“维数低”作判断，而是由该陷阱的低能态密度与Bose占据共同决定。\n\n固定$\\omega$的有限陷阱保留能级间隔，其激发态求和\n$$\n\\sum_{n=1}^\\infty\n\\frac1{e^{n\\hbar\\omega/(k_BT)}-1}\n$$\n是有限的，因而可出现大量基态占据的平滑交叉。这与题目指定的热力学极限不同；大粒子数下其交叉尺度约为$N\\hbar\\omega/(k_B\\ln N)$，在固定$N\\omega$的极限趋零。\n\n**(c) 三维的激发态容量。** 在凝聚临界点，$\\mu\\to0$，宏观基态占据尚未出现，全部$N$由激发态容纳：\n$$\nN=\\int_0^\\infty\n\\frac{D_{3D}(\\epsilon)\\,d\\epsilon}{e^{\\epsilon/(k_BT_c)}-1}\n=\\frac1{2(\\hbar\\omega)^3}\n\\int_0^\\infty\n\\frac{\\epsilon^2\\,d\\epsilon}{e^{\\epsilon/(k_BT_c)}-1}.\n$$\n令$x=\\epsilon/(k_BT_c)$：\n$$\nN=\\frac12\\left(\\frac{k_BT_c}{\\hbar\\omega}\\right)^3\n\\int_0^\\infty\\frac{x^2\\,dx}{e^x-1}.\n$$\n三维被积函数低能行为为$x$，积分收敛，得到\n$$\n\\boxed{T_c=\\frac{\\hbar\\omega}{k_B}\n\\left[\n\\frac{2N}{\\displaystyle\\int_0^\\infty x^2/(e^x-1)\\,dx}\n\\right]^{1/3}}.\n$$\n使用$\\int_0^\\infty x^2/(e^x-1)\\,dx=2\\zeta(3)$，也可写成\n$$\n\\boxed{T_c=\\frac{\\hbar\\omega}{k_B}\n\\left[\\frac{N}{\\zeta(3)}\\right]^{1/3}}.\n$$\n量纲为温度。三维陷阱有效体积按$\\omega^{-3}$缩放，故保持$N\\omega^3$固定时$T_c$有限，符合热力学极限的要求。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "给出一维平滑态密度1/(ℏω)，定义和量纲正确。"
+        },
+        {
+          "points": 3,
+          "text": "明确凝聚判据为μ趋于基态能时激发态容量是否有限。"
+        },
+        {
+          "points": 3,
+          "text": "一维激发态积分低能呈dε/ε并对数发散。"
+        },
+        {
+          "points": 2,
+          "text": "在指定热力学极限下得出无有限温转变的结论。"
+        },
+        {
+          "points": 3,
+          "text": "正确建立三维临界粒子数积分，使用μ=0且无额外自旋因子。"
+        },
+        {
+          "points": 3,
+          "text": "换元并得到Tc的完整系数，纯数积分形式或ζ(3)形式均可。"
+        },
+        {
+          "points": 2,
+          "text": "结果N^{1/3}与ω依赖、量纲和低能收敛性正确。"
+        }
+      ],
+      "checks": [
+        "原图(a)态密度、(b)一维凝聚、(c)三维临界温度均保留。",
+        "无自旋Bose粒子不加简并度，三维态密度分母含2。",
+        "一维区别有限陷阱交叉与标准热力学极限；三维常数为ζ(3)。"
+      ]
+    }
+  ]
+}

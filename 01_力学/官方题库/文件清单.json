@@ -1,0 +1,477 @@
+{
+  "folder": "01_力学",
+  "token": "a57bdd3e1dfb4380ac5a",
+  "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/",
+  "retrieved_date": "2026-10-07",
+  "files": [
+    {
+      "name": "1-1T2.png",
+      "size": 161643,
+      "sha256": "878aa8cae724a78c0a598905901a637c07a756642e4f34a54fa63f13c68c4f7a",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T2.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:21+08:00"
+    },
+    {
+      "name": "1-1T3.png",
+      "size": 244659,
+      "sha256": "5e8d5b0649dcbc31c893a7af70ce08a244447cdf73862be65378dd8cef49fd81",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T3.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T4.png",
+      "size": 484011,
+      "sha256": "a753594df4e20b1e021bff48e99b97ea577c7952800cd078b7088a59e525c0cd",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T4.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T5.png",
+      "size": 392610,
+      "sha256": "384009429403091d824832e245402d1a5d428a2ee5f471608d01808daeccc409",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T5.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T6.png",
+      "size": 324244,
+      "sha256": "ddd632384b46f26a510b09a53656eecb429e63d8c2d3794e0002f727da9cb451",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T6.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:27+08:00"
+    },
+    {
+      "name": "1-1T7.png",
+      "size": 212114,
+      "sha256": "87520812fd9a3f9915827da3a33fe2118b3e7bb51141d12abe0ea63e0c8e8c51",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T7.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:29+08:00"
+    },
+    {
+      "name": "1-1T8.png",
+      "size": 470146,
+      "sha256": "794161671d87eea0d9a8468d1c2525522119559674601cb1a475d5af08a90bc8",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T8.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:29+08:00"
+    },
+    {
+      "name": "1-1T9.png",
+      "size": 159074,
+      "sha256": "cd14b316cb7730d08bac0654168292015fba9d76a664f2bb3e3fcdeb80a7107f",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T9.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:29+08:00"
+    },
+    {
+      "name": "1-1T10.png",
+      "size": 233839,
+      "sha256": "9bd97776eb71e9adf2e12c312a397c9b89c7fe1df97f5c9bb9c6feaba91f7f19",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T10.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:19+08:00"
+    },
+    {
+      "name": "1-1T11.png",
+      "size": 270117,
+      "sha256": "87a656c8cb0bf61f6e1e7d82ae4e277bc6a4a05a83be190d4413ca1b15aaa5ef",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T11.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:19+08:00"
+    },
+    {
+      "name": "1-1T12.png",
+      "size": 491500,
+      "sha256": "94733bd734f2b14c7de277d8ebaeb5a5e3f3a89556f96b520bcce2fee81b30a1",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T12.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:19+08:00"
+    },
+    {
+      "name": "1-1T13.png",
+      "size": 518721,
+      "sha256": "66c9ec8638273dc394aae33052dbcded76b5e6f914d536ca8c77608cc6671615",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T13.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:20+08:00"
+    },
+    {
+      "name": "1-1T14.png",
+      "size": 629934,
+      "sha256": "2f324af3422f486eb14c71782554cff0be6ddd730a5b2b04c3e7f9d09bce029f",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T14.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:20+08:00"
+    },
+    {
+      "name": "1-1T15.png",
+      "size": 405446,
+      "sha256": "5a2e2f84a04ca8ce9f1c9c2bbdda25c52adad4e7caeffd3b8a18ac25b30612fb",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T15.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:20+08:00"
+    },
+    {
+      "name": "1-1T16.png",
+      "size": 576079,
+      "sha256": "488e0f04dfd789fb8e55268ce5b6a75fc683b26da00435df3144226f65aeeaf7",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T16.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:20+08:00"
+    },
+    {
+      "name": "1-1T17.png",
+      "size": 601012,
+      "sha256": "62011bd057df3c9412e9287386182c3bb47bea79ba30599182b73113a51b8d7f",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T17.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:20+08:00"
+    },
+    {
+      "name": "1-1T18.png",
+      "size": 336179,
+      "sha256": "bd219411b09e1edba762490acb15eb8d3e80b97f3b2a2a2d06ac373784afe4aa",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T18.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:20+08:00"
+    },
+    {
+      "name": "1-1T19.png",
+      "size": 238349,
+      "sha256": "88c4b86acdb4a37210cd460760ecaf93fc64660ab40223557a795f803c7bbbc7",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T19.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:21+08:00"
+    },
+    {
+      "name": "1-1T20.png",
+      "size": 362355,
+      "sha256": "d96cbf10d9a31d136836583c192acd33218128450c583938594f8b3e22be4cec",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T20.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:21+08:00"
+    },
+    {
+      "name": "1-1T21.png",
+      "size": 506658,
+      "sha256": "7e7aa9c4905bfacf97b23fdfd1411f10e674e3021798f2da96900ea1d9578ebd",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T21.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:21+08:00"
+    },
+    {
+      "name": "1-1T22.png",
+      "size": 401729,
+      "sha256": "aae2de3e45881f4372d1424987962432a363310c4d86a1f0386199681edd8903",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T22.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:21+08:00"
+    },
+    {
+      "name": "1-1T23.png",
+      "size": 706526,
+      "sha256": "69ce312cd7d7ec974ccf7d21dc89cf0819934e055c4ecdd138dbe9fe67056f2a",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T23.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:21+08:00"
+    },
+    {
+      "name": "1-1T24.png",
+      "size": 934520,
+      "sha256": "a83b74950d519edc0950d3fd3f4cd60ab61d74f0fad021a89159e1109928f371",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T24.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:22+08:00"
+    },
+    {
+      "name": "1-1T25.png",
+      "size": 1049992,
+      "sha256": "f300535bafe7e3de74fabe047467d84399d1bdc9e4a847743963905d08bc590b",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T25.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:22+08:00"
+    },
+    {
+      "name": "1-1T26.png",
+      "size": 918639,
+      "sha256": "4d6f7124938f58359fddcab50d8bd6934da5e156a7ea559aa69570fb0ee31d56",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T26.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:22+08:00"
+    },
+    {
+      "name": "1-1T27.png",
+      "size": 105879,
+      "sha256": "cb046c66cccfb9747650c016a5b8c8ccfa6cfd53e8bf4fcca7df1a503159d305",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T27.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:22+08:00"
+    },
+    {
+      "name": "1-1T28.png",
+      "size": 67593,
+      "sha256": "28007cee46aef1775b4694dcc8c9fe519b16d5953668cd2dd127cdfaba80e8eb",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T28.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:22+08:00"
+    },
+    {
+      "name": "1-1T29.png",
+      "size": 96307,
+      "sha256": "4de45cb90140d5fd5b5e9fe8c71ffa353b7a362661f89a6f411c08f4c0ad0472",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T29.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:22+08:00"
+    },
+    {
+      "name": "1-1T31.png",
+      "size": 92657,
+      "sha256": "732a275d93e89ee02d73f30b724b32d7a5e0ecfca1defac2b259f4a06501b5bd",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T31.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T32.png",
+      "size": 189431,
+      "sha256": "e0dde0d5601e13bb9cb780f0cee4934145547a1e84c329a04bdd8c5c0fe72762",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T32.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T33.png",
+      "size": 77527,
+      "sha256": "5c59b44d2cf80dd780f8325eed3ac6790a5a0dedd7816896624467869d671fb2",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T33.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T34.png",
+      "size": 130120,
+      "sha256": "5ee003060918898268ff0955e917bb038b7d45e5dc09334f2a6ebd3e032ecf75",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T34.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T35.png",
+      "size": 188270,
+      "sha256": "671faacfce0ebd3c7989977fae9c3a4c4e46c6fa9958eb00793a16de8ff840b9",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T35.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T36.png",
+      "size": 87276,
+      "sha256": "da9e028949c7e2ef6e251113b779a304bfbb8a631ed28813e8f84118f49d7820",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T36.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:23+08:00"
+    },
+    {
+      "name": "1-1T37.png",
+      "size": 117261,
+      "sha256": "78fe13073c024e9ff431b72e6ce2e6f29fedafba632f15eb0792aee5b8a95801",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T37.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T38.png",
+      "size": 60350,
+      "sha256": "5c68cd7af33f23eb31f8b76eb8d754789da137b344302476d7ae9bd98dc70587",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T38.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T39.png",
+      "size": 36793,
+      "sha256": "97fb146d9b0346ff01729d30472672db9f655c71789015011f33e6e40b241648",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T39.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T40.png",
+      "size": 172330,
+      "sha256": "7fa3591839cfbfddcfa82e85715f9fa0bdf4ffcd5da5e9339d7b79c5b81ad161",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T40.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T41.png",
+      "size": 65132,
+      "sha256": "ea46b6f25a98092179f6dfa3aabb1659fa264828db2ea6a2f2ff7a9be9ccf5dd",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T41.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T42.png",
+      "size": 64025,
+      "sha256": "e2d3adf7011219edaf7e839b5b06fa74c2f6c45f9962e04c4c5ba3f35e378cc0",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T42.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:24+08:00"
+    },
+    {
+      "name": "1-1T43.png",
+      "size": 82414,
+      "sha256": "227493881d4e9f817196388097bfae2bc57c064e9b6ca3ca0c92d27b16891cd5",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T43.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T44.png",
+      "size": 88578,
+      "sha256": "de44b9ceeb4b3f801d8445ba6cd6e8bf6b7a77dc748442ded00fb221a47275f3",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T44.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T45.png",
+      "size": 92232,
+      "sha256": "a98671b8836fb078c39d06c29c64f7361e76bdfcc7ced94486a7e48cb1215227",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T45.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T46.png",
+      "size": 42903,
+      "sha256": "7091d1c05912085b0c4bdc8c8eef73c70531c697cc230cad8a4d09391170bcd4",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T46.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T47.png",
+      "size": 74360,
+      "sha256": "48240664e4a06842dc71417efa823ee704f1ec4aace0873fdecca7667ddf488a",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T47.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T48.png",
+      "size": 72796,
+      "sha256": "10fc40ad0c87af0022bbeaf7c13e4b353d97c11973bc3529e6b3daa9bd74b0b4",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T48.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T49.png",
+      "size": 56536,
+      "sha256": "4f401e6d8411724b620745ecad97c589a6867ebcf02f8426cbb8ac9ff6e52e6a",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T49.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:25+08:00"
+    },
+    {
+      "name": "1-1T50.png",
+      "size": 59549,
+      "sha256": "bf054cf542314387a175232ad834ade7db1be31b47422528566befb9f65d5ff1",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T50.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:26+08:00"
+    },
+    {
+      "name": "1-1T51.png",
+      "size": 53881,
+      "sha256": "d5aebae591e051c6c54b1815874057187e5d178fa1c8ce9786560b555f5c197c",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T51.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:26+08:00"
+    },
+    {
+      "name": "1-1T52.png",
+      "size": 61412,
+      "sha256": "7d3103dec3a722606ce721660e3c726dd34aa7ff9829d5030f81ad116b362d07",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T52.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:26+08:00"
+    },
+    {
+      "name": "1-1T53.png",
+      "size": 76835,
+      "sha256": "3fdb6218cd111d97f4cf5816d526a91dbb1ac74ca3e70c533b77d399bf5b526d",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T53.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:26+08:00"
+    },
+    {
+      "name": "1-1T54.png",
+      "size": 61484,
+      "sha256": "716f4de910f9832c6403264ecbe67ec432cb56f551a1e542e0c2752467ce7b9d",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T54.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:26+08:00"
+    },
+    {
+      "name": "1-1T55.png",
+      "size": 94059,
+      "sha256": "5fbfabfa36dcf9148eac07146d182253610d878688ebdfb23cc2c809e492c5ae",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T55.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:26+08:00"
+    },
+    {
+      "name": "1-1T56.png",
+      "size": 41832,
+      "sha256": "8a3c62036e36a14112b3caf391bed3b7b8996ca9d7cd055620928c93ac5bfa75",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T56.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:27+08:00"
+    },
+    {
+      "name": "1-1T57.png",
+      "size": 64652,
+      "sha256": "afe11e24348301fe32a2304c8273f1384c454d66ef4b9ca365a611a8a1cb9744",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T57.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:27+08:00"
+    },
+    {
+      "name": "1-1T59.png",
+      "size": 32936,
+      "sha256": "c0362a403538e369968b7441c13838a985328e82bfba49641ee29ed7a917bd8a",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T59.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:27+08:00"
+    },
+    {
+      "name": "1-1T60.png",
+      "size": 104358,
+      "sha256": "ca00141e61048d00cde28f61b3bc740f456d76bcdb9c70d87fc1d6ef9a7a8f85",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T60.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:27+08:00"
+    },
+    {
+      "name": "1-1T61.png",
+      "size": 51270,
+      "sha256": "d34eaddaf625d590dbca23405909480b94b40c452d50ef3db037d853bdda9611",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T61.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:27+08:00"
+    },
+    {
+      "name": "1-1T62.png",
+      "size": 101995,
+      "sha256": "4b37e9a244c188fbeda70512621a4e04697c91eab5e29e96ed3bd7ee76e04a59",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T62.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T63.png",
+      "size": 45802,
+      "sha256": "ccdc9be029ec331a36b684a33808c8b10535a5342531b179a4430e1cdf6bf339",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T63.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T64.png",
+      "size": 53345,
+      "sha256": "c416edfaca86514e9221c3b20a835c342856428584a8806cfed95466c3a26d6d",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T64.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T65.png",
+      "size": 43835,
+      "sha256": "62cfffa05b32b8e1b829e2d469a27c32d283e386725580960ceba098b62fe638",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T65.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T66.png",
+      "size": 53335,
+      "sha256": "eb8503c2dc7f662ba3147232c5ed4cef9cf3e0a845a6b9171f90ce918f33b94e",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T66.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T67.png",
+      "size": 62231,
+      "sha256": "6234abfc4b1e171b6a295bddae1c3652f27dd60b73682407fb355c9edc8399e6",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T67.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T68.png",
+      "size": 69646,
+      "sha256": "57829d07eae9cad59697b82e1f8267ed21050aada06f47e45d2fc410075fb183",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T68.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T69.png",
+      "size": 55795,
+      "sha256": "c678aab8a609ea1ff6364b90e37be4849431d11465eb24346c2233b8ff82124e",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T69.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:28+08:00"
+    },
+    {
+      "name": "1-1T70.png",
+      "size": 104957,
+      "sha256": "29548207f5bb9b9ceecc7370f3473941a1b3804cf0091a9346bc3b6562f27fa2",
+      "source_url": "https://cloud.tsinghua.edu.cn/d/a57bdd3e1dfb4380ac5a/files/?p=%2F1-1T70.png&dl=1",
+      "remote_last_modified": "2025-09-10T11:55:29+08:00"
+    }
+  ]
+}

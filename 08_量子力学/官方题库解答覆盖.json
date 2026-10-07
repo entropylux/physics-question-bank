@@ -1,0 +1,539 @@
+{
+  "items": [
+    {
+      "file": "2-1T1068.png",
+      "subparts": [
+        "a",
+        "b:E1",
+        "b:E2"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1069.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1070.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "原图磁矩与能量常数不一致；分别给出字面模型和标准物理模型"
+    },
+    {
+      "file": "2-1T1071.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1072.png",
+      "subparts": [
+        "变分"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1073.png",
+      "subparts": [
+        "临界阱深"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1074.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1076.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1077.png",
+      "subparts": [
+        "a",
+        "c"
+      ],
+      "status": "solved",
+      "note": "未说明自旋简并，按不同自旋条件分别作答"
+    },
+    {
+      "file": "2-1T1078.png",
+      "subparts": [],
+      "status": "source_incomplete",
+      "note": "原图只有本征方程定义，没有问句、初态或任何小问"
+    },
+    {
+      "file": "2-1T1079.png",
+      "subparts": [
+        "a",
+        "b:能量",
+        "b:波函数"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1080.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1081.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "以标准衰减常数定义时指数应为-2κd"
+    },
+    {
+      "file": "2-1T1082.png",
+      "subparts": [
+        "n=2全部终态"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1083.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1084.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1085.png",
+      "subparts": [
+        "n",
+        "l",
+        "m"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1086.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1087.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1088.png",
+      "subparts": [
+        "证明"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1089.png",
+      "subparts": [
+        "证明与条件"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1090.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1091.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "原图漏列A的逆向矩阵元；明确自伴补全与字面矩阵的区别"
+    },
+    {
+      "file": "2-1T1092.png",
+      "subparts": [
+        "变分"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1093.png",
+      "subparts": [
+        "测量结果及概率"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1094.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1095.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1096.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1097.png",
+      "subparts": [
+        "求和规则"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1098.png",
+      "subparts": [
+        "突变投影"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1099.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1100.png",
+      "subparts": [
+        "单态概率"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1101.png",
+      "subparts": [
+        "基态简并"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1102.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1103.png",
+      "subparts": [
+        "内积守恒"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1104.png",
+      "subparts": [
+        "中心",
+        "宽度"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1106.png",
+      "subparts": [
+        "振幅",
+        "微分截面"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1107.png",
+      "subparts": [
+        "前向截面"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1108.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1109.png",
+      "subparts": [
+        "散射长度",
+        "相移",
+        "振幅",
+        "截面"
+      ],
+      "status": "solved",
+      "note": "已逐图核实，推导与答案见同名小节"
+    },
+    {
+      "file": "2-1T1110.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1111.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1112.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1113.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1114.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1115.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1116.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1117.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1118.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1119.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1120.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1121.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1122.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1123.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1124.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1125.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1126.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1127.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1128.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1129.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    },
+    {
+      "file": "2-1T1130.png",
+      "subparts": [
+        "原题全部问项，见同名解答小节"
+      ],
+      "status": "solved",
+      "note": "已逐图核实；推导、结果及检查见同名小节"
+    }
+  ]
+}

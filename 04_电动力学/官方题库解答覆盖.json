@@ -1,0 +1,142 @@
+{
+  "items": [
+    {
+      "file": "1-6T1033.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1034.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1036.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1038.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1040.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1043.png",
+      "subparts": "a,b,c,d,e,f",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1044.png",
+      "subparts": "角速度随时间",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1051.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1052.png",
+      "subparts": "a,b,c,d,e",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1053.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1054.png",
+      "subparts": "a,b,c,d",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1055.png",
+      "subparts": "内外H和B、场线",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1056.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1057.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1058.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1059.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1060.png",
+      "subparts": "a,b-i,b-ii,b-iii",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1061.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1062.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1063.png",
+      "subparts": "内场幅度、趋肤修正",
+      "status": "solved",
+      "note": "原图准静态条件量纲笔误；说明薄壁趋肤假设并补充一般扩散解"
+    },
+    {
+      "file": "1-6T1064.png",
+      "subparts": "a,b",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1065.png",
+      "subparts": "a,b,c",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    },
+    {
+      "file": "1-6T1066.png",
+      "subparts": "a,b,c,d",
+      "status": "solved",
+      "note": "已逐图核对全部小问，独立推导与条件检查见正文。"
+    }
+  ]
+}

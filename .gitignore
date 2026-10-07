@@ -1,0 +1,19 @@
+# Local caches and editor files
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.venv/
+node_modules/
+
+# Local credentials must never be tracked
+.env
+.env.*
+*.pem
+*.key
+
+
+node_modules/
+.tmp/

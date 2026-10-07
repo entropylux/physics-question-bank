@@ -1,0 +1,456 @@
+{
+  "items": [
+    {
+      "file": "2-3T1419.png",
+      "subparts": [
+        "巨配分函数",
+        "平均吸附数"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1420.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1421.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1422.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1423.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1424.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1425.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1426.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作极限检查。"
+    },
+    {
+      "file": "2-3T1427.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导。"
+    },
+    {
+      "file": "2-3T1428.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导。"
+    },
+    {
+      "file": "2-3T1429.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导。"
+    },
+    {
+      "file": "2-3T1430.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "给出额外束缚结构态及纯自旋单态三重态两种模型，显式标出态计数条件。"
+    },
+    {
+      "file": "2-3T1431.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导。"
+    },
+    {
+      "file": "2-3T1432.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导。"
+    },
+    {
+      "file": "2-3T1433.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导。"
+    },
+    {
+      "file": "2-3T1434.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "分别处理固定液面和固定质量自由液面，说明题目缺少边界条件。"
+    },
+    {
+      "file": "2-3T1436.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1437.png",
+      "subparts": [
+        "i",
+        "ii"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1438.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1439.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1440.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1441.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1442.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1443.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已独立推导并作量纲与极限检查。"
+    },
+    {
+      "file": "2-3T1500.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1501.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1502.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1503.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "给出标度关系及单尺度自由能假设；指出alpha<0时解析热容背景不可忽略。"
+    },
+    {
+      "file": "2-3T1504.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1505.png",
+      "subparts": [
+        "熵",
+        "线性力",
+        "比例系数"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1506.png",
+      "subparts": [
+        "主问"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1507.png",
+      "subparts": [
+        "熵变",
+        "机器类型",
+        "可行性"
+      ],
+      "status": "solved",
+      "note": "已查看原图，全部小问已推导并检查模型条件。"
+    },
+    {
+      "file": "2-3T1508.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "含零能级二重简并；方差与标准差区分，检验低高温。"
+    },
+    {
+      "file": "2-3T1509.png",
+      "subparts": [
+        "完整求解"
+      ],
+      "status": "solved",
+      "note": "椭球费米面态计数，含自旋二重简并。"
+    },
+    {
+      "file": "2-3T1510.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "环境熵展开得到恒温恒压权重，固定测度说明。"
+    },
+    {
+      "file": "2-3T1511.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "八构型完整列举；遵守原题正号磁场项。"
+    },
+    {
+      "file": "2-3T1512.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "自旋1三态配分函数、磁矩及弱场饱和检验。"
+    },
+    {
+      "file": "2-3T1513.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "角频率谱、小孔通量、非零峰及2.7K数值；区分波长谱。"
+    },
+    {
+      "file": "2-3T1514.png",
+      "subparts": [
+        "完整求解"
+      ],
+      "status": "solved",
+      "note": "电子简并交叉尺度和强经典条件，单位换算。"
+    },
+    {
+      "file": "2-3T1515.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "谐振子能谱、配分函数、归一化概率阈值计数。"
+    },
+    {
+      "file": "2-3T1516.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "态密度积分，朴素熵非广延和全同粒子Gibbs修正。"
+    },
+    {
+      "file": "2-3T1517.png",
+      "subparts": [
+        "平均能量",
+        "热容",
+        "同图曲线"
+      ],
+      "status": "solved",
+      "note": "两能级能量、Schottky峰及高低温极限，附曲线图。"
+    },
+    {
+      "file": "2-3T1518.png",
+      "subparts": [
+        "配分函数",
+        "平均能量",
+        "高温",
+        "低温"
+      ],
+      "status": "solved",
+      "note": "等间距非简并能级几何求和与渐近展开。"
+    },
+    {
+      "file": "2-3T1519.png",
+      "subparts": [
+        "完整求解"
+      ],
+      "status": "solved",
+      "note": "氦化学势/分压平衡，氧分压保留，总压约2atm。"
+    },
+    {
+      "file": "2-3T1520.png",
+      "subparts": [
+        "a",
+        "b"
+      ],
+      "status": "solved",
+      "note": "一维Maxwell速度方差，均值和均方根Doppler线宽。"
+    },
+    {
+      "file": "2-3T1521.png",
+      "subparts": [
+        "a",
+        "b",
+        "c"
+      ],
+      "status": "solved",
+      "note": "一维低能发散和有限尺寸交叉区别，三维陷阱凝聚温度。"
+    },
+    {
+      "file": "2-3T1522.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "status": "solved",
+      "note": "链构型、奇偶约束、熵、自由能、拉力及有效弹簧常数。"
+    },
+    {
+      "file": "2-3T1523.png",
+      "subparts": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "status": "solved",
+      "note": "相对论Boltzmann气体相空间积分、U/F/P/Cv及固定粒子数条件。"
+    },
+    {
+      "file": "2-3T1524.png",
+      "subparts": [
+        "完整求解"
+      ],
+      "status": "solved",
+      "note": "完成平方后能量均分，保留势能常数偏移及坐标域。"
+    }
+  ]
+}
