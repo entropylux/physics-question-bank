@@ -323,13 +323,121 @@
           "points": 10
         }
       ]
+    },
+    {
+      "paper": 7,
+      "round": 4,
+      "session": "经典",
+      "title": "第四轮 · 经典卷",
+      "file": "第四轮_经典卷",
+      "questionCount": 6,
+      "points": 100,
+      "plannedMinutes": 170,
+      "items": [
+        {
+          "slot": 1,
+          "subject": "力学",
+          "source": "01_力学/1-1T54",
+          "sourceKind": "official",
+          "points": 10
+        },
+        {
+          "slot": 2,
+          "subject": "电磁学",
+          "source": "03_电磁学/1-2T233",
+          "sourceKind": "official",
+          "points": 10
+        },
+        {
+          "slot": 3,
+          "subject": "热学",
+          "source": "05_热学/1-4T933",
+          "sourceKind": "official",
+          "points": 10
+        },
+        {
+          "slot": 4,
+          "subject": "光学",
+          "source": "06_光学/1-3T661",
+          "sourceKind": "official",
+          "points": 10
+        },
+        {
+          "slot": 5,
+          "subject": "分析力学",
+          "source": "02_分析力学/1-5T1021",
+          "sourceKind": "official",
+          "points": 30
+        },
+        {
+          "slot": 6,
+          "subject": "电动力学",
+          "source": "03_电磁学/1-2T204",
+          "sourceKind": "official",
+          "points": 30
+        }
+      ]
+    },
+    {
+      "paper": 8,
+      "round": 4,
+      "session": "近代",
+      "title": "第四轮 · 近代卷",
+      "file": "第四轮_近代卷",
+      "questionCount": 6,
+      "points": 100,
+      "plannedMinutes": 170,
+      "items": [
+        {
+          "slot": 1,
+          "subject": "高等量子力学",
+          "source": "07_高等量子力学/AQ-06",
+          "sourceKind": "supplement",
+          "points": 10
+        },
+        {
+          "slot": 2,
+          "subject": "量子力学",
+          "source": "08_量子力学/2-1T1073",
+          "sourceKind": "official",
+          "points": 20
+        },
+        {
+          "slot": 3,
+          "subject": "量子力学",
+          "source": "08_量子力学/2-1T1106",
+          "sourceKind": "official",
+          "points": 20
+        },
+        {
+          "slot": 4,
+          "subject": "统计物理",
+          "source": "09_统计物理/2-3T1509",
+          "sourceKind": "official",
+          "points": 20
+        },
+        {
+          "slot": 5,
+          "subject": "统计力学",
+          "source": "10_统计力学/2-3T1505",
+          "sourceKind": "official",
+          "points": 20
+        },
+        {
+          "slot": 6,
+          "subject": "相对论",
+          "source": "11_相对论/SR-11",
+          "sourceKind": "supplement",
+          "points": 10
+        }
+      ]
     }
   ],
-  "questions": 36,
-  "uniqueSources": 36,
-  "official": 30,
-  "supplement": 6,
-  "totalMath": 1306,
+  "questions": 48,
+  "uniqueSources": 48,
+  "official": 40,
+  "supplement": 8,
+  "totalMath": 1821,
   "mathErrors": [],
   "errors": []
 }

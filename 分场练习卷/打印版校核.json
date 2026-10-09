@@ -89,6 +89,36 @@
       "brokenImages": [],
       "answerPageBreak": "page",
       "failedResources": []
+    },
+    {
+      "paper": 7,
+      "round": 4,
+      "session": "经典",
+      "pdf": "第四轮_经典卷.pdf",
+      "bytes": 577841,
+      "questions": 6,
+      "answers": 6,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 8,
+      "round": 4,
+      "session": "近代",
+      "pdf": "第四轮_近代卷.pdf",
+      "bytes": 501683,
+      "questions": 6,
+      "answers": 6,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
     }
   ]
 }
