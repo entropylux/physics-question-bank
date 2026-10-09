@@ -39,7 +39,7 @@ const css=`:root{--ink:#172d37;--accent:#126960;--line:#d5e0dc}*{box-sizing:bord
 `;
 fs.writeFileSync(path.join(out,'练习卷.css'),css);
 function shell(title,body){return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><link rel="stylesheet" href="../阅读资源/katex/katex.min.css"><link rel="stylesheet" href="练习卷.css"></head><body><main>${body}</main></body></html>`;}
-let indexMD='# 四大力学专项练习卷\n\n本目录保留跨科专题训练。需要按经典与近代分别成卷时，请使用[两轮分场练习卷](../分场练习卷/README.md)。围绕四大力学开展综合练习，重点训练量子力学与热力学统计物理。全部选自本题库，中文重排及节选说明见各题来源；不是官方模拟命题或考试题量预测。\n\n每套7题、100分、建议180分钟。量子3题45分，热统2题35分，分析力学1题10分，电动力学1题10分。量子与热统合计80分；四套原题不重复。每套均先给出全部题目，再换页附完整解答和建议评分点。\n\n';
+let indexMD='# 四大力学专项练习卷\n\n本目录保留跨科专题训练。需要按经典与近代分别成卷时，请使用[三轮分场练习卷](../分场练习卷/README.md)。围绕四大力学开展综合练习，重点训练量子力学与热力学统计物理。全部选自本题库，中文重排及节选说明见各题来源；不是官方模拟命题或考试题量预测。\n\n每套7题、100分、建议180分钟。量子3题45分，热统2题35分，分析力学1题10分，电动力学1题10分。量子与热统合计80分；四套原题不重复。每套均先给出全部题目，再换页附完整解答和建议评分点。\n\n';
 indexMD+='| 练习卷 | 学习重点 | 打印版 | 离线阅读 | 可编辑文本 |\n|---|---|---|---|---|\n';
 for(let paper=1;paper<=4;paper++){
  const qs=items.filter(q=>q.paper===paper).sort((a,b)=>a.slot-b.slot);

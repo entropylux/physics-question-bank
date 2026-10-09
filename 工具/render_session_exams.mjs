@@ -7,10 +7,16 @@ const {chromium}=require('playwright');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dir=path.join(root,'分场练习卷');
 const check=JSON.parse(fs.readFileSync(path.join(dir,'组卷校核.json'),'utf8'));
+const roundArg=process.argv.slice(2).find(a=>a.startsWith('--round='));
+const selectedRound=roundArg?Number(roundArg.split('=')[1]):null;
+const targetPapers=check.papers.filter(p=>selectedRound===null||p.round===selectedRound);
+if(!targetPapers.length)throw Error('未找到指定轮次');
+const reportFile=path.join(dir,'打印版校核.json');
+const retained=selectedRound!==null&&fs.existsSync(reportFile)?JSON.parse(fs.readFileSync(reportFile,'utf8')).outputs.filter(p=>p.round!==selectedRound):[];
 const browser=await chromium.launch({...(process.env.BROWSER_EXECUTABLE?{executablePath:process.env.BROWSER_EXECUTABLE}:{}),headless:true});
-const outputs=[];
+const outputs=[...retained];
 try{
- for(const paper of check.papers){
+ for(const paper of targetPapers){
   const page=await browser.newPage({viewport:{width:673,height:900},deviceScaleFactor:1});
   const failures=[];page.on('requestfailed',r=>failures.push(r.url()));
   await page.goto(pathToFileURL(path.join(dir,paper.file+'.html')).href,{waitUntil:'load'});
@@ -30,4 +36,5 @@ try{
   await page.close();
  }
 }finally{await browser.close();}
-fs.writeFileSync(path.join(dir,'打印版校核.json'),JSON.stringify({outputs},null,2)+'\n');console.log(JSON.stringify(outputs,null,2));
+outputs.sort((a,b)=>a.paper-b.paper);
+fs.writeFileSync(reportFile,JSON.stringify({outputs},null,2)+'\n');console.log(JSON.stringify(outputs.filter(p=>selectedRound===null||p.round===selectedRound),null,2));
