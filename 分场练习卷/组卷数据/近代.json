@@ -1,0 +1,492 @@
+{
+  "items": [
+    {
+      "paper": 2,
+      "round": 1,
+      "session": "近代",
+      "slot": 1,
+      "subject": "高等量子力学",
+      "sourceSubject": "07_高等量子力学",
+      "sourceId": "AQ-03",
+      "sourceKind": "supplement",
+      "title": "约化密度矩阵、纯度与纠缠熵",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "教学补充：选自本题库高等量子力学分层练习 AQ-03，保留约化态、纯度、熵、极值条件及相位影响的全部要求；不是官方原题。",
+      "question": "两个可区分的量子比特 $A,B$ 处于归一化联合纯态\n$$\n|\\Psi\\rangle=\\cos\\theta\\,|00\\rangle+\ne^{i\\phi}\\sin\\theta\\,|11\\rangle,\\qquad\n0\\leq\\theta\\leq\\frac{\\pi}{2},\\quad\\phi\\in\\mathbb R.\n$$\n这里 $|ij\\rangle=|i\\rangle_A\\otimes|j\\rangle_B$，各量子比特的 $|0\\rangle,|1\\rangle$ 正交归一。\n\n(a) 求子系统 $A$ 的约化密度矩阵 $\\rho_A$。（3分）\n\n(b) 求纯度 $\\operatorname{Tr}\\rho_A^2$ 及采用自然对数的熵 $S_A=-\\operatorname{Tr}(\\rho_A\\ln\\rho_A)$。（3分）\n\n(c) 确定联合态何时为乘积态，子系统 $A$ 何时为最大混态；说明相位 $\\phi$ 是否影响上述局部量。（4分）",
+      "solution": "**(a) 先展开联合密度矩阵，再对 $B$ 取偏迹。** 为简化书写，令 $c_\\theta=\\cos\\theta$、$s_\\theta=\\sin\\theta$，则\n$$\n\\begin{aligned}\n\\rho_{AB}=|\\Psi\\rangle\\langle\\Psi|\n={}&c_\\theta^2|00\\rangle\\langle00|\n+s_\\theta^2|11\\rangle\\langle11|\\\\\n&+c_\\theta s_\\theta e^{-i\\phi}|00\\rangle\\langle11|\n+c_\\theta s_\\theta e^{i\\phi}|11\\rangle\\langle00|.\n\\end{aligned}\n$$\n偏迹定义为 $\\rho_A=\\sum_{j=0}^1{}_B\\langle j|\\rho_{AB}|j\\rangle_B$。例如\n$$\n\\operatorname{Tr}_B(|00\\rangle\\langle11|)\n=|0\\rangle\\langle1|\\,\\langle1|0\\rangle_B=0.\n$$\n所以两项相干交叉项在偏迹后消失，得到\n$$\n\\boxed{\\rho_A=\n\\cos^2\\theta\\,|0\\rangle\\langle0|+\n\\sin^2\\theta\\,|1\\rangle\\langle1|\n=\\begin{pmatrix}\\cos^2\\theta&0\\\\0&\\sin^2\\theta\\end{pmatrix}.}\n$$\n\n**(b) 用本征值求纯度与熵。** 两个本征值是 $\\lambda_0=\\cos^2\\theta$、$\\lambda_1=\\sin^2\\theta$，故\n$$\n\\boxed{\\operatorname{Tr}\\rho_A^2\n=\\cos^4\\theta+\\sin^4\\theta\n=1-\\frac12\\sin^2(2\\theta),}\n$$\n$$\n\\boxed{S_A=-\\cos^2\\theta\\ln(\\cos^2\\theta)\n-\\sin^2\\theta\\ln(\\sin^2\\theta).}\n$$\n在某一本征值为零时，使用连续极限 $0\\ln0=0$。\n\n**(c) 识别乘积态和最大混态。** 联合态已有 Schmidt 形式。它是乘积态当且仅当一个 Schmidt 系数为零，即\n$$\n\\theta=0\\quad\\text{或}\\quad\\theta=\\frac{\\pi}{2}.\n$$\n此时局部态为纯态，纯度为 1、熵为 0。局部最大混态要求两个本征值相等，因此\n$$\n\\theta=\\frac{\\pi}{4},\\qquad\n\\rho_A=\\frac I2,\\qquad\n\\operatorname{Tr}\\rho_A^2=\\frac12,\\qquad S_A=\\ln2.\n$$\n相位 $\\phi$ 只出现在被偏迹消去的交叉项中，因此不影响 $\\rho_A$、纯度或局部熵；它仍可能影响对两个量子比特进行联合测量得到的关联。联合态始终纯净，而局部态可以混合，二者描述的是不同系统。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确展开联合态并取偏迹，得到对角的约化密度矩阵。"
+        },
+        {
+          "points": 3,
+          "text": "纯度和自然对数熵的表达式正确，包含零本征值的连续极限。"
+        },
+        {
+          "points": 4,
+          "text": "乘积态、最大混态的条件及相位对局部量的影响均判断正确。"
+        }
+      ],
+      "checks": [
+        "ρA 的迹为 1，本征值非负，纯度介于 1/2 和 1 之间。",
+        "θ=0、π/2 时熵为 0；θ=π/4 时熵为 ln 2。",
+        "对应教学练习 AQ-03 的所有问项均已保留，未标为官方原题。"
+      ]
+    },
+    {
+      "paper": 2,
+      "slot": 2,
+      "subject": "量子力学",
+      "sourceSubject": "08_量子力学",
+      "sourceId": "2-1T1071",
+      "title": "二能级系统：从态矢到能谱",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题中文重排，保留 (a)–(e) 全部问项；删除原 (a) 中对任意基底并不普遍成立的提示，明确讨论一般态的时间依赖。原卷分值按本练习卷重配。",
+      "question": "一个二态量子系统的哈密顿算符 $\\hat H$ 不显含时间。$\\{|1\\rangle,|2\\rangle\\}$ 是正交归一基，但不一定是 $\\hat H$ 的本征基。一般归一化态写成\n$$\n|\\psi(t)\\rangle=C_1(t)|1\\rangle+C_2(t)|2\\rangle,\\qquad H_{ij}=\\langle i|\\hat H|j\\rangle.\n$$\n(a) 说明 $C_i(t)$ 的物理意义，并说明它们随时间变化的一般形式。\n\n(b) 从含时薛定谔方程导出 $C_1(t),C_2(t)$ 满足的耦合微分方程。\n\n(c) 求允许的两个能量，用 $H_{ij}$ 表示。\n\n(d) 当 $H_{12}=H_{21}=0$ 时，求能量及相应的含时定态波函数。\n\n(e) 当 $H_{11}=H_{22}=E_0$、$H_{12}=H_{21}=-A$（$A$ 为实常数）时，求能量及相应的归一化含时定态波函数。",
+      "solution": "**(a) 概率振幅与时间依赖。** 在这组基中，$C_i(t)=\\langle i|\\psi(t)\\rangle$ 是概率振幅，投影测量得到 $|i\\rangle$ 的概率为 $|C_i(t)|^2$，且 $|C_1|^2+|C_2|^2=1$。记系数列向量为 $\\mathbf C$，时间无关的自伴矩阵 $H$ 给出\n$$\n\\mathbf C(t)=e^{-iHt/\\hbar}\\mathbf C(0).\n$$\n若 $|E_\\alpha\\rangle$ 是能量本征态，令 $u_{i\\alpha}=\\langle i|E_\\alpha\\rangle$、$a_\\alpha=\\langle E_\\alpha|\\psi(0)\\rangle$，则\n$$\nC_i(t)=\\sum_\\alpha u_{i\\alpha}a_\\alpha e^{-iE_\\alpha t/\\hbar}.\n$$\n因此任意基底中的每个系数一般包含两个能量相位。只有系统处于某个能量定态时，两分量才具有共同的时间因子；只有基底本身是能量本征基时，各分量才能分别乘自己的单一能量相位。\n\n**(b) 投影薛定谔方程。** 将展开式代入 $i\\hbar\\partial_t|\\psi\\rangle=\\hat H|\\psi\\rangle$，分别左乘 $\\langle1|,\\langle2|$，利用正交归一性：\n$$\ni\\hbar\\dot C_1=H_{11}C_1+H_{12}C_2,\\qquad\ni\\hbar\\dot C_2=H_{21}C_1+H_{22}C_2.\n$$\n非对角矩阵元使两个基态的振幅相互耦合。\n\n**(c) 能谱。** 对定态取 $C_i(t)=c_i e^{-iEt/\\hbar}$，得到 $(H-EI)\\mathbf c=0$。非零解要求\n$$\n(H_{11}-E)(H_{22}-E)-H_{12}H_{21}=0.\n$$\n由于 $H$ 自伴，$H_{21}=H_{12}^*$，因此\n$$\nE_\\pm=\\frac{H_{11}+H_{22}}2\n\\pm\\sqrt{\\left(\\frac{H_{11}-H_{22}}2\\right)^2+|H_{12}|^2}.\n$$\n\n**(d) 无耦合。** 能量为 $H_{11},H_{22}$，相应归一化含时定态可取\n$$\n|\\psi_1(t)\\rangle=e^{-iH_{11}t/\\hbar}|1\\rangle,\\qquad\n|\\psi_2(t)\\rangle=e^{-iH_{22}t/\\hbar}|2\\rangle.\n$$\n若 $H_{11}=H_{22}$，该能级简并，任意归一化线性组合也是定态。\n\n**(e) 对称耦合。** 矩阵为 $H=E_0I-A\\sigma_x$。直接作用于对称、反对称组合可得\n$$\nE_{\\mathrm s}=E_0-A,\\qquad\n|\\psi_{\\mathrm s}(t)\\rangle=\ne^{-i(E_0-A)t/\\hbar}\\frac{|1\\rangle+|2\\rangle}{\\sqrt2},\n$$\n$$\nE_{\\mathrm a}=E_0+A,\\qquad\n|\\psi_{\\mathrm a}(t)\\rangle=\ne^{-i(E_0+A)t/\\hbar}\\frac{|1\\rangle-|2\\rangle}{\\sqrt2}.\n$$\n这里“对称态能量为 $E_0-A$”对任意实 $A$ 成立；只有 $A>0$ 时它才是较低能态。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "解释概率振幅、归一化与一般酉演化，区分任意基底和能量本征基"
+        },
+        {
+          "points": 4,
+          "text": "投影得到两条正确的耦合微分方程"
+        },
+        {
+          "points": 4,
+          "text": "写出世俗方程并求得两个能量"
+        },
+        {
+          "points": 4,
+          "text": "无耦合情形的能量和含时定态正确"
+        },
+        {
+          "points": 4,
+          "text": "对称耦合情形的能量、归一化本征态和时间相位正确"
+        }
+      ],
+      "checks": [
+        "两能量之和等于矩阵迹，乘积等于行列式。",
+        "H12→0 时一般能谱回到对角元素；酉演化保持总概率为 1。",
+        "原题 (a)–(e) 均已作答；原提示的适用条件已在详解中说明。"
+      ],
+      "round": 1,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 2,
+      "slot": 3,
+      "subject": "量子力学",
+      "sourceSubject": "08_量子力学",
+      "sourceId": "2-1T1069",
+      "title": "一维 δ 势散射与概率流",
+      "points": 20,
+      "minutes": 30,
+      "adaptation": "原题中文重排，保留 (a)、(b) 全部问项；明确给出入射能量及势强的量纲，删去原图的概率流公式提示。I、R、T 沿用原题，均表示振幅。本卷按 20 分配置评分。",
+      "question": "质量为 $m$、能量为 $E>0$ 的粒子从左侧入射到一维排斥势\n$$\nV(x)=V_0\\delta(x),\\qquad V_0>0,\n$$\n其中 $V_0$ 的量纲为能量乘长度。入射平面波的振幅为 $I$。\n\n(a) 利用原点处的边界条件，求反射振幅 $R$ 和透射振幅 $T$，用 $I,E,m,V_0,\\hbar$ 表示。\n\n(b) 求反射流、透射流与入射流之比，并检验概率流守恒。请区分反射流的有向比值和反射概率。",
+      "solution": "**(a) 分区求解并匹配。** 定义 $k=\\sqrt{2mE}/\\hbar$。原点外势为零，且右侧没有入射波，因此\n$$\n\\psi(x)=\n\\begin{cases}\nIe^{ikx}+Re^{-ikx},&x<0,\\\\\nTe^{ikx},&x>0.\n\\end{cases}\n$$\n波函数在原点连续，给出 $I+R=T$。把定态薛定谔方程从 $-\\eta$ 积分到 $+\\eta$，再令 $\\eta\\to0^+$：\n$$\n-\\frac{\\hbar^2}{2m}\\bigl[\\psi'(0^+)-\\psi'(0^-)\\bigr]+V_0\\psi(0)=0.\n$$\n所以导数不连续，跃变量为\n$$\n\\psi'(0^+)-\\psi'(0^-)=\\frac{2mV_0}{\\hbar^2}\\psi(0).\n$$\n代入平面波解得到\n$$\nikT-ik(I-R)=\\frac{2mV_0}{\\hbar^2}T.\n$$\n令无量纲参数 $b=mV_0/(\\hbar^2k)$，利用 $R=T-I$，上式化成 $(1+ib)T=I$，故\n$$\n\\boxed{\\frac{T}{I}=\\frac1{1+ib}},\\qquad\n\\boxed{\\frac{R}{I}=-\\frac{ib}{1+ib}}.\n$$\n\n**(b) 从振幅到概率流。** 一维概率流为\n$$\nj=\\frac{\\hbar}{2mi}\\left(\\psi^*\\psi'-\\psi\\psi'^*\\right).\n$$\n对 $Ae^{ikx}$，代入可得 $j=\\hbar k|A|^2/m$；对 $Ae^{-ikx}$，流方向相反。因此\n$$\nj_{\\mathrm i}=\\frac{\\hbar k}{m}|I|^2,\\quad\nj_{\\mathrm r}=-\\frac{\\hbar k}{m}|R|^2,\\quad\nj_{\\mathrm t}=\\frac{\\hbar k}{m}|T|^2.\n$$\n有向流比为\n$$\n\\frac{j_{\\mathrm r}}{j_{\\mathrm i}}=-\\frac{b^2}{1+b^2},\\qquad\n\\frac{j_{\\mathrm t}}{j_{\\mathrm i}}=\\frac1{1+b^2}.\n$$\n通常把反射概率定义为反射流大小与入射流之比：\n$$\n\\mathcal R=\\frac{b^2}{1+b^2},\\qquad\n\\mathcal T=\\frac1{1+b^2}.\n$$\n于是 $\\mathcal R+\\mathcal T=1$，等价于 $j_{\\mathrm i}+j_{\\mathrm r}=j_{\\mathrm t}$。本题两侧势能相同、波数相同，所以概率流比恰等于相应振幅比的模平方。",
+      "rubric": [
+        {
+          "points": 6,
+          "text": "分区波函数、连续条件与导数跃变条件正确"
+        },
+        {
+          "points": 6,
+          "text": "联立得到带正确复相位的反射及透射振幅"
+        },
+        {
+          "points": 5,
+          "text": "计算三个概率流并区分反射流符号与反射概率"
+        },
+        {
+          "points": 3,
+          "text": "验证概率流守恒"
+        }
+      ],
+      "checks": [
+        "b 无量纲；V0→0 或 E→∞ 时透射概率趋于 1。",
+        "强势垒时 R/I→−1，反射概率趋于 1。",
+        "原题 (a)、(b) 均已覆盖，未把振幅 R、T 与概率混用。"
+      ],
+      "round": 1,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 2,
+      "slot": 4,
+      "subject": "统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1516",
+      "title": "经典配分函数与熵的广延性",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题(a)–(c)完整中文重排，保留给定态密度与积分；采用经典非简并极限。本卷按 20 分配置评分。",
+      "question": "体积为$V$的三维盒内，一个质量为$m$、无自旋的自由粒子的能量态密度为\n$$\nD(\\epsilon)=\\frac{V}{4\\pi^2}\n\\left(\\frac{2m}{\\hbar^2}\\right)^{3/2}\\epsilon^{1/2},\n\\qquad \\epsilon\\ge0.\n$$\n考虑温度$T$下由$N$个全同、无相互作用粒子构成的气体，且气体处于经典非简并区。\n\n(a) 写出单粒子配分函数$Z_1$的积分表达式并求值。可用\n$$\n\\int_0^\\infty x^{1/2}e^{-ax}\\,dx\n=\\frac{\\sqrt\\pi}{2a^{3/2}},\\qquad a>0.\n$$\n（5分）\n\n(b) 如果直接取$Z_N=Z_1^N$，求所得气体熵，并证明这个熵不是广延量。（9分）\n\n(c) 应如何修正$Z_N$，才能在热力学极限得到广延的熵？写出修正后的熵。（6分）",
+      "solution": "**(a) 态密度把逐态求和变成能量积分。** 正则配分函数是每个单粒子态的Boltzmann权重之和：\n$$\nZ_1=\\int_0^\\infty D(\\epsilon)e^{-\\beta\\epsilon}\\,d\\epsilon.\n$$\n将题给积分中的$a$取为$\\beta$，得到\n$$\nZ_1=\\frac{V}{4\\pi^2}\n\\left(\\frac{2m}{\\hbar^2}\\right)^{3/2}\n\\frac{\\sqrt\\pi}{2\\beta^{3/2}}\n=V\\left(\\frac{mk_BT}{2\\pi\\hbar^2}\\right)^{3/2}.\n$$\n引入热德布罗意波长$\\lambda_T=h/\\sqrt{2\\pi mk_BT}$，可简写为\n$$\n\\boxed{Z_1=\\frac{V}{\\lambda_T^3}}.\n$$\n分子分母都是体积，保证$Z_1$无量纲。\n\n**(b) 检查全同粒子被标号后的结果。** 采用题设的朴素表达式，会得到\n$$\nF_{\\rm naive}=-k_BT\\ln Z_N\n=-Nk_BT\\ln\\frac{V}{\\lambda_T^3}.\n$$\n在$V,N$不变时求$S=-(\\partial F/\\partial T)_{V,N}$。由于$\\lambda_T^{-3}\\propto T^{3/2}$，对数的温度导数也必须保留：\n$$\n\\boxed{S_{\\rm naive}\n=Nk_B\\left[\\ln\\frac{V}{\\lambda_T^3}+\\frac32\\right]}.\n$$\n广延性要求在$T$不变时，将$V,N$同时放大$a$倍应使熵也恰好放大$a$倍。实际却是\n$$\nS_{\\rm naive}(aN,aV)\n=aS_{\\rm naive}(N,V)+aNk_B\\ln a.\n$$\n最后的附加项表明朴素熵不广延。物理原因是$Z_1^N$把粒子人为编号，交换两个相同粒子被重复计为新微观态。\n\n**(c) 用Gibbs因子消除重复计数。** 在经典非简并区，\n$$\n\\boxed{Z_N=\\frac{Z_1^N}{N!}}.\n$$\n于是\n$$\nF=-k_BT\\left[N\\ln\\frac{V}{\\lambda_T^3}-\\ln N!\\right].\n$$\n大$N$时$\\ln N!\\simeq N\\ln N-N$，从而\n$$\nF\\simeq-Nk_BT\\left[\\ln\\frac{V}{N\\lambda_T^3}+1\\right],\n$$\n$$\n\\boxed{S\\simeq Nk_B\\left[\n\\ln\\frac{V}{N\\lambda_T^3}+\\frac52\\right]}.\n$$\n同时放大$N,V$时，括号中的$V/N$不变，因此熵的主导项具有广延性。精确阶乘会产生次广延的有限粒子数修正；这里检验的是热力学极限。$1/N!$是经典态计数修正，当$n\\lambda_T^3$不再远小于1时，仍须改用完整的Bose或Fermi统计。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "单粒子配分函数写成态密度与Boltzmann因子的积分。"
+        },
+        {
+          "points": 3,
+          "text": "积分常数正确，得到Z1=V/λT³或等价式。"
+        },
+        {
+          "points": 4,
+          "text": "由朴素配分函数求出熵，含正确的3/2项。"
+        },
+        {
+          "points": 5,
+          "text": "通过N、V同比例放大展示多余的aNkB ln a项，说明非广延性。"
+        },
+        {
+          "points": 2,
+          "text": "给出1/N!修正并说明全同粒子重复计数。"
+        },
+        {
+          "points": 4,
+          "text": "用Stirling近似得到含5/2项的广延熵并验证。"
+        }
+      ],
+      "checks": [
+        "原图(a)、(b)、(c)完整保留；原题为无自旋粒子，未添加自旋因子。",
+        "态密度积分与三维动量Gaussian积分的配分函数一致。",
+        "修正前后熵分别出现3/2与5/2，广延性检查保持T不变。"
+      ],
+      "round": 1,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 2,
+      "slot": 5,
+      "subject": "统计力学",
+      "sourceSubject": "10_统计力学",
+      "sourceId": "2-3T1508",
+      "title": "简并能级的正则能量涨落",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题(a)、(b)完整中文重排；明确ε>0，保留零能级二重简并。本卷按 20 分配置评分。",
+      "question": "一个量子系统与温度为$T>0$的热库达到热平衡。系统能级为$+\\epsilon$、$0$、$-\\epsilon$，其中$\\epsilon>0$；零能级二重简并，另两个能级均非简并。\n\n(a) 求系统的能量方差\n$$\n\\operatorname{Var}(E)=\\langle E^2\\rangle-\\langle E\\rangle^2.\n$$\n（14分）\n\n(b) 分别求$T\\to0^+$和$T\\to\\infty$时的能量方差，并从各微观态的占据情况解释结果。（6分）",
+      "solution": "**(a) 先确定系综，再数微观态。** 系统只与热库交换能量，采用正则系综。每个微观态$i$的概率是$p_i=e^{-\\beta E_i}/Z$，其中$\\beta=1/(k_BT)$。零能级对应两个不同微观态，必须贡献两个权重。令$x=\\beta\\epsilon$，则\n$$\nZ=e^{-x}+2+e^x=2+2\\cosh x\n=4\\cosh^2(x/2).\n$$\n平均能量可从配分函数求得：\n$$\nU=\\langle E\\rangle=-\\frac{\\partial\\ln Z}{\\partial\\beta}\n=-\\epsilon\\tanh(x/2).\n$$\n为什么二阶导数给方差？对$U=\\sum_iE_ip_i$求$\\beta$导数，利用$\\partial_\\beta p_i=-(E_i-U)p_i$，得到\n$$\n-\\frac{\\partial U}{\\partial\\beta}\n=\\langle E^2\\rangle-U^2\n=\\frac{\\partial^2\\ln Z}{\\partial\\beta^2}.\n$$\n因此\n$$\n\\boxed{\\operatorname{Var}(E)\n=\\frac{\\epsilon^2}{2}\\operatorname{sech}^2\n\\left(\\frac{\\epsilon}{2k_BT}\\right)}.\n$$\n直接按概率求$\\langle E^2\\rangle=\\epsilon^2\\cosh x/(1+\\cosh x)$再减$U^2$，也得到相同结果。\n\n**(b) 用占据情况检查极限。** 零温时系统以概率1占据唯一基态$-\\epsilon$，测得的能量不再变化：\n$$\n\\boxed{\\lim_{T\\to0^+}\\operatorname{Var}(E)=0}.\n$$\n高温时四个微观态各以概率$1/4$出现，平均能量为零，而平方平均值为\n$$\n\\langle E^2\\rangle\\longrightarrow\n\\frac{\\epsilon^2+0+0+\\epsilon^2}{4}\n=\\frac{\\epsilon^2}{2}.\n$$\n故\n$$\n\\boxed{\\lim_{T\\to\\infty}\\operatorname{Var}(E)=\\frac{\\epsilon^2}{2}}.\n$$\n高温使有限能级的概率趋于均匀，并不使能量涨落消失。方差的单位是能量平方；标准差应另取平方根。作为热力学检查，正则系综有$\\operatorname{Var}(E)=k_BT^2C$，本题得到非负热容，并在两端趋于零。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "正则配分函数正确，零能级按二重简并计数。"
+        },
+        {
+          "points": 4,
+          "text": "正确求平均能量及二阶矩，或建立配分函数二阶导数与方差的关系。"
+        },
+        {
+          "points": 6,
+          "text": "得到完整能量方差表达式，量纲与归一化正确。"
+        },
+        {
+          "points": 3,
+          "text": "零温极限及唯一基态占据解释正确。"
+        },
+        {
+          "points": 3,
+          "text": "高温方差为ε²/2，并解释四个微观态等概率。"
+        }
+      ],
+      "checks": [
+        "原图(a)、(b)逐项核对；零能级简并度为2，其余为1。",
+        "四态直接求和与ln Z二阶导数结果一致。",
+        "低温方差0，高温ε²/2，单位为能量平方。"
+      ],
+      "round": 1,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 2,
+      "round": 1,
+      "session": "近代",
+      "slot": 6,
+      "subject": "相对论",
+      "sourceSubject": "11_相对论",
+      "sourceId": "SR-04",
+      "sourceKind": "supplement",
+      "title": "时空间隔与同时发生的参考系",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "教学补充：选自本题库相对论分层练习 SR-04，保留间隔分类、同时系速度、空间间隔及同地系判断；补明坐标差与相对运动的约定，不是官方原题。",
+      "question": "两个事件 $A,B$ 在惯性系 $S$ 中的坐标差（$B$ 减 $A$）为\n$$\n\\Delta t=1.00\\,\\mu\\mathrm s,\\qquad\n\\Delta x=600\\,\\mathrm m,\\qquad\n\\Delta y=\\Delta z=0.\n$$\n取 $c=3.00\\times10^8\\,\\mathrm{m/s}$。另一惯性系 $S'$ 相对 $S$ 沿 $x$ 方向以速度 $v$ 运动，两系坐标轴平行。\n\n(a) 判断两事件的时空间隔类型。（2分）\n\n(b) 求使两事件在 $S'$ 中同时发生的速度 $v$，以及此时的空间间隔。（5分）\n\n(c) 是否存在使两事件在同一地点发生的惯性系？说明理由。（3分）",
+      "solution": "**(a) 先把时间间隔换成长度。** $c\\Delta t=300\\,\\mathrm m$。采用度规约定\n$$\n\\Delta s^2=c^2\\Delta t^2-\\Delta x^2-\\Delta y^2-\\Delta z^2,\n$$\n则\n$$\n\\Delta s^2=300^2-600^2\n=-270000\\,\\mathrm{m^2}<0.\n$$\n所以两事件之间是类空间隔。\n\n**(b) 同时条件来自时间的洛伦兹变换。** 对事件差，\n$$\n\\Delta t'=\\gamma\\left(\\Delta t-\\frac{v\\Delta x}{c^2}\\right),\n\\qquad\n\\Delta x'=\\gamma(\\Delta x-v\\Delta t).\n$$\n令 $\\Delta t'=0$，求得\n$$\n\\boxed{v=\\frac{c^2\\Delta t}{\\Delta x}=0.500c.}\n$$\n该速度小于 $c$，对应物理上允许的惯性系。此时 $\\gamma=1/\\sqrt{1-0.5^2}=2/\\sqrt3$，而 $v\\Delta t=150\\,\\mathrm m$，所以\n$$\n\\boxed{\\Delta x'=\\frac2{\\sqrt3}(600-150)\\,\\mathrm m\n=300\\sqrt3\\,\\mathrm m\\simeq519.6\\,\\mathrm m.}\n$$\n因为两事件在此系同时发生，不变间隔还应满足 $\\Delta s^2=-(\\Delta x')^2$，与所得数值一致。\n\n**(c) 类空事件没有同地惯性系。** 若沿 $x$ 的变换满足 $\\Delta x'=0$，便要求\n$$\nv=\\frac{\\Delta x}{\\Delta t}=6.00\\times10^8\\,\\mathrm{m/s}=2c,\n$$\n超出了惯性系间相对速度的允许范围。因此不存在这样的沿 $x$ 惯性系。更一般地，若任意惯性系中两事件同地，则 $\\Delta s^2=c^2\\Delta t'^2\\geq0$，与本题负的不变量矛盾，故也不存在其他方向运动的同地惯性系。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "正确计算不变间隔并判断为类空。"
+        },
+        {
+          "points": 3,
+          "text": "用时间变换的同时条件求得 v=0.500c。"
+        },
+        {
+          "points": 2,
+          "text": "空间间隔为 300√3 m，并与不变量一致。"
+        },
+        {
+          "points": 3,
+          "text": "说明同地条件需超光速或与负的不变量矛盾。"
+        }
+      ],
+      "checks": [
+        "(cΔt′)²−(Δx′)²=−270000 m²，洛伦兹不变量保持。",
+        "同时系速度为 0.5c；形式上的同地速度为 2c，不属于物理惯性系。",
+        "对应教学练习 SR-04 的全部问项均已保留。"
+      ]
+    },
+    {
+      "paper": 4,
+      "round": 2,
+      "session": "近代",
+      "slot": 1,
+      "subject": "高等量子力学",
+      "sourceSubject": "07_高等量子力学",
+      "sourceId": "AQ-07",
+      "sourceKind": "supplement",
+      "title": "费米对算符与占据约束",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "教学补充：选自本题库高等量子力学分层练习 AQ-07，保留对易子、各占据扇区及玻色代数判断；补明完整反对易关系，便于独立作答。不是官方原题。",
+      "question": "两个不同费米模式的湮灭算符为 $a,b$，满足\n$$\n\\{a,a^\\dagger\\}=\\{b,b^\\dagger\\}=1,\\qquad\na^2=b^2=0,\\qquad\n\\{a,b\\}=\\{a,b^\\dagger\\}=0\n$$\n及其厄米共轭关系。定义数算符 $n_a=a^\\dagger a$、$n_b=b^\\dagger b$，以及成对算符\n$$\nP=ba,\\qquad P^\\dagger=a^\\dagger b^\\dagger.\n$$\n\n(a) 求普通对易子 $[P,P^\\dagger]$。（5分）\n\n(b) 求该对易子在零占据、单占据和双占据子空间中的本征值。（3分）\n\n(c) 判断 $P$ 是否严格满足理想玻色湮灭算符的代数，并说明理由。（2分）",
+      "solution": "**(a) 分别整理两个算符乘积。** 不同费米模式的算符反对易，但某个模式的数算符与另一模式的算符对易。例如\n$$\nn_a b=a^\\dagger ab=-a^\\dagger ba=ba^\\dagger a=bn_a.\n$$\n因此可以使用 $aa^\\dagger=1-n_a$、$bb^\\dagger=1-n_b$：\n$$\n\\begin{aligned}\nPP^\\dagger\n&=baa^\\dagger b^\\dagger\\\\\n&=b(1-n_a)b^\\dagger\\\\\n&=(1-n_a)(1-n_b).\n\\end{aligned}\n$$\n另一方面，\n$$\nP^\\dagger P=a^\\dagger b^\\dagger ba\n=a^\\dagger n_ba=n_bn_a=n_an_b.\n$$\n二者相减，四次算符项抵消，得到\n$$\n\\boxed{[P,P^\\dagger]=1-n_a-n_b.}\n$$\n\n**(b) 用占据数读出各扇区的本征值。** 费米数算符的本征值只能为 0 或 1。在标准占据数基中：\n$$\n\\begin{array}{c|c|c}\n\\text{子空间}&n_a+n_b&[P,P^\\dagger]\\text{ 的本征值}\\\\\n\\hline\n\\text{零占据}&0&+1\\\\\n\\text{单占据}&1&0\\\\\n\\text{双占据}&2&-1\n\\end{array}\n$$\n单占据子空间有两个基态，但它们都给出零本征值。\n\n**(c) 与理想玻色算符比较。** 理想玻色湮灭算符 $d$ 应在整个 Fock 空间上满足 $[d,d^\\dagger]=I$。这里的对易子依赖占据数，并非恒等算符，因此 $P$ 不严格满足理想玻色代数。双占据时两个费米模式都已占满，$P^\\dagger$ 不能继续加入一对粒子；这正是泡利阻塞在对易关系中的体现。它包含两个费米算符，并不意味着可以忽略有限占据空间而把它当作无约束的玻色模式。",
+      "rubric": [
+        {
+          "points": 5,
+          "text": "正确处理不同模式的反对易关系，分别算出 PP† 与 P†P，并得到 1−na−nb。"
+        },
+        {
+          "points": 3,
+          "text": "零、单、双占据扇区的本征值依次为 +1、0、−1。"
+        },
+        {
+          "points": 2,
+          "text": "说明对易子不是恒等算符，并联系泡利占据约束。"
+        }
+      ],
+      "checks": [
+        "在空态上对易子为 +1；在满态上为 −1，不能整体替为常数。",
+        "P†P=na nb 是双占据投影，符合成对湮灭后的范数。",
+        "对应教学练习 AQ-07 的全部问项均已保留。"
+      ]
+    },
+    {
+      "paper": 4,
+      "slot": 2,
+      "subject": "量子力学",
+      "sourceSubject": "08_量子力学",
+      "sourceId": "2-1T1079",
+      "title": "三维谐振子的简并微扰",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题中文重排，保留 (a)、(b) 全部要求；一阶波函数按包含简并子空间外一阶修正的完整含义作答。删去原图的坐标矩阵元提示。本卷按 20 分配置评分。",
+      "question": "考虑质量为 $m$、频率为 $\\omega_0$ 的三维各向同性谐振子。\n\n(a) 基态及第一激发能级的简并度各是多少？\n\n(b) 加入弱微扰\n$$\nW=\\beta xy,\\qquad |\\beta|\\ll m\\omega_0^2.\n$$\n用微扰论求第一激发能级最低阶的劈裂，并用未微扰本征态写出劈裂后的三个态，波函数保留到 $\\beta$ 的一阶。",
+      "solution": "**(a) 列出简并子空间。** 用 $|n_xn_yn_z\\rangle$ 表示三个一维谐振子态的直积：\n$$\nE_{n_xn_yn_z}^{(0)}\n=\\left(n_x+n_y+n_z+\\frac32\\right)\\hbar\\omega_0.\n$$\n基态为 $|000\\rangle$，简并度为 1。第一激发能级为 $5\\hbar\\omega_0/2$，其子空间由 $|100\\rangle,|010\\rangle,|001\\rangle$ 张成，简并度为 3。\n\n**(b) 先在简并子空间中对角化。** 定义\n$$\n\\ell=\\sqrt{\\frac{\\hbar}{2m\\omega_0}},\\qquad\nx=\\ell(a_x+a_x^\\dagger),\\quad\ny=\\ell(a_y+a_y^\\dagger).\n$$\n$W$ 同时改变 $x,y$ 的振子量子数各一单位。三个对角矩阵元均为零，唯一非零的子空间内矩阵元为\n$$\n\\langle100|W|010\\rangle=\\langle010|W|100\\rangle\n=\\beta\\ell^2.\n$$\n因此\n$$\nW_{\\mathrm{sub}}=\\frac{\\beta\\hbar}{2m\\omega_0}\n\\begin{pmatrix}\n0&1&0\\\\\n1&0&0\\\\\n0&0&0\n\\end{pmatrix}.\n$$\n其归一化本征态为\n$$\n|+\\rangle=\\frac{|100\\rangle+|010\\rangle}{\\sqrt2},\\quad\n|-\\rangle=\\frac{|100\\rangle-|010\\rangle}{\\sqrt2},\\quad\n|z\\rangle=|001\\rangle.\n$$\n对应能量到一阶为\n$$\n\\boxed{\nE_\\pm=\\frac52\\hbar\\omega_0\\pm\\frac{\\beta\\hbar}{2m\\omega_0}\n+O(\\beta^2),\\qquad\nE_z=\\frac52\\hbar\\omega_0+O(\\beta^2).\n}\n$$\n\n**再求简并子空间外的波函数修正。** 仅把三个未微扰态线性组合，还没有包含完整的一阶波函数。写 $g=\\beta\\ell^2$，直接作用升降算符可得\n$$\nW|+\\rangle=g|+\\rangle+g(|210\\rangle+|120\\rangle),\n$$\n$$\nW|-\\rangle=-g|-\\rangle+g(|210\\rangle-|120\\rangle),\\qquad\nW|001\\rangle=g|111\\rangle.\n$$\n右侧的 $N=n_x+n_y+n_z=3$ 态，其能量为 $9\\hbar\\omega_0/2$，与第一激发子空间的能量差为 $-2\\hbar\\omega_0$。因此\n$$\n\\boxed{\n|\\widetilde+\\rangle=\n\\frac{|100\\rangle+|010\\rangle}{\\sqrt2}\n-\\frac{\\beta}{4m\\omega_0^2}(|210\\rangle+|120\\rangle)\n+O(\\beta^2),\n}\n$$\n$$\n\\boxed{\n|\\widetilde-\\rangle=\n\\frac{|100\\rangle-|010\\rangle}{\\sqrt2}\n-\\frac{\\beta}{4m\\omega_0^2}(|210\\rangle-|120\\rangle)\n+O(\\beta^2),\n}\n$$\n$$\n\\boxed{\n|\\widetilde z\\rangle=\n|001\\rangle-\\frac{\\beta}{4m\\omega_0^2}|111\\rangle+O(\\beta^2).\n}\n$$\n这些子空间外修正与原态正交，故波函数已归一化到一阶。坐标旋转到 $(x+y)/\\sqrt2,(x-y)/\\sqrt2$ 后，两个频率成为 $\\sqrt{\\omega_0^2+\\beta/m}$ 与 $\\sqrt{\\omega_0^2-\\beta/m}$；其线性展开与上述能级劈裂一致。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "正确给出基态、第一激发能级及其简并度"
+        },
+        {
+          "points": 5,
+          "text": "构造正确的简并子空间微扰矩阵"
+        },
+        {
+          "points": 5,
+          "text": "对角化得到三个能移及适当零阶组合"
+        },
+        {
+          "points": 6,
+          "text": "求出三个态在简并子空间外的完整一阶修正"
+        }
+      ],
+      "checks": [
+        "波函数修正系数 β/(mω0²) 无量纲；β→0 恢复第一激发子空间。",
+        "三个一阶能移之和为零，等于微扰矩阵的迹。",
+        "基态与第一激发简并度、能级劈裂、三个完整一阶态均已覆盖。"
+      ],
+      "round": 2,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 4,
+      "slot": 3,
+      "subject": "量子力学",
+      "sourceSubject": "08_量子力学",
+      "sourceId": "2-1T1095",
+      "title": "角动量涨落与轨道—自旋合成",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题中文重排，保留彼此独立的 (a)、(b)；(b) 保留 l=0 与 l=1 的全部总角动量态，不节选。本卷按 20 分配置评分。",
+      "question": "以下两问彼此独立。\n\n(a) 系统处于 $\\hat L^2,\\hat L_z$ 的归一化共同本征态 $|l,m\\rangle$。计算 $\\langle L_x\\rangle$ 与 $\\langle L_x^2\\rangle$。\n\n(b) 电子自旋为 $s=1/2$，其轨道角动量可以是 $l=0$ 或 $l=1$。将这两种情况下所有总角动量态 $|j,m_j\\rangle$，分别展开为直积态\n$$\n|l,m_l\\rangle\\left|\\frac12,m_s\\right\\rangle\n$$\n的线性组合。",
+      "solution": "**(a) 横向分量的均值与涨落。** 写\n$$\nL_x=\\frac{L_++L_-}{2}.\n$$\n$L_\\pm$ 把 $m$ 改为 $m\\pm1$，所得态与原态正交，因此 $\\boxed{\\langle L_x\\rangle=0}$。平方后，\n$$\nL_x^2=\\frac14\\left(L_+^2+L_-^2+L_+L_-+L_-L_+\\right).\n$$\n前两项把 $m$ 改变两单位，期望为零。用\n$$\nL_+L_-=L^2-L_z^2+\\hbar L_z,\\qquad\nL_-L_+=L^2-L_z^2-\\hbar L_z\n$$\n得到\n$$\n\\boxed{\\langle L_x^2\\rangle=\\frac{\\hbar^2}{2}\\bigl[l(l+1)-m^2\\bigr].}\n$$\n\n**(b) 先列 $l=0$。** 此时 $J=L+S$ 只允许 $j=1/2$，两个态为\n$$\n\\left|\\frac12,\\frac12\\right\\rangle_{l=0}=|0,0\\rangle|\\uparrow\\rangle,\\qquad\n\\left|\\frac12,-\\frac12\\right\\rangle_{l=0}=|0,0\\rangle|\\downarrow\\rangle.\n$$\n\n**再构造 $l=1$。** 允许 $j=3/2,1/2$。以下用 $|m_l,\\uparrow\\rangle$ 简记 $|1,m_l\\rangle|\\uparrow\\rangle$，向下同理。最高权态只能是\n$$\n\\left|\\frac32,\\frac32\\right\\rangle=|1,\\uparrow\\rangle.\n$$\n在两侧作用 $J_-=L_-+S_-$：\n$$\n\\hbar\\sqrt3\\left|\\frac32,\\frac12\\right\\rangle\n=\\hbar\\sqrt2|0,\\uparrow\\rangle+\\hbar|1,\\downarrow\\rangle.\n$$\n继续下降即可构造整个 $j=3/2$ 多重态。在每个 $m_j=\\pm1/2$ 的二维子空间中，取与 $j=3/2$ 态正交的归一化组合，得到 $j=1/2$ 态。固定相位使同一多重态的升降关系一致，全部六个态为\n$$\n\\begin{aligned}\n\\left|\\frac32,\\frac32\\right\\rangle&=|1,\\uparrow\\rangle,\\\\\n\\left|\\frac32,\\frac12\\right\\rangle&=\\sqrt{\\frac23}|0,\\uparrow\\rangle\n+\\sqrt{\\frac13}|1,\\downarrow\\rangle,\\\\\n\\left|\\frac32,-\\frac12\\right\\rangle&=\\sqrt{\\frac13}|-1,\\uparrow\\rangle\n+\\sqrt{\\frac23}|0,\\downarrow\\rangle,\\\\\n\\left|\\frac32,-\\frac32\\right\\rangle&=|-1,\\downarrow\\rangle,\\\\\n\\left|\\frac12,\\frac12\\right\\rangle&=\\sqrt{\\frac13}|0,\\uparrow\\rangle\n-\\sqrt{\\frac23}|1,\\downarrow\\rangle,\\\\\n\\left|\\frac12,-\\frac12\\right\\rangle&=\\sqrt{\\frac23}|-1,\\uparrow\\rangle\n-\\sqrt{\\frac13}|0,\\downarrow\\rangle.\n\\end{aligned}\n$$\n例如 $m_j=1/2$ 的两个组合的内积为 $\\sqrt2/3-\\sqrt2/3=0$。每一项均满足 $m_l+m_s=m_j$。整个多重态可以同时乘任意整体相位，不影响物理结果；各项之间的相对系数则必须保持。",
+      "rubric": [
+        {
+          "points": 5,
+          "text": "由升降算符正确求得 〈Lx〉与〈Lx²〉"
+        },
+        {
+          "points": 3,
+          "text": "完整列出 l=0 的两个态"
+        },
+        {
+          "points": 6,
+          "text": "构造并列全 l=1、j=3/2 的四个态"
+        },
+        {
+          "points": 6,
+          "text": "构造并列全 l=1、j=1/2 的两个正交归一态"
+        }
+      ],
+      "checks": [
+        "所有展开系数的模平方之和为 1，且每项的 mj 都守恒。",
+        "l=1 直积空间有 3×2=6 维，与 4+2 个耦合态吻合；连同 l=0 共 8 态。",
+        "原题要求的两个期望值及全部 8 个态均已给出。"
+      ],
+      "round": 2,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 4,
+      "slot": 4,
+      "subject": "统计物理",
+      "sourceSubject": "09_统计物理",
+      "sourceId": "2-3T1502",
+      "title": "二维Fermi气体的精确化学势",
+      "points": 20,
+      "minutes": 30,
+      "adaptation": "原题求μ(T)的任务完整中文重排；将原题默认的自由电子模型明确写为二维非相互作用、二次色散及面积A，保留原给定积分。本卷按 20 分配置评分。",
+      "question": "面积为$A$的二维大盒内有$N$个质量为$m$、自旋为$1/2$的非相互作用自由电子。单粒子色散为\n$$\n\\epsilon_{\\mathbf k}=\\frac{\\hbar^2(k_x^2+k_y^2)}{2m},\n$$\n能量零点取在带底。每个波矢有两个自旋态。体系处于温度$T>0$，电子面密度$n=N/A$固定，采用热力学极限。\n\nFermi分布为\n$$\nf(\\epsilon)=\\frac1{e^{\\beta(\\epsilon-\\mu)}+1},\n\\qquad \\beta=\\frac1{k_BT},\n$$\n粒子数满足$N=2\\sum_{\\mathbf k}f(\\epsilon_{\\mathbf k})$。\n\n求任意温度下化学势$\\mu(T)$的精确表达式，用$n,m,\\hbar,k_B,T$表示。（20分）\n\n可用\n$$\n\\int_0^\\infty\\frac{dy}{ae^y+1}\n=\\ln(a+1)-\\ln a,\\qquad a>0.\n$$",
+      "solution": "**先把粒子数约束写成二维态计数。** 化学势不是预先固定为费米能；它须随温度调整，使总电子数保持不变。热力学极限下，每个自旋的波矢态密度为$A/(2\\pi)^2$。包括两个自旋，\n$$\nn=2\\int\\frac{d^2k}{(2\\pi)^2}\n\\frac1{e^{\\beta(\\epsilon_{\\mathbf k}-\\mu)}+1}.\n$$\n在二维极坐标中$d^2k=2\\pi k\\,dk$。又$\\epsilon=\\hbar^2k^2/(2m)$，故$k\\,dk=(m/\\hbar^2)d\\epsilon$，得到\n$$\nn=\\frac{m}{\\pi\\hbar^2}\\int_0^\\infty\n\\frac{d\\epsilon}{e^{\\beta(\\epsilon-\\mu)}+1}.\n$$\n于是含自旋的二维单位面积态密度是常数$m/(\\pi\\hbar^2)$。这是二维问题能精确积分的原因。\n\n令$y=\\beta\\epsilon$、$a=e^{-\\beta\\mu}$，用给定积分：\n$$\nn=\\frac{mk_BT}{\\pi\\hbar^2}\n\\left[\\ln(1+e^{-\\beta\\mu})+\\beta\\mu\\right]\n=\\frac{mk_BT}{\\pi\\hbar^2}\n\\ln(1+e^{\\beta\\mu}).\n$$\n定义同一密度对应的零温费米能\n$$\nE_F=\\frac{\\pi\\hbar^2n}{m}.\n$$\n反解粒子数方程，\n$$\ne^{\\beta\\mu}=e^{E_F/(k_BT)}-1,\n$$\n$$\n\\boxed{\\mu(T)=k_BT\\ln\\left[\n\\exp\\left(\\frac{\\pi\\hbar^2n}{mk_BT}\\right)-1\\right]}.\n$$\n也可等价写为\n$$\n\\mu(T)=E_F+k_BT\\ln\\left(1-e^{-E_F/(k_BT)}\\right).\n$$\n\n**检查退化区与经典区。** 当$T\\to0^+$，第二式的对数修正指数趋零，因此$\\mu\\to E_F$。这里低温修正不是三维气体常见的$T^2$形式，原因正是二维态密度为常数。高温$k_BT\\gg E_F$时，\n$$\n\\mu\\simeq k_BT\\ln\\frac{E_F}{k_BT}\n=k_BT\\ln\\frac{n\\lambda_T^2}{2},\n\\qquad\n\\lambda_T=\\frac{h}{\\sqrt{2\\pi mk_BT}},\n$$\n回到含自旋简并度2的经典Boltzmann结果。漏掉自旋因子2会使整个费米能尺度偏差一倍。",
+      "rubric": [
+        {
+          "points": 5,
+          "text": "二维波矢计数及自旋因子正确，得到常数态密度m/(πℏ²)。"
+        },
+        {
+          "points": 5,
+          "text": "粒子数方程积分正确，得到n=(mkBT/πℏ²)ln(1+e^{βμ})。"
+        },
+        {
+          "points": 7,
+          "text": "正确反解，得到任意温度下μ的完整表达式。"
+        },
+        {
+          "points": 3,
+          "text": "所用密度、能量零点与固定粒子数条件明确，表达式量纲和参数系数正确。"
+        }
+      ],
+      "checks": [
+        "原题给自旋1/2及N=2Σkf；重排明确原题默认的二维自由电子二次色散。",
+        "二维态密度已包含自旋2，无二次计入。",
+        "T趋零回到EF，经典高温回到kBT ln(nλT²/2)。"
+      ],
+      "round": 2,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 4,
+      "slot": 5,
+      "subject": "统计力学",
+      "sourceSubject": "10_统计力学",
+      "sourceId": "2-3T1521",
+      "title": "陷阱态密度与Bose凝聚判据",
+      "points": 20,
+      "minutes": 35,
+      "adaptation": "原题(a)–(c)完整中文重排；明确一维凝聚判断采用标准陷阱热力学极限，避免与有限粒子数的基态占据交叉混淆；三维给定态密度不变。本卷按 20 分配置评分。",
+      "question": "考虑谐振子陷阱中的非相互作用、自旋为0的Bose气体。单粒子能量的共同常数已减去，因此基态能量为零。\n\n一维陷阱的单粒子能级为\n$$\n\\epsilon_n=n\\hbar\\omega,\\qquad n=0,1,2,\\ldots.\n$$\n\n(a) 在平滑连续近似下求一维单粒子态密度$D_{1D}(\\epsilon)$。本题态密度的定义为：$D(\\epsilon)d\\epsilon$是能量在$[\\epsilon,\\epsilon+d\\epsilon]$之间的轨道数，不除以系统体积。（4分）\n\n(b) 在标准一维陷阱热力学极限$N\\to\\infty,\\omega\\to0$且$N\\omega$固定时，这种气体能否在非零温度发生Bose–Einstein凝聚？给出论证。（8分）\n\n(c) 三维各向同性谐振子陷阱的平滑单粒子态密度为\n$$\nD_{3D}(\\epsilon)=\\frac{\\epsilon^2}{2(\\hbar\\omega)^3}.\n$$\n求$N$个粒子的凝聚温度$T_c$，用$N,\\omega$及普适常数表示。纯数积分不必求值。（8分）",
+      "solution": "**(a) 数能级，而非数粒子。** 一维单粒子能级等间隔，相邻能级间隔$\\hbar\\omega$。宽度为$d\\epsilon$且包含许多能级的能区约有$d\\epsilon/(\\hbar\\omega)$个轨道，因此\n$$\n\\boxed{D_{1D}(\\epsilon)=\\frac1{\\hbar\\omega}}.\n$$\n其单位是能量的倒数。若不作平滑近似，精确态密度是$\\sum_{n\\ge0}\\delta(\\epsilon-n\\hbar\\omega)$。凝聚问题中应把基态占据单独计算。\n\n**(b) 凝聚的关键是激发态是否有有限容量。** Bose分布为\n$$\n\\bar n(\\epsilon)=\\frac1{e^{\\beta(\\epsilon-\\mu)}-1}.\n$$\n基态能量为零，所以$\\mu\\le0$。当增加粒子数，$\\mu$从负值升向0；若$\\mu\\to0$时激发态总数仍有有限上限，其余粒子才必须进入基态。\n\n一维连续近似中，在$\\mu\\to0$时\n$$\nN_{\\rm ex}^{\\rm max}\n=\\frac1{\\hbar\\omega}\n\\int_0^\\infty\\frac{d\\epsilon}{e^{\\beta\\epsilon}-1}.\n$$\n低能区$e^{\\beta\\epsilon}-1\\simeq\\beta\\epsilon$，因此积分含\n$$\n\\frac{k_BT}{\\hbar\\omega}\\int_0\\frac{d\\epsilon}{\\epsilon},\n$$\n发生对数发散。激发态在非零温度没有有限的饱和容量，所以\n$$\n\\boxed{\\text{标准一维陷阱热力学极限下不存在非零温度的Bose凝聚转变。}}\n$$\n这不是仅凭“维数低”作判断，而是由该陷阱的低能态密度与Bose占据共同决定。\n\n固定$\\omega$的有限陷阱保留能级间隔，其激发态求和\n$$\n\\sum_{n=1}^\\infty\n\\frac1{e^{n\\hbar\\omega/(k_BT)}-1}\n$$\n是有限的，因而可出现大量基态占据的平滑交叉。这与题目指定的热力学极限不同；大粒子数下其交叉尺度约为$N\\hbar\\omega/(k_B\\ln N)$，在固定$N\\omega$的极限趋零。\n\n**(c) 三维的激发态容量。** 在凝聚临界点，$\\mu\\to0$，宏观基态占据尚未出现，全部$N$由激发态容纳：\n$$\nN=\\int_0^\\infty\n\\frac{D_{3D}(\\epsilon)\\,d\\epsilon}{e^{\\epsilon/(k_BT_c)}-1}\n=\\frac1{2(\\hbar\\omega)^3}\n\\int_0^\\infty\n\\frac{\\epsilon^2\\,d\\epsilon}{e^{\\epsilon/(k_BT_c)}-1}.\n$$\n令$x=\\epsilon/(k_BT_c)$：\n$$\nN=\\frac12\\left(\\frac{k_BT_c}{\\hbar\\omega}\\right)^3\n\\int_0^\\infty\\frac{x^2\\,dx}{e^x-1}.\n$$\n三维被积函数低能行为为$x$，积分收敛，得到\n$$\n\\boxed{T_c=\\frac{\\hbar\\omega}{k_B}\n\\left[\n\\frac{2N}{\\displaystyle\\int_0^\\infty x^2/(e^x-1)\\,dx}\n\\right]^{1/3}}.\n$$\n使用$\\int_0^\\infty x^2/(e^x-1)\\,dx=2\\zeta(3)$，也可写成\n$$\n\\boxed{T_c=\\frac{\\hbar\\omega}{k_B}\n\\left[\\frac{N}{\\zeta(3)}\\right]^{1/3}}.\n$$\n量纲为温度。三维陷阱有效体积按$\\omega^{-3}$缩放，故保持$N\\omega^3$固定时$T_c$有限，符合热力学极限的要求。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "给出一维平滑态密度1/(ℏω)，定义和量纲正确。"
+        },
+        {
+          "points": 3,
+          "text": "明确凝聚判据为μ趋于基态能时激发态容量是否有限。"
+        },
+        {
+          "points": 3,
+          "text": "一维激发态积分低能呈dε/ε并对数发散。"
+        },
+        {
+          "points": 2,
+          "text": "在指定热力学极限下得出无有限温转变的结论。"
+        },
+        {
+          "points": 3,
+          "text": "正确建立三维临界粒子数积分，使用μ=0且无额外自旋因子。"
+        },
+        {
+          "points": 3,
+          "text": "换元并得到Tc的完整系数，纯数积分形式或ζ(3)形式均可。"
+        },
+        {
+          "points": 2,
+          "text": "结果N^{1/3}与ω依赖、量纲和低能收敛性正确。"
+        }
+      ],
+      "checks": [
+        "原图(a)态密度、(b)一维凝聚、(c)三维临界温度均保留。",
+        "无自旋Bose粒子不加简并度，三维态密度分母含2。",
+        "一维区别有限陷阱交叉与标准热力学极限；三维常数为ζ(3)。"
+      ],
+      "round": 2,
+      "session": "近代",
+      "sourceKind": "official"
+    },
+    {
+      "paper": 4,
+      "round": 2,
+      "session": "近代",
+      "slot": 6,
+      "subject": "相对论",
+      "sourceSubject": "11_相对论",
+      "sourceId": "SR-10",
+      "sourceKind": "supplement",
+      "title": "完全非弹性碰撞与复合体静质量",
+      "points": 10,
+      "minutes": 20,
+      "adaptation": "教学补充：选自本题库相对论分层练习 SR-10，保留碰撞后速度、静质量及增加静能的全部要求；重排为两个小问，不是官方原题。",
+      "question": "两个粒子的静质量同为 $m$。在实验室系中，一个粒子静止，另一个以 $0.6c$ 沿正 $x$ 方向运动。它们碰撞后粘成一个复合体，且没有辐射或其他粒子离开。\n\n(a) 求复合体在实验室系中的速度 $V$ 及静质量 $M$。（7分）\n\n(b) 解释为什么 $M$ 不等于 $2m$，并计算复合体相对于两粒子静质量和所增加的静能。（3分）",
+      "solution": "**(a) 先求初态总能量和总动量。** 入射粒子的洛伦兹因子为\n$$\n\\gamma=\\frac1{\\sqrt{1-0.6^2}}=\\frac54.\n$$\n其能量为 $5mc^2/4$，动量为 $(5/4)m(0.6c)=3mc/4$。另一个静止粒子只贡献静能 $mc^2$，所以守恒的总量为\n$$\nE_{\\mathrm{tot}}=\\frac94mc^2,\\qquad\np_{\\mathrm{tot}}=\\frac34mc.\n$$\n碰撞后只有一个复合体，其能量、动量满足\n$$\nE_{\\mathrm{tot}}=\\Gamma Mc^2,\\qquad\np_{\\mathrm{tot}}=\\Gamma MV.\n$$\n两式相除就能消去未知的 $\\Gamma M$：\n$$\n\\boxed{V=\\frac{c^2p_{\\mathrm{tot}}}{E_{\\mathrm{tot}}}=\\frac c3.}\n$$\n再用四动量不变量，\n$$\n\\begin{aligned}\nM^2c^4\n&=E_{\\mathrm{tot}}^2-p_{\\mathrm{tot}}^2c^2\\\\\n&=\\left(\\frac94mc^2\\right)^2-\\left(\\frac34mc^2\\right)^2\\\\\n&=\\frac92m^2c^4,\n\\end{aligned}\n$$\n因此\n$$\n\\boxed{M=\\frac3{\\sqrt2}\\,m.}\n$$\n\n**(b) 相对运动的动能转成复合体内部能。** 在两粒子的质心系中，它们碰撞前仍有相对运动动能。完全非弹性碰撞使这部分能量留在复合体内部，而题目又排除了向外辐射等能量损失，因此复合体静能大于两粒子静能之和。增加的静能为\n$$\n\\boxed{\\Delta E_{\\mathrm{rest}}=(M-2m)c^2\n=\\left(\\frac3{\\sqrt2}-2\\right)mc^2\n\\simeq0.12132\\,mc^2.}\n$$\n它不是入射粒子全部实验室动能 $mc^2/4$：碰撞后的复合体在实验室中仍有整体平动动能。若同时强行设 $M=2m$ 并要求所有能量留在体系，就无法满足本题的能量与动量守恒。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确求初态总能量 9mc²/4 与总动量 3mc/4。"
+        },
+        {
+          "points": 2,
+          "text": "用能量动量比得到复合体速度 c/3。"
+        },
+        {
+          "points": 2,
+          "text": "用四动量不变量求得静质量 3m/√2。"
+        },
+        {
+          "points": 3,
+          "text": "说明相对动能转化为内能，并给出增加静能 (3/√2−2)mc²。"
+        }
+      ],
+      "checks": [
+        "V=c/3<c，复合体静质量大于 2m。",
+        "所得 V 和 M 代回 ΓMc²、ΓMV，恢复初态总能量与总动量。",
+        "对应教学练习 SR-10 的全部问项均已保留。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "items": [
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "slot": 1,
+      "subject": "力学",
+      "sourceSubject": "01_力学",
+      "sourceId": "1-1T14",
+      "sourceKind": "official",
+      "title": "质点弹性撞击自由细杆",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "原题(a)–(d)完整中文重排，用文字替代原图并明确杆均匀、撞击点在质心左侧；10分为本卷训练分值。",
+      "question": "一根均匀细杆质量为 $m$、长度为 $L$，静止在无摩擦水平面上。初始杆沿 $x$ 轴放置，质心在原点。质量为 $m_p$ 的质点沿 $+y$ 方向以速度 $V$ 撞击杆上 $x=-d$ 处，其中 $0\\le d\\le L/2$。碰撞为弹性碰撞，且碰后质点恰好静止。\n\n(a) 求碰后杆质心速度的大小和方向。（2分）\n\n(b) 求杆绕质心、垂直于水平面的轴的转动惯量。（2分）\n\n(c) 求碰后杆绕质心的角速度，说明旋转方向。（3分）\n\n(d) 求使碰后质点静止所需的质量比 $m/m_p$。（3分）",
+      "solution": "**(a) 先使用线动量守恒。** 水平面没有外界水平冲量。质点碰后静止，其全部初始动量转移给杆：\n$$\nm\\mathbf v_C=m_pV\\hat{\\mathbf y},\n\\qquad\n\\boxed{\\mathbf v_C=\\frac{m_p}{m}V\\hat{\\mathbf y}.}\n$$\n\n**(b) 转动惯量由质量分布求得。** 杆的线密度是 $m/L$，所以\n$$\n\\boxed{I_C=\\frac mL\\int_{-L/2}^{L/2}x^2\\,dx=\\frac{mL^2}{12}.}\n$$\n\n**(c) 选杆的质心计算角冲量。** 杆所受碰撞冲量为 $\\mathbf J=m_pV\\hat{\\mathbf y}$，作用臂为 $-d\\hat{\\mathbf x}$。故\n$$\nI_C\\boldsymbol\\omega=(-d\\hat{\\mathbf x})\\times\\mathbf J\n=-dm_pV\\hat{\\mathbf z},\n$$\n$$\n\\boxed{\\boldsymbol\\omega=-\\frac{12m_pVd}{mL^2}\\hat{\\mathbf z}.}\n$$\n从 $+z$ 一侧看是顺时针。$d=0$ 时角速度为零。\n\n**(d) 用弹性条件补上能量方程。** 杆同时有质心平动和绕质心转动，二者都应计入：\n$$\n\\frac12m_pV^2=\\frac12m v_C^2+\\frac12I_C\\omega^2.\n$$\n代入前两步的运动量，约去 $m_p^2V^2/2$：\n$$\n\\frac1{m_p}=\\frac1m+\\frac{d^2}{I_C}.\n$$\n因此\n$$\n\\boxed{\\frac m{m_p}=1+\\frac{12d^2}{L^2}.}\n$$\n中心碰撞要求等质量；打到端点时要求 $m/m_p=4$，与 $0\\le d\\le L/2$ 给出的质量比范围 $[1,4]$ 一致。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "线动量守恒及质心速度方向、大小正确。"
+        },
+        {
+          "points": 2,
+          "text": "均匀杆转动惯量积分或正确结果。"
+        },
+        {
+          "points": 3,
+          "text": "角冲量或角动量方程2分，角速度及旋向1分。"
+        },
+        {
+          "points": 3,
+          "text": "同时计入平动和转动能2分，质量比1分。"
+        }
+      ],
+      "checks": [
+        "d=0时m=m_p、杆不转；d=L/2时m/m_p=4。",
+        "冲量矩的符号与题设x=−d、入射沿+y一致。"
+      ]
+    },
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "slot": 2,
+      "subject": "电磁学",
+      "sourceSubject": "03_电磁学",
+      "sourceId": "1-2T219",
+      "sourceKind": "official",
+      "title": "均匀带电绝缘球中的偏心空腔",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "原题(a)、(b)完整中文重排；将原图腔心位移写为向量，明确电荷固定在绝缘体上、空腔完全位于球内；10分为本卷训练分值。",
+      "question": "半径为 $R$ 的实心绝缘球均匀带电，体电荷密度为常数 $\\rho$；电荷固定在材料上，空间介电常数取 $\\varepsilon_0$。\n\n(a) 用高斯定律求完整球内任意场点 $\\mathbf r$（$r<R$）处的电场。（4分）\n\n(b) 从球中挖去一个完全位于球内的球形空腔。腔心相对原球心的位置为 $\\mathbf a=a\\hat{\\mathbf x}$，其余材料上的电荷密度仍为 $\\rho$。求空腔内任意点的电场大小和方向。（6分）",
+      "solution": "**(a) 对完整球使用球对称性。** 半径 $r$ 的球形高斯面上电场沿径向且大小相同，包围电荷为 $\\rho(4\\pi r^3/3)$。于是\n$$\n4\\pi r^2E_r=\\frac{4\\pi r^3\\rho}{3\\varepsilon_0},\n\\qquad\n\\boxed{\\mathbf E_{\\rm full}(\\mathbf r)=\\frac{\\rho}{3\\varepsilon_0}\\mathbf r.}\n$$\n向量形式尤其重要：球内电场与相对球心的位置向量成正比。\n\n**(b) 用两个完整带电球叠加表示“挖去”。** 保留中心在原点、密度为 $\\rho$ 的原球，再叠加一个中心在 $\\mathbf a$、密度为 $-\\rho$、大小与空腔相同的小球。空腔内的点同时位于这两个球内部，因此可分别使用(a)：\n$$\n\\mathbf E_{\\rm cavity}\n=\\frac{\\rho}{3\\varepsilon_0}\\mathbf r\n-\\frac{\\rho}{3\\varepsilon_0}(\\mathbf r-\\mathbf a)\n=\\boxed{\\frac{\\rho}{3\\varepsilon_0}\\mathbf a}.\n$$\n所以空腔内是匀强电场，大小为 $|\\rho|a/(3\\varepsilon_0)$。$\\rho>0$ 时方向从原球心指向腔心；$\\rho<0$ 时相反。结果与场点位置及空腔半径无关，但要求整个空腔位于原球内部。这里是固定电荷的绝缘体，不能套用静电平衡导体内部电场为零的结论。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "球对称性1分、包围电荷与高斯定律2分、球内向量场1分。"
+        },
+        {
+          "points": 4,
+          "text": "将空腔表示为负密度球2分，正确使用相对腔心向量并叠加2分。"
+        },
+        {
+          "points": 2,
+          "text": "电场大小、方向及匀强性正确。"
+        }
+      ],
+      "checks": [
+        "a=0时同心空腔电场为零；ρ变号则场反向。",
+        "结果量纲为ρa/ε0，即电场量纲。"
+      ]
+    },
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "slot": 3,
+      "subject": "热学",
+      "sourceSubject": "05_热学",
+      "sourceId": "1-4T967",
+      "sourceKind": "official",
+      "title": "理想气体循环的功与熵变",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "完整保留原图的三个小问。将原图中的 p–V 路径关系改写为自足文字，并明确气体对外做功为正。采用原题的刚性双原子模型，转动自由度参与能量均分、振动不参与。",
+      "question": "一摩尔双原子理想气体沿 $A\\to B\\to C\\to A$ 完成准静态循环。气体分子可视为由无质量刚性杆连接的两个质点，平动和转动自由度均已激发。路径 $AB$ 为等温膨胀，温度 $T_A=T_B=500\\,\\mathrm K$；路径 $BC$ 为等压压缩；路径 $CA$ 为等容升温。已知 $V_A=1.00\\,\\mathrm L$、$V_B=4.00\\,\\mathrm L$，所以 $V_C=V_A$、$p_C=p_B$。取 $R=8.31\\,\\mathrm{J\\,mol^{-1}K^{-1}}$，规定气体对外做功为正。\n\n（1）求状态 $B$ 的压强 $p_B$。（2分）\n\n（2）求完成一次循环时气体对外所做的净功。（4分）\n\n（3）求气体从状态 $B$ 到状态 $C$ 的熵变 $S_C-S_B$。（4分）",
+      "solution": "（1）先用理想气体状态方程确定状态。物质的量 $n=1\\,\\mathrm{mol}$，体积换算为 $V_B=4.00\\times10^{-3}\\,\\mathrm{m^3}$，所以\n\n$$\np_B=\\frac{nRT_B}{V_B}=\\frac{1\\times8.31\\times500}{4.00\\times10^{-3}}=1.03875\\times10^6\\,\\mathrm{Pa}\\approx1.04\\times10^6\\,\\mathrm{Pa}.\n$$\n\n因为 $BC$ 等压，理想气体有 $T\\propto V$，故\n\n$$\nT_C=T_B\\frac{V_C}{V_B}=500\\times\\frac14=125\\,\\mathrm K.\n$$\n\n（2）准静态体积功为 $W=\\int p\\,dV$，应分别按各段路径积分。在 $AB$ 段，温度恒定，$p=nRT_A/V$，因此\n\n$$\nW_{AB}=nRT_A\\ln\\frac{V_B}{V_A}=nRT_A\\ln4.\n$$\n\n在 $BC$ 段，压强恒定、体积减小，故气体做负功：\n\n$$\nW_{BC}=p_B(V_C-V_B)=-\\frac34nRT_A.\n$$\n\n在 $CA$ 段，体积不变，$W_{CA}=0$。于是\n\n$$\nW_{\\mathrm{cycle}}=nRT_A\\left(\\ln4-\\frac34\\right)=2.6438\\times10^3\\,\\mathrm J\\approx2.64\\,\\mathrm{kJ}.\n$$\n\n正号表示这一循环输出机械功。\n\n（3）刚性双原子分子有三个平动和两个转动自由度，故摩尔定容热容为 $C_{V,m}=5R/2$，摩尔定压热容为 $C_{P,m}=C_{V,m}+R=7R/2$。沿连接两状态的可逆等压路径，有 $dS=nC_{P,m}\\,dT/T$，所以\n\n$$\nS_C-S_B=nC_{P,m}\\ln\\frac{T_C}{T_B}=-\\frac72nR\\ln4=-40.32\\,\\mathrm{J\\,K^{-1}}.\n$$\n\n熵是状态函数，以上结果只由端点决定。此段气体降温并放热，气体自身熵减少；第二定律约束的是气体与环境的总熵，而非要求每个子系统的熵都增加。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "正确使用 p_B=nRT_B/V_B 并将升换算成立方米，得到约 1.04×10^6 Pa。"
+        },
+        {
+          "points": 2,
+          "text": "正确写出并积分等温段功 W_AB=nRT_A ln4。"
+        },
+        {
+          "points": 1,
+          "text": "正确得到 W_BC=−3nRT_A/4、W_CA=0。"
+        },
+        {
+          "points": 1,
+          "text": "求和得到正的循环功约 2.64 kJ，并使用正确功的符号约定。"
+        },
+        {
+          "points": 1,
+          "text": "由等压状态关系得到 T_C=125 K。"
+        },
+        {
+          "points": 1,
+          "text": "正确辨认刚性双原子气体的摩尔定压热容为 7R/2。"
+        },
+        {
+          "points": 2,
+          "text": "正确积分熵变，得到 −(7/2)nR ln4≈−40.32 J/K。"
+        }
+      ],
+      "checks": [
+        "数值检查：p_B=1038750 Pa，循环功=2643.803 J，熵变=−40.32037 J/K。",
+        "循环在 p–V 平面沿顺时针方向，净功为正，与结果一致。",
+        "用 ΔS=nC_V,m ln(T_C/T_B)+nR ln(V_C/V_B) 交叉检查，仍得到 −(7/2)nR ln4。"
+      ]
+    },
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "slot": 4,
+      "subject": "光学",
+      "sourceSubject": "06_光学",
+      "sourceId": "1-3T692",
+      "sourceKind": "official",
+      "title": "不透明圆盘后的轴上衍射亮斑",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "保留原题求圆盘后轴上强度的完整问项。教学补充：明确单色相干平面波、足够宽的照明区域和标量菲涅尔近似，给出菲涅尔积分作为起算提示，并要求说明几何阴影中出现亮点的原因。",
+      "question": "波长为 $\\lambda$、强度为 $I$ 的单色相干平面光，垂直照射位于 $z=0$ 平面、半径为 $R$ 的理想不透明圆盘。入射照明横向范围足够大。观察点 $P$ 位于圆盘后方轴线上，距圆心为 $z$，且 $z\\gg R$。采用标量菲涅尔衍射近似，求 $P$ 点的光强，并解释为什么它在几何阴影中仍可为亮点。\n\n提示：设圆盘所在平面的入射复振幅为 $U_0$，$k=2\\pi/\\lambda$。一个透光区域 $D$ 在轴上产生的菲涅尔复振幅可写成\n\n$$\nU_D(P)=\\frac{U_0e^{ikz}}{i\\lambda z}\\int_D e^{i\\pi\\rho^2/(\\lambda z)}\\,d^2\\rho.\n$$\n\n可先计算与圆盘互补的圆孔，再使用互补屏的复场叠加关系。必须写出计算过程。",
+      "solution": "光的强度由复振幅的模平方决定，因此应先相加复振幅，再求强度。圆盘与同半径圆孔互补，两者的振幅透过率之和等于全透过屏。线性传播给出\n\n$$\nU_{\\mathrm{disk}}(P)+U_{\\mathrm{hole}}(P)=U_{\\mathrm{free}}(P),\\qquad U_{\\mathrm{free}}(P)=U_0e^{ikz}.\n$$\n\n先计算圆孔。轴对称使面积元成为 $d^2\\rho=2\\pi\\rho\\,d\\rho$，于是\n\n$$\nU_{\\mathrm{hole}}(P)=\\frac{U_0e^{ikz}}{i\\lambda z}\\int_0^R e^{i\\pi\\rho^2/(\\lambda z)}2\\pi\\rho\\,d\\rho.\n$$\n\n令 $v=\\pi\\rho^2/(\\lambda z)$，便有 $2\\pi\\rho\\,d\\rho=\\lambda z\\,dv$。定义无量纲相位 $\\alpha=\\pi R^2/(\\lambda z)$，积分成为\n\n$$\nU_{\\mathrm{hole}}(P)=\\frac{U_0e^{ikz}}i\\int_0^\\alpha e^{iv}\\,dv=U_0e^{ikz}(1-e^{i\\alpha}).\n$$\n\n再由互补关系相减：\n\n$$\nU_{\\mathrm{disk}}(P)=U_0e^{ikz}-U_0e^{ikz}(1-e^{i\\alpha})=U_0e^{ikz+i\\alpha}.\n$$\n\n圆盘改变了轴上复场的相位，但在本题的近似模型中没有改变其模长。因此\n\n$$\n\\frac{I(P)}I=\\left|\\frac{U_{\\mathrm{disk}}(P)}{U_0}\\right|^2=|e^{ikz+i\\alpha}|^2=1,\\qquad \\boxed{I(P)=I}.\n$$\n\n几何光学忽略了衍射，只会给出轴上的阴影；波动光学中，圆形边缘各处到轴上点的传播距离相同，边缘衍射贡献能相干叠加，形成轴心亮点。这一结论针对轴上点，不表示整个圆盘阴影区都具有强度 $I$。\n\n互补关系适用于复振幅，不能写成 $I_{\\mathrm{disk}}+I_{\\mathrm{hole}}=I$；两复场之间存在干涉项。",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "使用互补圆孔建模，并正确写出复场关系 U_disk+U_hole=U_free。"
+        },
+        {
+          "points": 2,
+          "text": "正确写出圆孔轴上积分，包含面积元 2πρ dρ、积分上下限及菲涅尔相位。"
+        },
+        {
+          "points": 3,
+          "text": "完成积分，得到 U_hole=U_0 exp(ikz)[1−exp(iπR²/(λz))]。"
+        },
+        {
+          "points": 2,
+          "text": "求得圆盘复场并取模平方，得到 I(P)=I；未把互补关系错误用于强度。"
+        },
+        {
+          "points": 1,
+          "text": "用圆形边缘到轴上点等程、衍射贡献相干叠加解释轴心亮点。"
+        }
+      ],
+      "checks": [
+        "相位 πR²/(λz) 无量纲，圆孔积分后的场与 U_0 同量纲。",
+        "互补圆孔与圆盘的复场相加严格回到本模型的自由传播场。",
+        "R 趋于零时圆孔场趋于零、圆盘场趋于自由场，极限一致。",
+        "结果明确限定在标量菲涅尔模型内。若从精确球面相位推导该积分，舍去四次项还需其相位误差足够小。"
+      ]
+    },
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "slot": 5,
+      "subject": "分析力学",
+      "sourceSubject": "02_分析力学",
+      "sourceId": "1-5T1018",
+      "sourceKind": "official",
+      "title": "可水平移动支点的摆：守恒量与简正模",
+      "points": 30,
+      "minutes": 45,
+      "adaptation": "完整保留原题的拉格朗日方程、运动常量和小振动模三个问项；用文字明确几何关系，并按原英文题干统一滑块质量为 M、摆球质量为 m。",
+      "question": "质量为 $M$ 的滑块可沿光滑水平直轨自由运动。滑块上连接一根长度为 $l$、质量可忽略的刚性杆，杆下端连接质量为 $m$ 的小球；连接处可在竖直平面内无摩擦转动。重力加速度为 $g$。取滑块的水平坐标为 $x$，杆与竖直向下方向的夹角为 $\\theta$；摆球坐标为 $(x+l\\sin\\theta,-l\\cos\\theta)$。忽略空气阻力。\n\n（1）写出系统的拉格朗日量，并推导关于 $x,\\theta$ 的两条拉格朗日方程。（12分）\n\n（2）指出系统的两个独立运动常量，写出表达式并说明其守恒的原因。（6分）\n\n（3）考虑杆在竖直向下位置附近的小运动，求两个简正模的本征角频率，并描述各模中滑块与摆球怎样运动。说明零频率模的物理意义。（12分）",
+      "solution": "（1）先把几何约束落实到速度。摆球的速度分量为\n\n$$\nv_{b,x}=\\dot x+l\\dot\\theta\\cos\\theta,\\qquad v_{b,y}=l\\dot\\theta\\sin\\theta.\n$$\n\n因此它的速度平方为 $v_b^2=\\dot x^2+2l\\dot x\\dot\\theta\\cos\\theta+l^2\\dot\\theta^2$。滑块与摆球的总动能、势能分别为\n\n$$\nT=\\frac12(M+m)\\dot x^2+ml\\dot x\\dot\\theta\\cos\\theta+\\frac12ml^2\\dot\\theta^2,\\qquad V=-mgl\\cos\\theta.\n$$\n\n这里势能零点选在支点高度，不影响动力学。拉格朗日量为\n\n$$\n\\mathcal L=T-V=\\frac12(M+m)\\dot x^2+ml\\dot x\\dot\\theta\\cos\\theta+\\frac12ml^2\\dot\\theta^2+mgl\\cos\\theta.\n$$\n\n对于 $x$，$\\partial\\mathcal L/\\partial x=0$，故\n\n$$\n\\frac{d}{dt}\\left[(M+m)\\dot x+ml\\dot\\theta\\cos\\theta\\right]=0,\n$$\n\n即\n\n$$\n\\boxed{(M+m)\\ddot x+ml(\\ddot\\theta\\cos\\theta-\\dot\\theta^2\\sin\\theta)=0}.\n$$\n\n对于 $\\theta$，逐项计算\n\n$$\n\\frac{\\partial\\mathcal L}{\\partial\\dot\\theta}=ml\\dot x\\cos\\theta+ml^2\\dot\\theta,\\qquad\n\\frac{\\partial\\mathcal L}{\\partial\\theta}=-ml\\dot x\\dot\\theta\\sin\\theta-mgl\\sin\\theta.\n$$\n\n代入欧拉—拉格朗日方程后，含 $\\dot x\\dot\\theta\\sin\\theta$ 的两项抵消，得到\n\n$$\n\\boxed{l\\ddot\\theta+\\ddot x\\cos\\theta+g\\sin\\theta=0}.\n$$\n\n（2）$x$ 是循环坐标，其共轭动量\n\n$$\n\\boxed{P_x=(M+m)\\dot x+ml\\dot\\theta\\cos\\theta=\\mathrm{const}}\n$$\n\n就是系统的总水平动量。轨道支持力和重力都竖直，因而没有水平外力。拉格朗日量不显含时间，机械能也守恒：\n\n$$\n\\boxed{E=\\frac12(M+m)\\dot x^2+ml\\dot x\\dot\\theta\\cos\\theta+\\frac12ml^2\\dot\\theta^2-mgl\\cos\\theta=\\mathrm{const}}.\n$$\n\n约束力不做功，且重力是保守力。竖直方向有轨道施加的外力，所以不能另行假设总竖直动量守恒。\n\n（3）在 $\\theta=0$ 附近保留位移与速度的一阶动力学项，方程成为\n\n$$\n(M+m)\\ddot x+ml\\ddot\\theta=0,\\qquad \\ddot x+l\\ddot\\theta+g\\theta=0.\n$$\n\n令 $(x,\\theta)=(X,\\Theta)e^{i\\omega t}$，得到\n\n$$\n\\begin{pmatrix}-(M+m)\\omega^2&-ml\\omega^2\\\\-ml\\omega^2&mgl-ml^2\\omega^2\\end{pmatrix}\n\\begin{pmatrix}X\\\\\\Theta\\end{pmatrix}=0.\n$$\n\n非零模振幅要求行列式为零：\n\n$$\nml\\omega^2\\left[Ml\\omega^2-(M+m)g\\right]=0.\n$$\n\n所以\n\n$$\n\\boxed{\\omega_1=0,\\qquad \\omega_2=\\sqrt{\\frac{(M+m)g}{Ml}}}.\n$$\n\n零频率模中 $\\Theta=0$，整个系统可沿水平轨平移而不改变势能。其一般运动为 $\\theta=0$、$x=X_0+V_0t$，包括静止在任意水平位置和匀速漂移；它不是具有有限周期的振荡。\n\n对于非零频率模，第一条线性方程给出\n\n$$\nX=-\\frac{ml}{M+m}\\Theta.\n$$\n\n摆球的绝对水平位移振幅为\n\n$$\nX+l\\Theta=\\frac{Ml}{M+m}\\Theta.\n$$\n\n滑块与摆球反向振动，且 $MX+m(X+l\\Theta)=0$，即该振动模的总质心水平位置保持不变。一般小运动是匀速漂移与此振动的叠加。令 $M\\to\\infty$，非零频率回到固定支点单摆的 $\\sqrt{g/l}$，与物理直觉一致。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "从摆球坐标求速度，完整写出动能的交叉项、势能及拉格朗日量。"
+        },
+        {
+          "points": 4,
+          "text": "正确推导 x 方程，保留非线性的角加速度与角速度平方项。"
+        },
+        {
+          "points": 4,
+          "text": "正确推导 θ 方程，并展示或正确处理交叉项的抵消。"
+        },
+        {
+          "points": 3,
+          "text": "给出总水平动量及其守恒原因：x 为循环坐标或无水平外力。"
+        },
+        {
+          "points": 3,
+          "text": "给出完整机械能及其守恒原因：拉格朗日量不显含时间或保守力与无功约束。"
+        },
+        {
+          "points": 4,
+          "text": "正确线性化两条方程并建立特征方程。"
+        },
+        {
+          "points": 3,
+          "text": "得到零频率与 sqrt[(M+m)g/(Ml)] 两个本征角频率。"
+        },
+        {
+          "points": 2,
+          "text": "解释零频率模对应水平平移及匀速漂移。"
+        },
+        {
+          "points": 3,
+          "text": "求得非零模振幅比，说明滑块与摆球反向运动、质心位置不变。"
+        }
+      ],
+      "checks": [
+        "非零模的水平总动量为零；叠加漂移后总动量仍为常量。",
+        "M 趋于无穷时回复固定支点单摆频率；两个频率的量纲均为时间的倒数。",
+        "零频率反映水平平移对称性，不应遗漏或解释成另一个有限周期振荡。"
+      ]
+    },
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "slot": 6,
+      "subject": "电动力学",
+      "sourceSubject": "04_电动力学",
+      "sourceId": "1-6T1057",
+      "sourceKind": "official",
+      "title": "弱导电介质中的透射平面波",
+      "points": 30,
+      "minutes": 50,
+      "adaptation": "完整保留原题求波数与介质内深度 d 处透射波两个问项。明确时间因子、弱导电参数、无外加面电流及复振幅约定，要求保留到电导率的一阶，包括界面透射系数的一阶相位。",
+      "question": "真空占据 $z<0$，均匀、线性、各向同性的弱导电介质占据 $z>0$。介质的介电常数为 $\\varepsilon>0$、磁导率为 $\\mu>0$、电导率为 $\\sigma>0$，满足\n\n$$\n\\eta=\\frac{\\sigma}{\\varepsilon\\omega}\\ll1.\n$$\n\n一束角频率为 $\\omega$ 的平面电磁波从真空沿 $+z$ 方向正入射，电场沿 $x$ 方向。采用 $e^{-i\\omega t}$ 时间约定，入射复电场为 $\\mathbf E_i(z)=E_i e^{ik_0z}\\hat{\\mathbf x}$，其中 $k_0=\\omega\\sqrt{\\mu_0\\varepsilon_0}$。界面没有外加自由面电流。\n\n（1）从频域麦克斯韦方程推导介质内透射波的复波数 $k(\\omega)$，选取向 $+z$ 传播且衰减的支，并求它关于 $\\sigma$ 的一阶近似。（12分）\n\n（2）利用界面边界条件，求深度为 $d>0$ 处的透射电场复振幅 $\\mathbf E_t(d)$，包括传播相位与衰减。先给出用 $k$ 表示的结果，再在固定 $d$ 的条件下保留到 $\\sigma$ 的一阶；须同时处理界面透射系数的一阶修正。（18分）",
+      "solution": "（1）在 $e^{-i\\omega t}$ 约定下，介质中的频域麦克斯韦方程为\n\n$$\n\\nabla\\times\\mathbf E=i\\omega\\mathbf B,\\qquad \\nabla\\times\\mathbf H=(\\sigma-i\\omega\\varepsilon)\\mathbf E,\n$$\n\n其中 $\\mathbf B=\\mu\\mathbf H$。对沿 $+z$ 传播的横向平面波 $\\mathbf E=E e^{ikz}\\hat{\\mathbf x}$，第一式给出\n\n$$\n\\mathbf H=\\frac{k}{\\mu\\omega}E e^{ikz}\\hat{\\mathbf y}.\n$$\n\n将其代入第二式，$\\nabla\\times\\mathbf H=-ikH\\hat{\\mathbf x}$，于是\n\n$$\n-\\frac{ik^2}{\\mu\\omega}E=(\\sigma-i\\omega\\varepsilon)E,\n\\qquad \\boxed{k^2=\\mu\\varepsilon\\omega^2+i\\mu\\sigma\\omega}.\n$$\n\n定义无耗散波数 $k_m=\\omega\\sqrt{\\mu\\varepsilon}$。选取在 $\\sigma\\to0^+$ 时趋于 $+k_m$ 的平方根，有\n\n$$\nk=k_m\\sqrt{1+i\\eta}=k_m\\left(1+\\frac{i\\eta}{2}\\right)+O(k_m\\eta^2)=k_m+i\\alpha+O(k_m\\eta^2),\n$$\n\n$$\n\\boxed{\\alpha=\\frac\\sigma2\\sqrt{\\frac\\mu\\varepsilon}>0}.\n$$\n\n因为 $e^{ikz}=e^{i\\operatorname{Re}kz}e^{-\\operatorname{Im}kz}$，所选支确实向介质内部衰减。$\\alpha$ 的单位是长度的倒数。\n\n（2）介质的复波阻抗由电场与磁场的振幅比定义：\n\n$$\nZ=\\frac{\\mu\\omega}{k},\\qquad Z_0=\\sqrt{\\frac{\\mu_0}{\\varepsilon_0}},\\qquad Z_m=\\sqrt{\\frac\\mu\\varepsilon}.\n$$\n\n设界面处反射、透射电场振幅为 $E_r,E_t(0)$。反射波沿 $-z$ 传播，所以它的磁场方向与入射波相反。切向电场与切向磁场连续给出\n\n$$\nE_i+E_r=E_t(0),\\qquad \\frac{E_i-E_r}{Z_0}=\\frac{E_t(0)}Z.\n$$\n\n联立消去 $E_r$，得到界面的电场透射系数和深度 $d$ 处的精确复场：\n\n$$\nt=\\frac{E_t(0)}{E_i}=\\frac{2Z}{Z+Z_0},\\qquad\n\\boxed{\\mathbf E_t(d)=E_i\\frac{2\\mu\\omega/k}{\\mu\\omega/k+Z_0}e^{ikd}\\hat{\\mathbf x}}.\n$$\n\n弱导电展开必须同时作用于阻抗和传播因子。由 $k$ 的展开，\n\n$$\nZ=Z_m\\left(1-\\frac{i\\eta}{2}\\right)+O(Z_m\\eta^2).\n$$\n\n令 $t_0=2Z_m/(Z_m+Z_0)$，把分母也展开，便得到\n\n$$\nt=t_0\\left[1-\\frac{i\\eta Z_0}{2(Z_m+Z_0)}\\right]+O(\\eta^2).\n$$\n\n这个一阶修正是界面引入的额外相位，虽然它不改变透射系数模长的一阶项，却不能从复振幅中删掉。对固定的 $d$，严格保留一阶后为\n\n$$\n\\boxed{\\mathbf E_t(d)=E_i t_0e^{ik_md}\\left[1-\\alpha d-\\frac{i\\eta Z_0}{2(Z_m+Z_0)}\\right]\\hat{\\mathbf x}+O(|E_i|\\eta^2)}.\n$$\n\n这里渐近余项的系数允许依赖固定的 $k_md$。为直接显示随深度衰减的形式，也常把主导衰减写回指数：\n\n$$\n\\mathbf E_t(d)\\simeq E_i t_0\\left[1-\\frac{i\\eta Z_0}{2(Z_m+Z_0)}\\right]e^{ik_md}e^{-\\alpha d}\\hat{\\mathbf x}.\n$$\n\n它与上一式在固定 $d$ 下的一阶展开相同；若深度随 $1/\\eta$ 等尺度增大，应回到精确的 $k$ 和透射系数检查累计误差。可测的实电场为 $\\operatorname{Re}[\\mathbf E_t(d)e^{-i\\omega t}]$。令 $\\sigma=0$，结果恢复无耗散介质正入射的菲涅耳透射公式。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "频域麦克斯韦方程与 e^(−iωt) 约定一致，正确包含传导电流。"
+        },
+        {
+          "points": 3,
+          "text": "由平面波关系得到 H=kE/(μω) 和 k²=μεω²+iμσω。"
+        },
+        {
+          "points": 3,
+          "text": "选对衰减支并展开平方根，得到 k=k_m+iα 至一阶。"
+        },
+        {
+          "points": 3,
+          "text": "求得 α=(σ/2)sqrt(μ/ε)，解释正虚部对应衰减。"
+        },
+        {
+          "points": 4,
+          "text": "正确写出两条界面边界条件，反射磁场符号正确。"
+        },
+        {
+          "points": 3,
+          "text": "求得 t=2Z/(Z+Z_0) 及深度 d 处含 exp(ikd) 的复场。"
+        },
+        {
+          "points": 3,
+          "text": "正确展开阻抗 Z=Z_m(1−iη/2)。"
+        },
+        {
+          "points": 4,
+          "text": "正确展开界面透射系数，保留 −iη Z_0/[2(Z_m+Z_0)] 的相位修正。"
+        },
+        {
+          "points": 4,
+          "text": "合并传播、衰减与界面修正，给出固定 d 时一致的一阶结果。"
+        }
+      ],
+      "checks": [
+        "对 e^(−iωt) 时间约定，k 的虚部为正，场沿 +z 衰减。",
+        "σ→0 时恢复无耗散界面公式；进一步取 ε=ε_0、μ=μ_0，透射系数回到 1。",
+        "界面系数的一阶修正为纯相位，未因只考察模长而漏掉它。",
+        "固定 d 的展开与保留主导指数衰减的写法在一阶一致。"
+      ]
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "slot": 1,
+      "subject": "力学",
+      "sourceSubject": "01_力学",
+      "sourceId": "1-1T53",
+      "sourceKind": "official",
+      "title": "摆绳碰钉后的完整圆周条件",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "原题(i)–(iii)完整中文重排；用文字说明钉在悬点正下方，并明确第二问以绳保持张紧到达小圆顶部为条件；10分为本卷训练分值。",
+      "question": "长为 $L$ 的不可伸长轻绳一端固定，另一端系质量为 $m$ 的小球。将绳拉到水平位置后，把小球从静止释放。在悬点正下方距离 $d$ 处有一个光滑小钉，$0<d<L$；绳经过最低点后碰到钉子，小球随后可绕钉运动。忽略空气阻力，重力加速度为 $g$，绳碰钉的过程不损失机械能。\n\n(a) 求小球到达原摆最低点时的速率。（3分）\n\n(b) 在绳保持张紧、能到达绕钉小圆顶部的条件下，求该顶部速率。（3分）\n\n(c) 求使小球能够绕钉完成整圈运动的最小 $d$。（4分）",
+      "solution": "**(a) 从高度差求底部速率。** 从水平释放位置到最低点，小球下降 $L$：\n$$\nmgL=\\frac12mv_b^2,\\qquad\n\\boxed{v_b=\\sqrt{2gL}.}\n$$\n\n**(b) 碰钉后先重新确定几何半径。** 绕钉小圆半径是\n$$\nr=L-d.\n$$\n从小圆底部到顶部上升 $2r$，所以\n$$\n\\frac12mv_t^2=\\frac12mv_b^2-2mgr,\n\\qquad\n\\boxed{v_t^2=2g(2d-L).}\n$$\n在题设能到达顶部且绳张紧的条件下，取正根 $v_t=\\sqrt{2g(2d-L)}$。\n\n**(c) 能量足够还不等于绳能始终拉紧。** 小圆顶部的向心方向向下，张力 $\\mathcal T$ 满足\n$$\nmg+\\mathcal T=\\frac{mv_t^2}{r}.\n$$\n轻绳不能施加推力，故 $\\mathcal T\\ge0$，即\n$$\nv_t^2\\ge gr.\n$$\n代入(b)得到\n$$\n2(2d-L)\\ge L-d,\\qquad\n\\boxed{d_{\\min}=\\frac{3L}{5}.}\n$$\n此时顶部张力恰为零。还可检查顶部确是最严格位置：以小圆底部为零角、位置角记为 $\\alpha$，能量与径向方程给\n$$\n\\mathcal T(\\alpha)=\\frac{mv_b^2}{r}-2mg+3mg\\cos\\alpha,\n$$\n它在顶部 $\\alpha=\\pi$ 最小。因此顶部条件足以保证整圈张力不为负。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "高度差、能量守恒和底部速率正确。"
+        },
+        {
+          "points": 3,
+          "text": "正确半径L−d 1分，顶部能量方程及速率2分。"
+        },
+        {
+          "points": 4,
+          "text": "顶部径向方程1分，张力非负条件1分，临界距离2分。"
+        }
+      ],
+      "checks": [
+        "临界d=3L/5时r=2L/5、v_t²=2gL/5=gr。",
+        "顶部张力是全圆最小值，条件充分。"
+      ]
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "slot": 2,
+      "subject": "电磁学",
+      "sourceSubject": "03_电磁学",
+      "sourceId": "1-2T231",
+      "sourceKind": "official",
+      "title": "圆形磁场区域内外的感生电场",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "原题求感生电场的大小与方向，中文重排并用R补全磁场区域半径，将区域内外明确拆分；原图手写解只列内部，本卷按完整问题求区域内外；10分为训练分值。",
+      "question": "在某平面内，半径为 $R$ 的圆形区域中存在随时间变化、垂直于平面的均匀磁场 $\\mathbf B=B(t)\\hat{\\mathbf z}$；区域外磁场为零。只求由该变化磁场产生的轴对称感生电场，不另加静电场。以圆心为原点，令 $\\hat{\\boldsymbol\\varphi}$ 为从 $+z$ 方向观察时逆时针的环向单位矢量。\n\n(a) 求距离圆心 $r<R$ 处的感生电场。（4分）\n\n(b) 求 $r>R$ 处的感生电场，并检查 $r=R$ 处的连续性。（4分）\n\n(c) 当 $\\dot B>0$ 时，说明电场方向；解释为何磁场区域外也可以存在感生电场。（2分）",
+      "solution": "**先选定环路方向。** 轴对称感生电场沿环向，在半径为 $r$ 的同心圆上大小相同。取沿 $+\\hat{\\boldsymbol\\varphi}$ 的闭合环路，其法向为 $+\\hat{\\mathbf z}$，Faraday定律为\n$$\n2\\pi r E_\\varphi=-\\frac{d\\Phi_B}{dt}.\n$$\n\n**(a) 环路位于磁场区域内。** 所围磁通为 $\\Phi_B=\\pi r^2B(t)$，因此\n$$\n\\boxed{\\mathbf E(r,t)=-\\frac r2\\dot B(t)\\,\\hat{\\boldsymbol\\varphi},\n\\qquad r<R.}\n$$\n\n**(b) 环路位于磁场区域外。** 此时有磁场的面积只有 $\\pi R^2$，不能再使用 $\\pi r^2$：\n$$\n\\Phi_B=\\pi R^2B(t),\\qquad\n\\boxed{\\mathbf E(r,t)=-\\frac{R^2}{2r}\\dot B(t)\\,\\hat{\\boldsymbol\\varphi},\n\\qquad r>R.}\n$$\n两侧在 $r=R$ 都给 $E_\\varphi=-R\\dot B/2$，电场连续；中心的感生场为零。\n\n**(c) 方向由环路负号决定。** $\\dot B>0$ 时 $E_\\varphi<0$，从 $+z$ 一侧看电场沿顺时针方向。磁场区域外的闭合环路仍包围随时间变化的磁通，所以具有非零环量，区域外电场不必为零。这种感生电场一般不能写成全空间单值静电势的负梯度。",
+      "rubric": [
+        {
+          "points": 4,
+          "text": "对称性与Faraday环路方程2分，内部磁通及电场2分。"
+        },
+        {
+          "points": 4,
+          "text": "外部磁通使用πR²B 2分，外部场1分，边界连续性1分。"
+        },
+        {
+          "points": 2,
+          "text": "顺时针方向1分，解释外部仍包围变化磁通1分。"
+        }
+      ],
+      "checks": [
+        "r=R两式一致，r→0时场为零。",
+        "环路正向及B增加时的Lenz定律方向一致。"
+      ]
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "slot": 3,
+      "subject": "热学",
+      "sourceSubject": "05_热学",
+      "sourceId": "1-4T946",
+      "sourceKind": "official",
+      "title": "缓慢卸载与突然卸载的绝热活塞",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "完整保留原图两种卸载过程求末态高度的问项。原图未给大气压与活塞自重，题干明确忽略二者；明确原题热容为定容热容。原题直接要求新平衡，题干补充气体内部耗散使宏观振荡最终衰减，且没有能量流出绝热系统。",
+      "question": "截面积为 $A$ 的竖直绝热气缸中装有 $n=1\\,\\mathrm{mol}$ 单原子理想气体，上方由可无摩擦滑动的密封活塞封闭。忽略活塞自重、大气压及气体内部由重力造成的密度梯度。活塞上最初放着两个质量均为 $M$ 的砝码，系统处于平衡，气柱高度为 $h$。重力加速度为 $g$，气体定容热容为 $C_V=3nR/2$。\n\n现分别从相同初态进行下列两种操作，求最终平衡气柱高度。\n\n（1）把其中一个砝码分成无穷小份，极缓慢地逐份移去，直至仅剩另一个完整砝码。（5分）\n\n（2）将其中一个砝码突然移去。设气体内部的耗散使宏观振荡最终衰减，气体、活塞及剩余砝码最终静止，整个过程不与外界交换热量。（5分）\n\n说明两种过程应分别采用什么热力学关系。",
+      "solution": "先确定两种操作共有的初、末机械平衡条件。初态由两个砝码压住活塞，故\n\n$$\np_i=\\frac{2Mg}{A},\\qquad V_i=Ah,\\qquad nRT_i=p_iV_i=2Mgh.\n$$\n\n最后仅剩一个砝码。若末态气柱高度为 $h_f$，则\n\n$$\np_f=\\frac{Mg}{A},\\qquad V_f=Ah_f,\\qquad nRT_f=Mgh_f.\n$$\n\n（1）逐份、极缓慢卸载时，气体经历一系列无限接近平衡的状态。配合绝热与无摩擦条件，可视为可逆绝热过程。由第一定律\n\n$$\nC_V\\,dT=-p\\,dV=-\\frac{nRT}{V}\\,dV\n$$\n\n积分得 $TV^{nR/C_V}=\\mathrm{const}$，等价于 $pV^\\gamma=\\mathrm{const}$，其中\n\n$$\n\\gamma=1+\\frac{nR}{C_V}=\\frac53.\n$$\n\n因此\n\n$$\np_i(Ah)^\\gamma=p_f(Ah_f)^\\gamma,\\qquad \\frac{h_f}{h}=\\left(\\frac{p_i}{p_f}\\right)^{1/\\gamma}=2^{3/5}.\n$$\n\n所求为\n\n$$\n\\boxed{h_{f,\\mathrm{slow}}=2^{3/5}h\\approx1.516h}.\n$$\n\n（2）突然卸载后气体不沿平衡态路径变化，不能使用 $pV^\\gamma=\\mathrm{const}$。取气体、活塞和剩余砝码为系统：绝热、初末均静止，气体内能的减少恰好转化为剩余砝码增加的重力势能，故\n\n$$\nC_V(T_f-T_i)=-Mg(h_f-h).\n$$\n\n这一式子也可理解为：气体对恒定外负载所做的净功为 $W=Mg(h_f-h)$，所以 $\\Delta U=-W$。内部耗散将振荡能转化为气体内能，不向外带走能量。\n\n代入初末状态方程，得到\n\n$$\n\\frac{C_V}{nR}Mg(h_f-2h)=-Mg(h_f-h),\n$$\n\n从而\n\n$$\n\\frac{h_f}{h}=\\frac{2C_V+nR}{C_V+nR}=\\frac{2(3nR/2)+nR}{3nR/2+nR}=\\frac85.\n$$\n\n因此\n\n$$\n\\boxed{h_{f,\\mathrm{sudden}}=\\frac85h=1.600h}.\n$$\n\n两个过程都绝热，但仅第一个过程可逆。突然卸载的末高度更大、末温也更高；其内部不可逆过程产生熵。作为检查，突然卸载的 $T_f/T_i=h_f/(2h)=4/5$，故\n\n$$\n\\Delta S=C_V\\ln\\frac45+nR\\ln\\frac85=nR\\left(\\frac32\\ln\\frac45+\\ln\\frac85\\right)>0.\n$$",
+      "rubric": [
+        {
+          "points": 2,
+          "text": "正确写出初末压强及状态关系 p_i=2Mg/A、p_f=Mg/A、nRT_i=2Mgh、nRT_f=Mgh_f；计入第一问分值。"
+        },
+        {
+          "points": 1,
+          "text": "辨认逐渐卸载为可逆绝热过程，并正确使用 γ=5/3。"
+        },
+        {
+          "points": 2,
+          "text": "使用 pV^γ=常量并求得缓慢卸载末高度 2^(3/5)h。"
+        },
+        {
+          "points": 1,
+          "text": "明确突然卸载不是可逆绝热过程，不能使用 pV^γ=常量。"
+        },
+        {
+          "points": 2,
+          "text": "正确建立初末能量关系 C_V(T_f−T_i)=−Mg(h_f−h)，使用恒定外负载做功。"
+        },
+        {
+          "points": 2,
+          "text": "联立初末状态方程，求得突然卸载末高度 8h/5。"
+        }
+      ],
+      "checks": [
+        "两种末态均满足气压对活塞的向上力为 Mg。",
+        "数值检查：2^(3/5)=1.5157166，小于突然卸载的 1.6。",
+        "突然卸载熵增为 0.1352883 nR，大于零；缓慢可逆绝热熵变为零。",
+        "补充的内部耗散仅保证题目所要求的最终平衡，不在能量方程中添加外部能量损失。"
+      ]
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "slot": 4,
+      "subject": "光学",
+      "sourceSubject": "06_光学",
+      "sourceId": "1-3T694",
+      "sourceKind": "official",
+      "title": "半缝衰减后的远场衍射",
+      "points": 10,
+      "minutes": 15,
+      "adaptation": "完整保留原题在三个指定位置求强度的问项。将原图中的 I_0、x_0 和 2x_0 用文字定义，并补充滤光片不引入额外相移。原题提示复振幅图解法即可，本题接受图解法或傅里叶积分法，解答采用后者以训练孔径函数与远场复振幅的联系。",
+      "question": "波长为 $\\lambda$ 的单色相干平面光均匀、垂直照射一条长直狭缝，缝宽为 $a$。在距离狭缝 $L$ 的远场屏上观察衍射，取屏坐标 $x$ 沿缝宽方向，原中央主极大位于 $x=0$，强度为 $I_0$；原第一暗纹位于 $x=\\pm x_0$，在近轴近似下 $x_0=\\lambda L/a$。\n\n现在用一片吸收滤光片覆盖狭缝宽度的右半部分。滤光片使该区域透射电场振幅变为原来的 $1/2$，不引入额外相移；左半部分保持不变。\n\n求新图样在 $x=0$、$x=x_0$、$x=2x_0$ 三处的强度，以 $I_0$ 表示。请通过复振幅叠加说明第一原暗纹与第二原暗纹的变化；可使用图解法或傅里叶积分法。",
+      "solution": "首先区分电场与强度：题目给右半缝的电场振幅减半，所以其单独贡献的强度减为四分之一。两半缝互相相干，不能直接把各自强度相加。\n\n取缝面坐标为 $\\xi\\in[-a/2,a/2]$，右半缝是 $\\xi>0$。它的振幅透过率为\n\n$$\nt(\\xi)=\\begin{cases}1,&-a/2\\le\\xi<0,\\\\1/2,&0\\le\\xi\\le a/2,\\\\0,&\\text{缝外}.\\end{cases}\n$$\n\n远场复振幅正比于孔径场的傅里叶变换。令 $K$ 为与 $x$ 无关的公共因子，$q=2\\pi x/(\\lambda L)$，则\n\n$$\nA'(x)=K\\left[\\int_{-a/2}^0e^{-iq\\xi}\\,d\\xi+\\frac12\\int_0^{a/2}e^{-iq\\xi}\\,d\\xi\\right].\n$$\n\n未加滤光片时的中央复振幅为 $A_0=Ka$，且 $I_0\\propto|A_0|^2$。定义\n\n$$\n\\beta=\\frac{qa}{2}=\\frac{\\pi ax}{\\lambda L}=\\frac{\\pi x}{x_0},\\qquad \\operatorname{sinc}u=\\frac{\\sin u}{u},\\quad\\operatorname{sinc}0=1.\n$$\n\n每个半缝都是宽度 $a/2$ 的矩形孔径；积分得到\n\n$$\n\\frac{A'(x)}{A_0}=\\frac12\\operatorname{sinc}\\frac\\beta2\\left(e^{i\\beta/2}+\\frac12e^{-i\\beta/2}\\right).\n$$\n\n因此完整的归一化强度表达式为\n\n$$\n\\frac{I'(x)}{I_0}=\\frac14\\operatorname{sinc}^2\\frac\\beta2\\left(\\frac54+\\cos\\beta\\right).\n$$\n\n（1）$x=0$ 时，所有缝元同相。左半缝贡献原中央振幅的 $1/2$，右半缝衰减后贡献 $1/4$，故\n\n$$\nA'(0)=\\frac34A_0,\\qquad \\boxed{I'(0)=\\frac9{16}I_0}.\n$$\n\n（2）$x=x_0$ 时，$\\beta=\\pi$，$\\operatorname{sinc}(\\pi/2)=2/\\pi$。于是\n\n$$\n\\boxed{I'(x_0)=\\frac14\\frac4{\\pi^2}\\left(\\frac54-1\\right)I_0=\\frac{I_0}{4\\pi^2}}.\n$$\n\n这里原本两半缝的合振幅等大反相；滤光片只削弱其中一半，两者不再完全抵消，所以原第一暗纹被填亮。\n\n（3）$x=2x_0$ 时，$\\beta=2\\pi$，每个半缝自身都处于其第一衍射零点，因为 $\\operatorname{sinc}\\pi=0$。无论两半缝的权重是否相同，合振幅仍为零：\n\n$$\n\\boxed{I'(2x_0)=0}.\n$$",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确把右半缝的电场权重取为 1/2，建立两半缝的相干复振幅叠加；傅里叶积分法和等价图解法均可。"
+        },
+        {
+          "points": 2,
+          "text": "正确求得中央振幅为原来的 3/4，从而 I′(0)=9I_0/16。"
+        },
+        {
+          "points": 3,
+          "text": "正确求得 I′(x_0)=I_0/(4π²)，并指出原本等大反相的两半缝贡献因衰减而不再完全抵消。"
+        },
+        {
+          "points": 2,
+          "text": "正确求得 I′(2x_0)=0，并说明此处每个半缝自身的合振幅均为零。"
+        }
+      ],
+      "checks": [
+        "数值检查：三个归一化强度为 0.5625、0.02533030、0。",
+        "若把右半缝透过率恢复为 1，两半缝表达式化为原整缝的 sincβ 振幅，归一化一致。",
+        "滤光片无相移时，孔径透过率为实函数，远场强度关于 x=0 对称；所给表达式满足此性质。"
+      ]
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "slot": 5,
+      "subject": "分析力学",
+      "sourceSubject": "02_分析力学",
+      "sourceId": "1-5T1001",
+      "sourceKind": "official",
+      "title": "重对称陀螺的哈密顿量",
+      "points": 30,
+      "minutes": 45,
+      "adaptation": "保留原题由欧拉角及其共轭动量求重对称陀螺哈密顿量的完整要求，将推导拆分为可评分的步骤。补充欧拉角、惯量取点与势能正方向的文字约定，不预先给出动能表达式。",
+      "question": "一个重对称刚体固定在点 $O$，可绕 $O$ 无摩擦转动。刚体质量为 $m$，质心位于由 $O$ 指向刚体的对称轴正方向上，距 $O$ 为 $l$。关于固定点 $O$ 的两个横向主转动惯量均为 $A$，对称轴主转动惯量为 $C$；重力加速度为 $g$。\n\n用欧拉角描述姿态：$\\theta$ 是刚体对称轴与竖直向上方向的夹角，$\\psi$ 是绕竖直轴的进动角，$\\phi$ 是绕刚体对称轴的自转角。采用右手正向约定，沿刚体对称轴的角速度分量为 $\\dot\\phi+\\dot\\psi\\cos\\theta$，并在 $0<\\theta<\\pi$ 的坐标区域讨论。\n\n求以欧拉角及其共轭动量 $(p_\\theta,p_\\psi,p_\\phi)$ 表示的哈密顿量。推导须包含以下步骤：\n\n（1）由角速度分解写出动能、势能和拉格朗日量。（5分）\n\n（2）求三个共轭动量，并将三个角速度反解为坐标与共轭动量的函数。（14分）\n\n（3）进行勒让德变换得到哈密顿量，并用 $\\partial H/\\partial p_i=\\dot q_i$ 核验反解的速度。（11分）",
+      "solution": "（1）先把总角速度分解为沿对称轴与垂直对称轴两部分。自转角速度沿对称轴；进动角速度的轴向投影为 $\\dot\\psi\\cos\\theta$，横向投影大小为 $\\dot\\psi\\sin\\theta$；章动角速度 $\\dot\\theta$ 与这个横向投影互相垂直。因此\n\n$$\n\\omega_3=\\dot\\phi+\\dot\\psi\\cos\\theta,\\qquad \\omega_1^2+\\omega_2^2=\\dot\\theta^2+\\dot\\psi^2\\sin^2\\theta.\n$$\n\n主轴系中转动动能为 $T=\\frac12A(\\omega_1^2+\\omega_2^2)+\\frac12C\\omega_3^2$，即\n\n$$\nT=\\frac A2\\left(\\dot\\theta^2+\\dot\\psi^2\\sin^2\\theta\\right)+\\frac C2\\left(\\dot\\phi+\\dot\\psi\\cos\\theta\\right)^2.\n$$\n\n题目中 $\\theta$ 从竖直向上方向起算，质心高度为 $l\\cos\\theta$，故\n\n$$\nV=mgl\\cos\\theta,\\qquad \\mathcal L=T-mgl\\cos\\theta.\n$$\n\n惯量 $A,C$ 已经是关于固定点 $O$ 的惯量，不能再额外加入质心平动能，否则会重复计数。\n\n（2）根据 $p_i=\\partial\\mathcal L/\\partial\\dot q_i$，有\n\n$$\np_\\theta=A\\dot\\theta,\n$$\n\n$$\np_\\phi=C(\\dot\\phi+\\dot\\psi\\cos\\theta),\n$$\n\n$$\np_\\psi=A\\dot\\psi\\sin^2\\theta+C(\\dot\\phi+\\dot\\psi\\cos\\theta)\\cos\\theta=A\\dot\\psi\\sin^2\\theta+p_\\phi\\cos\\theta.\n$$\n\n反解时先由 $p_\\theta$ 求 $\\dot\\theta$，再由最后一式求 $\\dot\\psi$，最后用 $p_\\phi$ 求 $\\dot\\phi$：\n\n$$\n\\boxed{\\dot\\theta=\\frac{p_\\theta}{A}},\\qquad\n\\boxed{\\dot\\psi=\\frac{p_\\psi-p_\\phi\\cos\\theta}{A\\sin^2\\theta}},\n$$\n\n$$\n\\boxed{\\dot\\phi=\\frac{p_\\phi}{C}-\\frac{(p_\\psi-p_\\phi\\cos\\theta)\\cos\\theta}{A\\sin^2\\theta}}.\n$$\n\n这一步解释了为什么哈密顿量中的进动动能不能简单写成 $p_\\psi^2/(2A\\sin^2\\theta)$：进动的轴向角动量中还包含自转贡献。\n\n（3）哈密顿量定义为\n\n$$\nH=p_\\theta\\dot\\theta+p_\\psi\\dot\\psi+p_\\phi\\dot\\phi-\\mathcal L.\n$$\n\n本题动能关于角速度为二次齐次函数，且势能不含速度，所以 $\\sum_i p_i\\dot q_i=2T$，从而 $H=T+V$，但必须把其中的速度全部换成共轭动量。代入反解式得到\n\n$$\n\\boxed{H(\\theta,\\psi,\\phi,p_\\theta,p_\\psi,p_\\phi)=\\frac{p_\\theta^2}{2A}+\\frac{(p_\\psi-p_\\phi\\cos\\theta)^2}{2A\\sin^2\\theta}+\\frac{p_\\phi^2}{2C}+mgl\\cos\\theta}.\n$$\n\n核验三个动量偏导：\n\n$$\n\\frac{\\partial H}{\\partial p_\\theta}=\\frac{p_\\theta}{A}=\\dot\\theta,\\qquad\n\\frac{\\partial H}{\\partial p_\\psi}=\\frac{p_\\psi-p_\\phi\\cos\\theta}{A\\sin^2\\theta}=\\dot\\psi,\n$$\n\n$$\n\\frac{\\partial H}{\\partial p_\\phi}=\\frac{p_\\phi}{C}-\\frac{(p_\\psi-p_\\phi\\cos\\theta)\\cos\\theta}{A\\sin^2\\theta}=\\dot\\phi.\n$$\n\n三式都与独立反解一致。此外，$H$ 不含 $\\psi,\\phi$，对应的 $p_\\psi,p_\\phi$ 为常量；它们分别表示角动量在竖直轴和刚体对称轴上的投影。$\\sin\\theta=0$ 处的分母反映欧拉角坐标退化，不能据此认为真实转动能必然发散。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确分解轴向与横向角速度并建立含交叉项的转动动能。"
+        },
+        {
+          "points": 2,
+          "text": "依照向上竖直方向定义 θ，正确给出 V=mgl cosθ 与拉格朗日量。"
+        },
+        {
+          "points": 2,
+          "text": "正确给出 p_θ=Aθdot。"
+        },
+        {
+          "points": 3,
+          "text": "正确给出 p_φ=C(φdot+ψdot cosθ)。"
+        },
+        {
+          "points": 3,
+          "text": "正确给出 p_ψ=Aψdot sin²θ+p_φ cosθ。"
+        },
+        {
+          "points": 6,
+          "text": "完整、正确反解三个角速度，每个 2 分。"
+        },
+        {
+          "points": 3,
+          "text": "正确使用勒让德变换，并说明本题 H=T+V 的适用原因。"
+        },
+        {
+          "points": 6,
+          "text": "得到完整的三项动能加重力势能的 H，特别是进动项中的 p_ψ−p_φ cosθ。"
+        },
+        {
+          "points": 2,
+          "text": "通过三个动量偏导核验速度，表达式与反解一致。"
+        }
+      ],
+      "checks": [
+        "三个哈密顿速度方程与动量定义的独立反解一致。",
+        "A、C 均为关于固定点的惯量，未重复加入质心平动能。",
+        "势能符号与 θ 从竖直向上方向起算的约定一致。"
+      ]
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "slot": 6,
+      "subject": "电动力学",
+      "sourceSubject": "04_电动力学",
+      "sourceId": "1-6T1059",
+      "sourceKind": "official",
+      "title": "菲涅耳菱体：全反射相移与圆偏振",
+      "points": 30,
+      "minutes": 50,
+      "adaptation": "完整保留原题的 p 分量相移、s 分量相移和由指定入射角求折射率三个问项。将菱体光路图转写为自足文字，明确局部偏振基底与时间约定；要求由边界条件推导，避免只套用未说明相位约定的公式。",
+      "question": "透明、无吸收的菲涅耳菱体折射率为 $n>1$，外部介质折射率为 1；两侧磁导率均为 $\\mu_0$。一束线偏振光从入口面正入射，在菱体内部依次发生两次全反射，再从出口面正出射。两次反射处的入射角均为 $\\theta$，都从法线量起，且两次反射的入射面是同一平面。入射光的偏振方向与该平面成 $45^\\circ$，故内部的 p、s 分量初始振幅相等。\n\n采用 $e^{-i\\omega t}$ 时间约定。取固定单位矢量 $\\hat{\\mathbf s}$ 垂直于入射面；对每条传播光线，局部 p 方向定义为 $\\hat{\\mathbf p}=\\hat{\\mathbf s}\\times\\hat{\\mathbf k}$。反射系数 $r_p,r_s$ 分别指各光线局部基底中的反射电场振幅除以入射电场振幅。\n\n（1）由界面边界条件推导单次全反射的 $r_p$，并求其相位 $\\varphi_p$。（10分）\n\n（2）同样推导 $r_s$，并求其相位 $\\varphi_s$。（8分）\n\n（3）为了让两次全反射后输出成为圆偏振，设计要求每次反射中两分量的相位差大小为 $45^\\circ$。已知 $\\theta=53.3^\\circ$，求菱体折射率 $n$，并核验全反射条件。（12分）",
+      "solution": "（1）先确定全反射时透射侧的衰逝波分支。斯涅耳关系为 $n\\sin\\theta=\\sin\\theta_t$。全反射要求 $\\sin\\theta>1/n$，定义\n\n$$\nc=\\cos\\theta,\\qquad b=\\sqrt{\\sin^2\\theta-\\frac1{n^2}}>0.\n$$\n\n在 $e^{-i\\omega t}$ 约定下，选择远离界面方向衰减的透射波，即\n\n$$\n\\cos\\theta_t=i\\sqrt{n^2\\sin^2\\theta-1}=inb.\n$$\n\n设某次反射的入射、反射与透射 p 电场标量振幅为 $E_i,E_r,E_t$。按照题设的局部 p 基底，入射与反射 p 基矢在界面切向的投影符号相反。因此切向电场连续给出\n\n$$\n(E_i-E_r)c=E_t\\cos\\theta_t.\n$$\n\n无自由面电流时切向磁场也连续。两介质的磁导率相同，电磁波的磁场振幅与电场振幅之比正比于折射率，故\n\n$$\nn(E_i+E_r)=E_t.\n$$\n\n消去 $E_t$ 得\n\n$$\n\\boxed{r_p=\\frac{c-n\\cos\\theta_t}{c+n\\cos\\theta_t}=\\frac{c-in^2b}{c+in^2b}}.\n$$\n\n分子与分母互为共轭，$|r_p|=1$。因为 $c,b>0$，选择从临界角连续延拓的相位，\n\n$$\n\\boxed{\\varphi_p=-2\\arctan\\frac{n^2b}{c}}.\n$$\n\n（2）对于 s 偏振，电场本身沿同一个固定的 $\\hat{\\mathbf s}$，边界条件为\n\n$$\nE_i+E_r=E_t,\\qquad nc(E_i-E_r)=\\cos\\theta_t E_t.\n$$\n\n因反射传播方向改变，磁场的切向分量在第二式中出现负号。联立得\n\n$$\n\\boxed{r_s=\\frac{nc-\\cos\\theta_t}{nc+\\cos\\theta_t}=\\frac{c-ib}{c+ib}},\\qquad\n\\boxed{\\varphi_s=-2\\arctan\\frac bc}.\n$$\n\n同样 $|r_s|=1$。全反射保持两偏振分量各自的振幅大小，却通常改变它们的相对相位。\n\n（3）在上述连续相位支上，$\\varphi_p<\\varphi_s$。令单次反射的相位差大小为\n\n$$\n\\Delta=\\varphi_s-\\varphi_p=2\\left(\\arctan\\frac{n^2b}{c}-\\arctan\\frac bc\\right)>0.\n$$\n\n由正切差角公式，\n\n$$\n\\tan\\frac\\Delta2=\\frac{(n^2-1)bc}{c^2+n^2b^2}.\n$$\n\n注意 $c^2+n^2b^2=c^2+n^2\\sin^2\\theta-1=(n^2-1)\\sin^2\\theta$，所以\n\n$$\n\\tan\\frac\\Delta2=\\frac{b\\cos\\theta}{\\sin^2\\theta}.\n$$\n\n代入 $\\Delta=45^\\circ$，设 $t=\\tan22.5^\\circ=\\sqrt2-1$，得到\n\n$$\nb=\\frac{t\\sin^2\\theta}{\\cos\\theta},\\qquad\n\\frac1{n^2}=\\sin^2\\theta-\\frac{t^2\\sin^4\\theta}{\\cos^2\\theta}.\n$$\n\n因此\n\n$$\n\\boxed{n=\\left[\\sin^2\\theta-\\frac{(\\sqrt2-1)^2\\sin^4\\theta}{\\cos^2\\theta}\\right]^{-1/2}\\approx1.5002}.\n$$\n\n由此算出的临界角为 $\\theta_c=\\arcsin(1/n)\\approx41.80^\\circ$，确有 $53.3^\\circ>\\theta_c$。代回相移表达式，\n\n$$\n\\varphi_p\\approx-118.41^\\circ,\\qquad \\varphi_s\\approx-73.41^\\circ,\n$$\n\n单次 p 相对 s 落后 $45^\\circ$，两次累积落后 $90^\\circ$。由于全反射保持两分量振幅相等，入口与出口又均为正入射，最后输出的两正交分量等幅且相差四分之一周期，构成圆偏振。\n\n若改用另一种反射 p 基矢约定，单个 $r_p$ 可能多一个负号；比较物理相位必须同时转换该基矢。这里所有系数和两次累积相移都使用题目明确给定的同一约定。",
+      "rubric": [
+        {
+          "points": 3,
+          "text": "正确确定全反射条件与衰逝分支 cosθ_t=inb。"
+        },
+        {
+          "points": 4,
+          "text": "按局部 p 基底写出正确的电场、磁场边界条件，推导 r_p。"
+        },
+        {
+          "points": 3,
+          "text": "得到 |r_p|=1 及 φ_p=−2 arctan(n²b/c)。"
+        },
+        {
+          "points": 3,
+          "text": "正确写出 s 偏振的两条边界条件。"
+        },
+        {
+          "points": 3,
+          "text": "推导 r_s=(c−ib)/(c+ib)。"
+        },
+        {
+          "points": 2,
+          "text": "得到 |r_s|=1 及 φ_s=−2 arctan(b/c)。"
+        },
+        {
+          "points": 4,
+          "text": "建立单次相位差 Δ=45°，并用差角公式化简为 tan(Δ/2)=bc/sin²θ。"
+        },
+        {
+          "points": 4,
+          "text": "解出 n 的表达式，数值得到约 1.5002。"
+        },
+        {
+          "points": 2,
+          "text": "计算或比较临界角，确认全反射条件成立。"
+        },
+        {
+          "points": 2,
+          "text": "说明两次反射使相位差达到 90°，等幅正交分量给出圆偏振。"
+        }
+      ],
+      "checks": [
+        "数值代回应得到 n=1.50020149、临界角 41.8034°、单次相位差 45.0000°。",
+        "r_p 与 r_s 模长均为 1，符合无吸收介质全反射的能量条件。",
+        "两条 p 边界条件使用同一局部偏振基底，未混用不同反射振幅正负约定。"
+      ]
+    }
+  ]
+}

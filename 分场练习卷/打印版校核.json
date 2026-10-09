@@ -1,0 +1,64 @@
+{
+  "outputs": [
+    {
+      "paper": 1,
+      "round": 1,
+      "session": "经典",
+      "pdf": "第一轮_经典卷.pdf",
+      "bytes": 447506,
+      "questions": 6,
+      "answers": 6,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 2,
+      "round": 1,
+      "session": "近代",
+      "pdf": "第一轮_近代卷.pdf",
+      "bytes": 440274,
+      "questions": 6,
+      "answers": 6,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 3,
+      "round": 2,
+      "session": "经典",
+      "pdf": "第二轮_经典卷.pdf",
+      "bytes": 473268,
+      "questions": 6,
+      "answers": 6,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    },
+    {
+      "paper": 4,
+      "round": 2,
+      "session": "近代",
+      "pdf": "第二轮_近代卷.pdf",
+      "bytes": 451854,
+      "questions": 6,
+      "answers": 6,
+      "answerAfterAllQuestions": true,
+      "mathErrors": 0,
+      "overflowingMath": [],
+      "brokenImages": [],
+      "answerPageBreak": "page",
+      "failedResources": []
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "name": "physics-question-bank",
   "private": true,
   "scripts": {
-    "build": "node 工具/build_reading.mjs && node 工具/build_practice_exams.mjs",
+    "build": "node 工具/build_reading.mjs && node 工具/build_practice_exams.mjs && node 工具/build_session_exams.mjs",
     "verify": "node 工具/verify_materials.mjs",
-    "pdf": "node 工具/render_practice_exams.mjs"
+    "pdf": "node 工具/render_practice_exams.mjs && node 工具/render_session_exams.mjs"
   },
   "devDependencies": {
     "marked": "^15.0.12",

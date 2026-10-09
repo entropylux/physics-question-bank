@@ -90,7 +90,7 @@ for(const subject of subjects){
  stats.push({subject,complete:exists,questions:qcount,originalImages:count,officialCoverage:coverage.reduce((a,i)=>(a[i.status]=(a[i.status]||0)+1,a),{}),documents:localStats});
 }
 for(const n of ['使用说明.md','官方题库解答总览.md'])if(fs.existsSync(path.join(root,n)))renderMD(path.join(root,n),'');
-const intro=`<h1>物理题库与解答</h1><p>按课程组织知识点、练习与逐题推导，适合本科物理学习、自测和复习。</p><div class="intro"><strong>11门科目 · ${totalQuestions}道教学自编题及详解 · ${unique}个原题图条目</strong><p>保留原题图片和逐题解答，配套4套四大力学练习卷。统计物理与统计力学共享原题库。</p><div class="links"><a href="使用说明.html">阅读说明与学习路线</a><a href="官方题库解答总览.html">原题解答与缺项清单</a><a href="专项练习卷/index.html">四大力学专项练习卷</a></div></div><div class="cards">${cards.join('')}</div>`;
+const intro=`<h1>物理题库与解答</h1><p>按课程组织知识点、练习与逐题推导，适合本科物理学习、自测和复习。</p><div class="intro"><strong>11门科目 · ${totalQuestions}道教学自编题及详解 · ${unique}个原题图条目</strong><p>保留原题图片和逐题解答，配套两轮经典与近代分场练习卷，并保留4套四大力学专题练习。统计物理与统计力学共享原题库。</p><div class="links"><a href="使用说明.html">阅读说明与学习路线</a><a href="官方题库解答总览.html">原题解答与缺项清单</a><a href="分场练习卷/index.html">两轮经典与近代分场练习</a><a href="专项练习卷/index.html">四大力学专题练习</a></div></div><div class="cards">${cards.join('')}</div>`;
 fs.writeFileSync(path.join(root,'index.html'),shell('分科讲义与题库',intro,{prefix:''}));
 const report={subjects:stats.length,totalQuestions,uniqueOriginalImages:unique,originalImageCopies:originalCopies,totalMath,mathErrors,subjectsDetail:stats};
 fs.writeFileSync(path.join(root,'排版核查.json'),JSON.stringify(report,null,2));
